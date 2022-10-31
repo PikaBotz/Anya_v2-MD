@@ -1,0 +1,49 @@
+{
+    "name": "@shineiichijo/nhentai-pdf",
+    "version": "1.0.5",
+    "description": "Fork of nhentai-pdf",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "yarn rimraf dist/ && yarn tsc",
+        "prepublish": "yarn build",
+        "lint": "eslint . --ignore-path .gitignore --ext .ts",
+        "lint:fix": "eslint . --ignore-path .gitignore --ext .ts --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ShineiIchijo/nhentai-pdf.git"
+    },
+    "keywords": [
+        "nhentai",
+        "nhentai",
+        "pdf",
+        "doujin",
+        "downloader",
+        "nhentai",
+        "downloader"
+    ],
+    "author": "PrajjwalDatir",
+    "license": "AGPL-3.0",
+    "bugs": {
+        "url": "https://github.com/ShineiIchijo/nhentai-pdf/issues"
+    },
+    "homepage": "https://github.com/ShineiIchijo/nhentai-pdf#readme",
+    "devDependencies": {
+        "@types/node": "^16.3.3",
+        "@types/pdfkit": "^0.11.2",
+        "@typescript-eslint/eslint-plugin": "^4.22.1",
+        "@typescript-eslint/parser": "^4.22.1",
+        "eslint": "^7.31.0",
+        "prettier": "^2.3.2",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "cheerio": "^1.0.0-rc.10",
+        "pdfkit": "^0.13.0"
+    }
+}

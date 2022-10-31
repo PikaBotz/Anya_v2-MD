@@ -1,0 +1,1 @@
+const whois=require("whois"),util=require("util"),parseraw=require("../parse-raw-data"),promis=util.promisify(whois.lookup);async function lookup(e){return json=await promis(e),result=await parseraw(json),result.nameServer&&(result.nameServers=result.nameServer.split(" "),delete result.nameServer),{status:200,creator:"Caliph",result:result}}module.exports=lookup.bind();

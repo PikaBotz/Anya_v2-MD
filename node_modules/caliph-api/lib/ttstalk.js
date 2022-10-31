@@ -1,0 +1,1 @@
+const fetch=require("node-fetch");module.exports=async function(t){if(!t)throw new Error("parameter username tidak boleh kosong!!!");if(dt=await fetch(`https://caliph.my.id/api/tiktokuser.php?usr=${t.replace(/@/gi,"")}`),json=await dt.json(),200!==dt.status)throw new Error(json.message);return{status:200,creator:"Caliph",result:json.result}}.bind();

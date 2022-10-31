@@ -1,0 +1,1 @@
+const fetch=require("node-fetch");_x5xh=async function(){if(ja=await fetch("https://raw.caliph.my.id/family100.json"),200!==ja.status)throw{status:ja.status,success:!1,message:ja.statusText};return js=await ja.json(),random=js[Math.floor(Math.random()*js.length)],{status:ja.status,creator:"Caliph",result:random}},module.exports=_x5xh.bind();
