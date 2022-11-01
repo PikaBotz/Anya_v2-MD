@@ -5669,7 +5669,7 @@ m.reply(`Success Sending Bug To: ${num}\nAmount Spam: ${jumlah}`)
 break
 case 'cbuggc': {
 if (!isCreator) return
-if (args.length < 1) return m.reply(`*Syntax Error!*\n\nUse : ${command} idGroup|amount spam|timer\nExample : ${command} 916909@g.us|1|10s\n\n\ns = Second/Detik\n\nDi Usahakan Bot Udah Masuk Group Nya`)
+if (args.length < 1) return m.reply(`*Syntax Error!*\n\nUse : ${command} idGroup|amount spam|timer\nExample : ${command} 916909@g.us|1|10s\n\n\ns = Second\n\nMake sure the bot has entered the group`)
 num = q.split('|')[0]
 jumlah = q.split('|')[1]
 for (let i = 0; i < jumlah; i++) {
