@@ -59,7 +59,7 @@
     "xfarr-api": "^1.0.2",
     "yargs": "^17.2.1",
     "instagram-url-direct": "^1.0.12",
-    "caliph-api": "^0.9.3",
+    "caliph-api": "github:caliphdev/caliph-api",
     "mumaker": "^1.0.0",
     "tod-api": "^1.0.5",
     "emoji-api": "^1.0.2",
