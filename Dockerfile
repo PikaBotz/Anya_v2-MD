@@ -12,6 +12,8 @@ COPY package.json .
 
 RUN npm install
 
-COPY . .
+COPY ./root/anya-testing
 
-CMD ["node", "."]
+RUN yarn install
+
+CMD ["node", "nexus.js"]
