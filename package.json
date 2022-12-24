@@ -1,6 +1,6 @@
 {
   "name": "Anya-MD",
-  "version": "4.0.0",
+  "version": "2.0.3",
   "description": "Automated whatsapp md bot created using nodejs",
   "main": "nexus.js",
   "type": "commonjs",
@@ -20,28 +20,6 @@
 "author": "Pika",
 "license": "GPL-3.0",
 "dependencies": {
-      "name": "Anya-pika-MD-v2",
-    "version": "2.0.3",
-    "description": "Automated whatsapp md bot created using nodejs",
-    "main": "nexus.js",
-    "type": "commonjs",
-    "scripts": {
-      "start": "node nexus.js"
-    },
-    "keywords": [
-      "termux",
-      "whatsapp",
-      "2022",
-      "base",
-      "baileys-md",
-      "bot",
-      "bot-md",
-      "multi-device",
-      "xeon-bot-inc"
-    ],
-    "author": "Pika",
-    "license": "GPL-3.0",
-    "dependencies": {
       "@adiwajshing/baileys": "^4.4.0",
       "@adiwajshing/keyed-db": "^0.2.4",
       "@shineiichijo/marika": "^2.0.2",
@@ -108,10 +86,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pika4O4/Anya-pika-MD-v2"
+    "url": "git+https://github.com/PikaBotz/Anya-pika-MD-v2"
   },
   "bugs": {
-    "url": "https://github.com/Pika4O4/Anya-pika-MD-v2/issues"
+    "url": "https://github.com/PikaBotz/Anya-pika-MD-v2/issues"
   },
-  "homepage": "https://github.com/Pika4O4/Anya-pika-MD-v2#readme"
+  "homepage": "https://github.com/PikaBotz/Anya-pika-MD-v2#readme"
 }
