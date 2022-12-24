@@ -12,7 +12,7 @@ COPY package.json .
 
 RUN npm install
 
-COPY ./root/anya-testing
+COPY . .
 
 RUN yarn install
 
