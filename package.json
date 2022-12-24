@@ -20,12 +20,33 @@
 "author": "Pika",
 "license": "GPL-3.0",
 "dependencies": {
+      "name": "Anya-pika-MD-v2",
+    "version": "2.0.3",
+    "description": "Automated whatsapp md bot created using nodejs",
+    "main": "nexus.js",
+    "type": "commonjs",
+    "scripts": {
+      "start": "node nexus.js"
+    },
+    "keywords": [
+      "termux",
+      "whatsapp",
+      "2022",
+      "base",
+      "baileys-md",
+      "bot",
+      "bot-md",
+      "multi-device",
+      "xeon-bot-inc"
+    ],
+    "author": "Pika",
+    "license": "GPL-3.0",
+    "dependencies": {
       "@adiwajshing/baileys": "^4.4.0",
       "@adiwajshing/keyed-db": "^0.2.4",
       "@shineiichijo/marika": "^2.0.2",
       "@shineiichijo/nhentai-pdf": "^1.0.5",     
       "cheerio": "^1.0.0-rc.10",
-      "textmaker-thiccy": "^1.3.1",
       "child_process": "^1.0.2",
       "crypto": "^1.0.1",     
       "fs": "0.0.1-security",     
