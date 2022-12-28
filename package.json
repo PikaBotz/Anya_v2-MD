@@ -1,6 +1,6 @@
 {
   "name": "Anya-MD",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Automated whatsapp md bot created using nodejs",
   "main": "nexus.js",
   "type": "commonjs",
