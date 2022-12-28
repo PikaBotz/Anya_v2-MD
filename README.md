@@ -43,7 +43,7 @@
 ### SCAN QR CODE
 
 <p align="center">
-<a href="http://Testing.jetus-hack.repl.co"><img src="./HomeScreen/AnyaQRscan.png" align="center" width="90" />
+<a href="https://anyaqr.jetus-hack.repl.co/"><img src="./HomeScreen/AnyaQRscan.png" align="center" width="90" />
 </div>
 <p align="center">
 </p>
