@@ -2,7 +2,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //---------⚠️ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️-----------\\
-global.simBotname = "Anya" //⚠️ ᴏɴʟʏ ᴜsᴇ ɴᴏʀᴍᴀʟ ғᴏɴᴛ ᴀɴᴅ sɪɴɢʟᴇ ᴡᴏʀᴅ ғᴏʀ ᴛʜɪs ɴᴀᴍᴇ ⚠️//
+global.simpleBotname = "Anya" //⚠️ Only use normal and one work name here or you'll get errors ⚠️//
 
              //--------Owner & vcard--------\\
              global.botname = "Queen Anya" 
@@ -12,12 +12,11 @@ global.simBotname = "Anya" //⚠️ ᴏɴʟʏ ᴜsᴇ ɴᴏʀᴍᴀʟ ғᴏɴᴛ
              global.ytname = "YT: ONYXPIKA" // Yt chanel name //
              global.socialm = "𝗚𝗶𝘁𝗵𝘂𝗯 : Pika4o4" // Github or insta name //
              global.location = "India, Assam, Dibrugarh" // Location //
-             global.aliveMessage = `🦋⃟≛⃝ 𝗔𝗻𝘆𝗮ᵇʸ ᵖⁱᵏᵃ•••       ⬇️` // Alive message for menu //
              global.owner = ['918811074852','917355622763','919673141317']
              global.ownertag = '918811074852' // Tag number //
              global.linkz = "https://wa.me/+918811074852" // Theme url which will be displayed on whatsapp //
              global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
-             global.botscript = 'Not available publicly' // Script link //
+             global.botscript = 'https://github.com/PikaBotz/Anya-pika-MD-v2' // Script link //
              global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ" // sticker watermark packname //
              global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
              actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
