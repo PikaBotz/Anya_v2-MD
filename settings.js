@@ -4,27 +4,30 @@ const chalk = require('chalk')
 //---------⚠️ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️-----------\\
 global.simpleBotname = "Anya" //⚠️ Only use normal and one work name here or you'll get errors ⚠️//
 
-             //--------Owner & vcard--------\\
-             global.botname = "Queen Anya" 
-             global.ownernumber = ['918811074852'] // Owner number //
-             global.vcardowner = ['918811074852'] // vcard owner number //
-             global.ownername = "3.69_Pika" // Owner name //
-             global.ytname = "YT: ONYXPIKA" // Yt chanel name //
-             global.socialm = "𝗚𝗶𝘁𝗵𝘂𝗯 : Pika4o4" // Github or insta name //
-             global.location = "India, Assam, Dibrugarh" // Location //
-             global.owner = ['918811074852','917355622763','919673141317']
-             global.ownertag = '918811074852' // Tag number //
-             global.linkz = "https://wa.me/+918811074852" // Theme url which will be displayed on whatsapp //
-             global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
-             global.botscript = 'https://github.com/PikaBotz/Anya-pika-MD-v2' // Script link //
-             global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ" // sticker watermark packname //
-             global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
-             actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
-             global.premium = ['918811074852'] // premium numbers //
-             global.headerText = "Anya by Pika" // text for header of menus //
-             global.waterMark = "×͜× Pika™ ✓" // Your own watermark //
 
-global.prefa = ['/','-']
+//------------❤️ 𝗕𝗼𝘁 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 ❤️-----------\\
+global.botname = "Queen Anya" 
+global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
+global.botscript = 'https://github.com/PikaBotz/Anya-pika-MD-v2' // Script link //
+global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ" // sticker watermark packname //
+global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
+actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
+global.headerText = "Anya by Pika" // text for header of menu //        
+     
+             //-------------👑Owner & vcard 👑----------\\             
+             global.ownernumber = ['918811074852']   // Owner number //
+             global.vcardowner = ['918811074852']   // vcard owner number //
+             global.ownername = "3.69_Pika"   // Owner name //
+             global.ytname = "YT: ONYXPIKA"   // Yt chanel name //
+             global.socialm = "𝗚𝗶𝘁𝗵𝘂𝗯 : Pika4o4"   // Github or insta name //
+             global.location = "India, Assam, Dibrugarh"   // Location //
+             global.owner = ['918811074852','917355622763','919673141317']
+             global.ownertag = '918811074852'  // Tag number //
+             global.linkz = "https://wa.me/+918811074852"  // Theme url which will be displayed on whatsapp //
+             global.premium = ['918811074852']  // premium numbers //             
+             global.waterMark = "×͜× King ✘ Pika™ ✓" // Your own watermark //
+
+global.prefa = ['','-']
 
 //--------Random bot name for Info section--------\\
 name16 = "𓄂⍣⃝ 🇦𝚗𝚢𝚊 𓆩×͜×𓆪ꪾ️"
@@ -60,10 +63,10 @@ tag10 = '𝘈𝘺𝘰𝘰 𝘈𝘯𝘺𝘢 𝘪𝘴 𝘉𝘦𝘴𝘵!!😚'
 
 
 global.mess = {
-    success: 'Kaam ho gya 𝗱𝗮𝗿𝗹𝗶𝗻𝗴❤️',
-    admin: 'Baby!\nThis command is only for 𝗔𝗱𝗺𝗶𝗻𝘀...To jaa pehle 𝗮𝗱𝗺𝗶𝗻 banke aa. 😏',
-    botAdmin: 'Pehle mujhe 𝗔𝗱𝗺𝗶𝗻 to banao yarr 😕...gadhe log',
-    owner: 'Ye feature sirf mere 𝗼𝘄𝗻𝗲𝗿 ke liye hai!! tune use kyu kiya!!',
+    success: 'Work done 𝗗𝗮𝗿𝗹𝗶𝗻𝗴❤️',
+    admin: "Baby!\nThis command is only for 𝗔𝗱𝗺𝗶𝗻𝘀...So i can't process your command babe. 😑",
+    botAdmin: 'First make me 𝗔𝗱𝗺𝗶𝗻!!! 😐',
+    owner: 'This command is only for my 𝗼𝘄𝗻𝗲𝗿..',
     group: "Baka !!!!!\nYou can't use this command in a 𝗽𝗿𝗶𝘃𝗮𝘁𝗲 𝗰𝗵𝗮𝘁 !😑",
     private: 'Such a baka !!\nThis command is only for 𝗽𝗿𝗶𝘃𝗮𝘁𝗲 𝗰𝗵𝗮𝘁𝘀. 🥲',
     bot: "This Feature Is Only For 𝗕𝗼𝘁... and you're not a 𝗕𝗼𝘁.",
