@@ -36,7 +36,7 @@
 𝗞𝗼𝘆𝗲𝗯
 
 <p align="center">
-<a href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/PikaBotz/Anya-pika-MD-v2&branch=main&name=queen-anya"><img align="center" src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Fork and deploy" /></a>
+<a href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/PikaBotz/Anya-pika-MD-v2&branch=main&name=anya"><img align="center" src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Fork and deploy" /></a>
 </P>
   
   
