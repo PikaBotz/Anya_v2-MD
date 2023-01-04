@@ -1,4 +1,4 @@
-const fs = require('fs')
+  const fs = require('fs')
   let _limitOrg = JSON.parse(fs.readFileSync('./storage/user/limit.json'))
   let limitAwal = global.limitawal.free
   const addInventoriLimit = (sender) => {
