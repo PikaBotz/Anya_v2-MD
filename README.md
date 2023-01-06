@@ -1,7 +1,6 @@
 <div align="center">
    
 ## 𝐀𝖓𝐲𝖆 𝖇𝐲 𝕻𝖎𝖐𝖆𝖈𝖍𝖚
-##   
 <p align="center">
 <img src="./HomeScreen/Anyapic.jpg" alt="Pika" height= "auto" width="auto"/>
 
@@ -21,6 +20,15 @@
 </P>
 </div>
 
+##  
+### SCAN QR CODE
+
+<p align="center">
+<a href="https://anyaqr.jetus-hack.repl.co/"><img src="./HomeScreen/AnyaQRscan.png" align="center" width="90" />
+</div>
+<p align="center">
+</p>
+
 ##
 
 ### `DEPLOY`
@@ -39,24 +47,16 @@
 <a href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/PikaBotz/Anya-pika-MD-v2&branch=main&name=anya"><img align="center" src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Fork and deploy" /></a>
 </P>
   
-  
-### SCAN QR CODE
 
-<p align="center">
-<a href="https://anyaqr.jetus-hack.repl.co/"><img src="./HomeScreen/AnyaQRscan.png" align="center" width="90" />
-</div>
-<p align="center">
-</p>
-
-
-# Install Manually 👇
-## `Requirements`
+## Install Manually 👇
+### `Requirements`
 * [Node.js](https://nodejs.org/en/)
 * [Git](https://git-scm.com/downloads)
 * [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
 * [Libwebp](https://developers.google.com/speed/webp/download)
 
-## `Clone Repo & Installation dependencies`
+##
+### `Clone Repo & Installation dependencies`
 ```bash
 git clone https://github.com/PikaBotz/Anya-pika-MD-v2
 cd Anya-pika-MD-v2
@@ -91,21 +91,25 @@ git clone https://github.com/PikaBotz/Anya-pika-MD-v2
 cd Anya-pika-MD-v2
 npm start
 ```
-## `For 24/7 Activation (Termux)`
+##
+### `For 24/7 Activation (Termux)`
 ```bash
 npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs
 ```
 ##
-## ℂℝ𝔼𝔻𝕀𝕋𝕊
+### ℂℝ𝔼𝔻𝕀𝕋𝕊
 * [Nexus](https://github.com/Nexusat12)
 * [Xeon](https://github.com/DGxeon)
 * [Jetus](https://github.com/jetus-hack)
 
 ##
-## 𝑻𝒉𝒆 𝒎𝒂𝒊𝒏 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑷𝒊𝑲𝒂𝑪𝒉𝒖🥵🔥
+### 𝑻𝒉𝒆 𝒎𝒂𝒊𝒏 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑷𝒊𝑲𝒂𝑪𝒉𝒖🥵🔥
 <p align="center">
 
 <img src="./HomeScreen/Developerpic.jpg">   
+
+##
 <br>
 <div>
 <br>
+
