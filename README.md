@@ -2,7 +2,7 @@
    
 ## 𝐀𝖓𝐲𝖆 𝖇𝐲 𝕻𝖎𝖐𝖆𝖈𝖍𝖚
 <p align="center">
-<img src="./HomeScreen/Anyapic.jpg" alt="Pika" height= "auto" width="auto"/>
+<img src="./AnyaPikaMedia/HomeScreen/Anyapic.jpg" alt="Pika" height= "auto" width="auto"/>
 
 
 </p>
@@ -24,7 +24,7 @@
 ### SCAN QR CODE
 
 <p align="center">
-<a href="https://anyaqr.jetus-hack.repl.co/"><img src="./HomeScreen/AnyaQRscan.png" align="center" width="90" />
+<a href="https://anyaqr.jetus-hack.repl.co/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" />
 </div>
 <p align="center">
 </p>
@@ -106,7 +106,7 @@ npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs
 ### 𝑻𝒉𝒆 𝒎𝒂𝒊𝒏 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑷𝒊𝑲𝒂𝑪𝒉𝒖🥵🔥
 <p align="center">
 
-<img src="./HomeScreen/Developerpic.jpg">   
+<img src="https://github.com/PikaBotz/My_Personal_Space/blob/main/Images/Developer_pics/Developerpic.jpg">   
 
 ##
 <br>
