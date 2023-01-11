@@ -2,41 +2,41 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //---------⚠️ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️-----------\\
-global.simpleBotname = "Anya" //⚠️ Only use normal and one work name here or you'll get errors ⚠️//
+global.simpleBotname = "𓄂᳆⃞🌹̶͟͞✯᭄ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐" //⚠️ Only use normal and one work name here or you'll get errors ⚠️//
 
 
 //------------❤️ 𝗕𝗼𝘁 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 ❤️-----------\\
-global.botname = "Queen Anya" 
-global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
-global.botscript = 'https://github.com/PikaBotz/Anya-pika-MD-v2' // Script link //
-global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ" // sticker watermark packname //
-global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
-actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
+global.botname = "*_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐*" 
+global.websitex = "https://github.com/Klmodz" // Website to be displayed //
+global.botscript = 'https://github.com/Klmodz/Anya-pika-MD-v2' // Script link //
+global.packname = "𝑺𝒖𝒕𝒊𝒌𝒌𝒊💫 вσᡶ 𝖻ꪗ 𝖑𝖆𝖐𝖘𝖍𝖆𝖓" // sticker watermark packname //
+global.author = "🥵3.69_𝕾𝖚𝖙𝖎𝖐𝖐𝖎" // sticker watermark author //
+actiontitle = '࿙⚜𝑺𝒖𝒕𝒊𝒌𝒌𝒊⚜࿚' // text who displays on the top of welcome and left message //
 global.headerText = "Anya by Pika" // text for header of menu //        
      
              //-------------👑Owner & vcard 👑----------\\             
-             global.ownernumber = ['918811074852']   // Owner number //
-             global.vcardowner = ['918811074852']   // vcard owner number //
-             global.ownername = "3.69_Pika"   // Owner name //
-             global.ytname = "YT: ONYXPIKA"   // Yt chanel name //
-             global.socialm = "𝗚𝗶𝘁𝗵𝘂𝗯 : Pika4o4"   // Github or insta name //
-             global.location = "India, Assam, Dibrugarh"   // Location //
-             global.owner = ['918811074852','917355622763','919673141317']
-             global.ownertag = '918811074852'  // Tag number //
-             global.linkz = "https://wa.me/+918811074852"  // Theme url which will be displayed on whatsapp //
-             global.premium = ['918811074852']  // premium numbers //             
-             global.waterMark = "×͜× King ✘ Pika™ ✓" // Your own watermark //
+             global.ownernumber = ['94779002494']   // Owner number //
+             global.vcardowner = ['94779002494']   // vcard owner number //
+             global.ownername = "*_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐*"   // Owner name //
+             global.ytname = "YT: 𝑲𝒍-𝑴𝒐𝒅𝒛"   // Yt chanel name //
+             global.socialm = "𝗚𝗶𝘁𝗵𝘂𝗯 : Klmodz"   // Github or insta name //
+             global.location = "Sri lanka, Kurunagala, Kukiyapitiya"   // Location //
+             global.owner = ['94779002494','94768282864','94717264813']
+             global.ownertag = '94779002494'  // Tag number //
+             global.linkz = "https://wa.me/+94779002494"  // Theme url which will be displayed on whatsapp //
+             global.premium = ['94779002494']  // premium numbers //             
+             global.waterMark = "*_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐*" // Your own watermark //
 
 global.prefa = ['','-']
 
 //--------Random bot name for Info section--------\\
-name16 = "𓄂⍣⃝ 🇦𝚗𝚢𝚊 𓆩×͜×𓆪ꪾ️"
-name17 = "*Λ⃝ͷ🇾Λ 𓆩×͜×𓆪ꪾ*"
-name18 = "*Λ⃝ͷʏΛ 𓆩×͜×𓆪ꪾ*"
+name16 = "*_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐ 𓆩×͜×𓆪ꪾ️*"
+name17 = "*_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐ 𓆩×͜×𓆪ꪾ*"
+name18 = "*_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐* 𓆩×͜×𓆪ꪾ*"
 
 //--------Random footer message-----------\\
-footer1 = `𓄂⍣⃝🇦𝚗𝚢𝚊ㅤꪜ⃢𝟤ㅤ𓆩×͜×𓆪ꪾ `
-footer2 = `Λ⃝ͷʏΛㅤꪜ⃢𝟤ㅤ𓆩×͜×𓆪ꪾ`
+footer1 = `*_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐*ㅤ𓆩×͜×𓆪ꪾ `
+footer2 = `*_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐*ㅤ𓆩×͜×𓆪ꪾ`
 
 //--------Left message "Nikal msg"--------\\
 nikalmsg1 = 'Ye galiye ye choubara, yaha dikhna na dubara 😚🖕🏻' 
@@ -58,8 +58,8 @@ tag5 = '𝘠𝘢𝘢𝘳 𝘬𝘺𝘢 𝘉𝘰𝘵 𝘩𝘢𝘪❤️'
 tag6 = '𝘐𝘵𝘯𝘢 𝘮𝘻𝘢 𝘬𝘺𝘶 𝘢𝘢 𝘳𝘩𝘢 𝘩𝘢𝘪...𝘛𝘶𝘯𝘦 𝘩𝘢𝘸𝘢 𝘮𝘦 𝘣𝘩𝘢𝘯𝘨 𝘮𝘪𝘭𝘢𝘺𝘢 𝘩𝘢𝘪!🥵' 
 tag7 = '𝘞𝘩𝘦𝘳𝘦 𝘢𝘳𝘦 𝘺𝘰𝘶 𝘢𝘭𝘭?' 
 tag8 = '𝘏𝘦𝘺 𝘸𝘩𝘦𝘳𝘦 𝘺𝘰𝘶 𝘢𝘭𝘭?...𝘤𝘰𝘮𝘦 𝘩𝘦𝘳𝘦 𝘨𝘶𝘺𝘴 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘖𝘗 𝘉𝘰𝘵!🔥' 
-tag9 = '𝘠𝘰𝘶 𝘢𝘭𝘭 𝘴𝘩𝘰𝘶𝘭 𝘵𝘳𝘺 𝘵𝘩𝘪𝘴 𝘤𝘶𝘵𝘦 𝘈𝘯𝘺𝘢❤️🍫' 
-tag10 = '𝘈𝘺𝘰𝘰 𝘈𝘯𝘺𝘢 𝘪𝘴 𝘉𝘦𝘴𝘵!!😚' 
+tag9 = '𝘠𝘰𝘶 𝘢𝘭𝘭 𝘴𝘩𝘰𝘶𝘭 𝘵𝘳𝘺 𝘵𝘩𝘪𝘴 𝘤𝘶𝘵𝘦 𝘚𝘶𝘵𝘪𝘬𝘬𝘪❤️🍫' 
+tag10 = '𝘈𝘺𝘰𝘰 𝘚𝘶𝘵𝘪𝘬𝘬𝘪 𝘪𝘴 𝘉𝘦𝘴𝘵!!😚' 
 
 
 global.mess = {
