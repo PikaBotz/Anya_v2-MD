@@ -1,0 +1,1 @@
+const translate=require("@vitalets/google-translate-api");module.exports=async function(t=null,e="id"){if(result={},!t)throw"String text tidak boleh kosong!";var r=await translate(t,{to:e});return result.creator="Caliph",result.result={text:r.text,fromlang:r.from.language.iso},result}.bind();

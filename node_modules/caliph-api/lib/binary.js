@@ -1,0 +1,1 @@
+function binaryAgent(n){var t=n.split(" "),r=[];for(i=0;i<t.length;i++)r.push(String.fromCharCode(parseInt(t[i],2)));return r.join("")}function textToBinary(n=""){let t="";return t=n.split("").map((n=>n.charCodeAt(0).toString(2))).join(" "),t}module.exports={enc:textToBinary.bind(),dec:binaryAgent.bind()};
