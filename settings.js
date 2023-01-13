@@ -1,6 +1,7 @@
 const fs = require('fs')
 const chalk = require('chalk')
 
+
 //---------⚠️ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️-----------\\
 global.simpleBotname = "Anya" //⚠️ Only use normal and one work name here or you'll get errors ⚠️//
 
