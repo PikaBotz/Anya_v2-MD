@@ -16,17 +16,17 @@ actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of 
 global.headerText = "Anya by Pika" // text for header of menu //        
      
              //-------------👑Owner & vcard 👑----------\\             
-             global.ownernumber = ['918811074852']   // Owner number //
-             global.vcardowner = ['918811074852']   // vcard owner number //
-             global.ownername = "3.69_Pika"   // Owner name //
-             global.ytname = "YT: ONYXPIKA"   // Yt chanel name //
+             global.ownernumber = ['94764766973']   // Owner number //
+             global.vcardowner = ['94764766973']   // vcard owner number //
+             global.ownername = "3.69_Buvi"   // Owner name //
+             global.ytname = "YT: BN Academy"   // Yt chanel name //
              global.socialm = "𝗚𝗶𝘁𝗵𝘂𝗯 : Pika4o4"   // Github or insta name //
              global.location = "India, Assam, Dibrugarh"   // Location //
-             global.owner = ['918811074852','917355622763','919673141317']
-             global.ownertag = '918811074852'  // Tag number //
-             global.linkz = "https://wa.me/+918811074852"  // Theme url which will be displayed on whatsapp //
-             global.premium = ['918811074852']  // premium numbers //             
-             global.waterMark = "×͜× King ✘ Pika™ ✓" // Your own watermark //
+             global.owner = ['94764766973','94764766973','94764766973']
+             global.ownertag = '94764766973'  // Tag number //
+             global.linkz = "https://wa.me/+94764766973"  // Theme url which will be displayed on whatsapp //
+             global.premium = ['94764766973']  // premium numbers //             
+             global.waterMark = "×͜× King ✘ Buvi™ ✓" // Your own watermark //
 
 global.prefa = ['','-']
 
