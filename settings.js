@@ -10,9 +10,9 @@ global.botname = "*_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛ�
 global.websitex = "https://github.com/Klmodz" // Website to be displayed //
 global.botscript = 'https://github.com/Klmodz/Anya-pika-MD-v2' // Script link //
 global.packname = "𝑺𝒖𝒕𝒊𝒌𝒌𝒊💫 вσᡶ 𝖻ꪗ 𝖑𝖆𝖐𝖘𝖍𝖆𝖓" // sticker watermark packname //
-global.author = "🥵3.69_𝕾𝖚𝖙𝖎𝖐𝖐𝖎" // sticker watermark author //
+global.author = "𝕾𝖚𝖙𝖎𝖐𝖐𝖎" // sticker watermark author //
 actiontitle = '࿙⚜𝑺𝒖𝒕𝒊𝒌𝒌𝒊⚜࿚' // text who displays on the top of welcome and left message //
-global.headerText = "Anya by Pika" // text for header of menu //        
+global.headerText = " *_𓄂᳆⃞🌹̶͟͞✯᭄_ ǫᴜͥᴇᴇᷧɴⷨ ꜱᴜᴛɪⷡᴋⷪᴋⷮɪ࿐* " // text for header of menu //        
      
              //-------------👑Owner & vcard 👑----------\\             
              global.ownernumber = ['94779002494']   // Owner number //
