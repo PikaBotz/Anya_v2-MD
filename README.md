@@ -94,7 +94,7 @@ npm start
 ##
 ### `For 24/7 Activation (Termux)`
 ```bash
-npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs
+npm i -g pm2 && pm2 start Anyaindex.js && pm2 save && pm2 logs
 ```
 ##
 ### ℂℝ𝔼𝔻𝕀𝕋𝕊
