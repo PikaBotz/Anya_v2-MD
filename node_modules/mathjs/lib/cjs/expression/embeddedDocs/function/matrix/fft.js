@@ -1,0 +1,15 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fftDocs = void 0;
+var fftDocs = {
+  name: 'fft',
+  category: 'Matrix',
+  syntax: ['fft(x)'],
+  description: 'Calculate N-dimensional fourier transform',
+  examples: ['fft([[1, 0], [1, 0]])'],
+  seealso: ['ifft']
+};
+exports.fftDocs = fftDocs;

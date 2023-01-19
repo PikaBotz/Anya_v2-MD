@@ -1,0 +1,11 @@
+{
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "opts": {
+    "recurse": true,
+    "readme": "./README.md"
+  }
+}
