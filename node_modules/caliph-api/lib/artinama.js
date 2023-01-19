@@ -1,0 +1,1 @@
+const axios=require("axios"),cheerio=require("cheerio");async function ArtiNama(t){return new Promise(((a,e)=>{axios.get(`https://www.primbon.com/arti_nama.php?nama1=${t}&proses=+Submit%21+`).then((({data:t})=>{const e={status:200,creator:"caliph",result:cheerio.load(t)("#body").text().split("Nama:")[0].trim()};a(e)})).catch(e)}))}module.exports=ArtiNama.bind();

@@ -1,0 +1,1 @@
+const fetch=require("node-fetch");module.exports=async()=>{let t=await fetch("https://raw.caliph.my.id/quotesanime.json");if(200!=t.status)return{status:t.status,creator:"Caliph",result:null};let a=await t.json(),e=a[Math.floor(Math.random()*a.length)];return{status:t.status,creator:"Caliph",result:e}};

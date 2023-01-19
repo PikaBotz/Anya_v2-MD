@@ -1,0 +1,28 @@
+{
+  "name": "minecraft-query",
+  "version": "1.0.13",
+  "description": "A Node.js implementation of Minecraft's query protocol",
+  "main": "Query.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilianomaccaferri/query.git"
+  },
+  "keywords": [
+    "Minecraft",
+    "Query",
+    "data",
+    "players",
+    "online",
+    "players",
+    "MOTD"
+  ],
+  "author": "Emiliano Maccaferri",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/emilianomaccaferri/query/issues"
+  },
+  "homepage": "https://github.com/emilianomaccaferri/query#readme"
+}
