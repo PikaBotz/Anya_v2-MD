@@ -78,6 +78,7 @@
     "tod-api": "^1.0.5",
     "util": "^0.12.5",
     "xfarr-api": "^1.0.3",
+    "yargs": "^17.6.0",
     "ytdl-core": "^4.11.0"
   },
   "directories": {
