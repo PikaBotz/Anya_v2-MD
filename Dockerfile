@@ -16,4 +16,4 @@ COPY . .
 
 RUN yarn install
 
-CMD ["node", "nexus.js"]
+CMD ["node", "Anyaindex.js"]
