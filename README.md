@@ -21,7 +21,7 @@
 </div>
 
 ##  
-### SCAN QR CODE
+# [SCAN QR CODE HERE 👇🏻](https://anyaqr.jetus-hack.repl.co/)
 
 <p align="center">
 <a href="https://anyaqr.jetus-hack.repl.co/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" />
@@ -47,7 +47,7 @@
 <a href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/PikaBotz/Anya-pika-MD-v2&branch=main&name=anya"><img align="center" src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Fork and deploy" /></a>
 </P>
   
-
+##
 ## Install Manually 👇
 ### `Requirements`
 * [Node.js](https://nodejs.org/en/)
