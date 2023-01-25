@@ -29,7 +29,7 @@ global.email = "sojanrajan1@gmail.com" // put your email here
 global.premium = ['917306004019','917306004019']  // available soon
 global.sudo = ['917306004019','917306004019']  // Co - Owners //
 
-global.prefa = ['-'.'🥵','🔥']
+global.prefa = ['.']
 
 //--------Random bot name for Info section--------\\
 name16 = "𓄂⍣⃝ 🇦𝚗𝚢𝚊 𓆩×͜×𓆪ꪾ️"
