@@ -26,8 +26,7 @@ global.email = "sojanrajan1@gmail.com" // put your email here
 
 
 //------------ 🌟 Premium Users 🌟-------------\\
-global.premium = ['917306004019']
-		 ','917306004019']  // available soon
+global.premium = ['917306004019','917306004019']  // available soon
 global.sudo = ['917306004019','917306004019']  // Co - Owners //
 
 global.prefa = ['-'.'🥵','🔥']
