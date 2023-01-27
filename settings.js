@@ -2,27 +2,27 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 
-global.botname = "Queen Anya" 
-global.botLanguage = "default" // 𝗗𝗲𝗳𝗮𝘂𝗹𝘁 || 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 || 𝗛𝗶𝗻𝗱𝗶 || 𝗔𝗿𝗮𝗯𝗶𝗰 \\
-global.author = "𝙋𝙄𝙆𝘼"  
-global.packname = "𝙌𝙐𝙀𝙀𝙉✯𝘼𝙉𝙔𝘼✯𝘽𝙊𝙏"  
+global.botname = "𝘳𝓲ꪊꪑꪖ 𝓲 ᥴ ꪀ ᦔ" 
+global.botLanguage = "Arabic" // 𝗗𝗲𝗳𝗮𝘂𝗹𝘁 || 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 || 𝗛𝗶𝗻𝗱𝗶 || 𝗔𝗿𝗮𝗯𝗶𝗰 \\
+global.author = "ahmed"  
+global.packname = "𝘳𝓲ꪊꪑꪖ 𝓲 ᥴ ꪀ ᦔ"  
 global.myweb = "https://github.com/PikaBotz" // You can put any link 
-global.waterMark = "×͜× King ✘ Pika™ ✓" // Your own watermark 
-global.headerText = "Anya by Pika" // text for header of menu         
-global.DocumentTitle = "MASTER⚔️PIKA" 
+global.waterMark = "𝘳𝓲ꪊꪑꪖ 𝓲 ᥴ ꪀ ᦔ" // Your own watermark 
+global.headerText = "𝘳𝓲ꪊꪑꪖ 𝓲 ᥴ ꪀ ᦔ" // text for header of menu         
+global.DocumentTitle = "𝘳𝓲ꪊꪑꪖ ⚔️𝓲 ᥴ ꪀ ᦔ" 
 
 
-global.ownername = "𝕻𝖎𝖐𝖆♰𝕶𝖚𝖓"   // Owner name //        
-global.ownernumber = ['916900904828'] 
-global.socialm = "𝗜𝗻𝘀𝘁𝗮 : 3.69_pika" // 𝗜𝗻𝘀𝘁𝗮 : || 𝗚𝗶𝘁𝗵𝘂𝗯 : || 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : \\
+global.ownername = "ꪖꫝꪑꫀᦔ ɀ𝓲ɀꪮ "   // Owner name //        
+global.ownernumber = ['393278169630'] 
+global.socialm = "𝗜𝗻𝘀𝘁𝗮 : AHMED" // 𝗜𝗻𝘀𝘁𝗮 : || 𝗚𝗶𝘁𝗵𝘂𝗯 : || 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : \\
 global.ytname = "YT: Ytname"   // Yt chanel name //
-global.continent = "Asia" // your continent name 
-global.region = "India" // your country name
-global.state = "Assam" // your state name
-global.district = "Dibrugarh" // your district name
+global.continent = "Europa" // your continent name 
+global.region = "Italia" // your country name
+global.state = "Lombardia" // your state name
+global.district = "Milano" // your district name
 global.timezone = "Asia/Kolkata" // search on google if you don't know the timezone of your country //
-global.instagramId = "3.69_pika" // Your insta ID
-global.email = "example@exmaple.com" // put your email here
+global.instagramId = "ahmed_zi_z_o" // Your insta ID
+global.email = "ayt566103@gmail.com" // put your email here
 
 
 //------------ 🌟 Premium Users 🌟-------------\\
@@ -41,8 +41,8 @@ footer1 = `𓄂⍣⃝🇦𝚗𝚢𝚊ㅤꪜ⃢𝟤ㅤ𓆩×͜×𓆪ꪾ `
 footer2 = `Λ⃝ͷʏΛㅤꪜ⃢𝟤ㅤ𓆩×͜×𓆪ꪾ`
 
 //--------Left message "Nikal msg"--------\\
-nikalmsg1 = 'Ye galiye ye choubara, yaha dikhna na dubara 😚🖕🏻' 
-nikalmsg2 = 'Patt se headshot 🔫...Abey dil se bura lagta hai bhai 😂.'
+nikalmsg1 = 'مع السلامه تروح و يجي مكانك الف' 
+nikalmsg2 = 'سوف تندم و تعود معتذراً🤣.'
 
 //--------Random Tagall msg--------\\
 tag1 = '𝘏𝘦𝘺 𝘦𝘷𝘦𝘳𝘺𝘣𝘰𝘥𝘺😚, 𝘊𝘰𝘮𝘦 𝘰𝘯𝘭𝘪𝘯𝘦 𝘢𝘯𝘥 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘢𝘸𝘦𝘴𝘰𝘮𝘦 𝘉𝘰𝘵.' 
