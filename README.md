@@ -33,6 +33,7 @@
 
 ### `DEPLOY`
 
+
 <p align="center">
 𝗛𝗲𝗿𝗼𝗸𝘂
 
@@ -40,11 +41,20 @@
 <a href="https://heroku.com/deploy?template=https://github.com/PikaBotz/Anya-pika-MD-v2/"><img align="center" src="https://www.herokucdn.com/deploy/button.svg" alt="Fork and deploy" /></a>
 </P>
 
+##
 <p align="center">
 𝗞𝗼𝘆𝗲𝗯
 
 <p align="center">
 <a href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/PikaBotz/Anya-pika-MD-v2&branch=main&name=anya"><img align="center" src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Fork and deploy" /></a>
+</P>
+
+##
+<p align="center">
+𝗠𝗼𝗴𝗲𝗻𝗶𝘂𝘀
+
+<p align="center">
+<a href="https://studio.mogenius.com/studio/cloud-space/cloud-space-overview"><img align="center" src="https://studio.mogenius.com/assets/logos/logo-mogenius-logo-quer.svg" alt="Fork and deploy" /></a>
 </P>
   
 ##
