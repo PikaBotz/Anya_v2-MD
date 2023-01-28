@@ -31,7 +31,7 @@
 
 ##
 
-### `DEPLOY`
+# `DEPLOY HERE`
 
 
 <p align="center">
@@ -107,13 +107,17 @@ npm start
 npm i -g pm2 && pm2 start Anyaindex.js && pm2 save && pm2 logs
 ```
 ##
-### ℂℝ𝔼𝔻𝕀𝕋𝕊
+### `ℂℝ𝔼𝔻𝕀𝕋𝕊`
 * [Nexus](https://github.com/Nexusat12)
 * [Xeon](https://github.com/DGxeon)
 * [Jetus](https://github.com/jetus-hack)
 
 ##
-### 𝑻𝒉𝒆 𝒎𝒂𝒊𝒏 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑷𝒊𝑲𝒂𝑪𝒉𝒖🥵🔥
+### `Repo Stats`
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=PikaBotz&repo=Anya-pika-MD-v2&theme=vision-friendly-dark)](https://github.com/PikaBotz/Anya-pika-MD-v2)
+
+##
+### `𝑻𝒉𝒆 𝒎𝒂𝒊𝒏 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑷𝒊𝑲𝒂𝑪𝒉𝒖🥵🔥`
 <p align="center">
 
 <img src="https://github.com/PikaBotz/My_Personal_Space/blob/main/Images/Developer_pics/Developerpic.jpg">   
