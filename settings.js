@@ -7,13 +7,13 @@ global.simpleBotname = "Anya" //⚠️ Only use normal and one work name here or
 
 
 //------------❤️ 𝗕𝗼𝘁 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 ❤️-----------\\
-global.botname = "Queen Anya" 
+global.botname = "⾐Cʏʙᴇʀ  D͏u͏l͏a͏ᥫ᭡፝֟፝֟__" 
 global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
 global.botscript = 'https://github.com/PikaBotz/Anya-pika-MD-v2' // Script link //
-global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ" // sticker watermark packname //
+global.packname = "⾐Cʏʙᴇʀ  D͏u͏l͏a͏ᥫ᭡፝֟፝֟__вσᡶ 𝖻ꪗ ρỉƙꪖ" // sticker watermark packname //
 global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
-actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
-global.headerText = "Anya by Pika" // text for header of menu //        
+actiontitle = '𝐂𝐘𝐁𝜩𝐑 𝐃𝐔𝐋𝐀' // text who displays on the top of welcome and left message //
+global.headerText = "⾐Cʏʙᴇʀ  D͏u͏l͏a͏ᥫ᭡፝֟፝֟__" // text for header of menu //        
      
              //-------------👑Owner & vcard 👑----------\\             
              global.ownernumber = ['94771263209']   // Owner number //
@@ -24,8 +24,8 @@ global.headerText = "Anya by Pika" // text for header of menu //
              global.location = "India, Assam, Dibrugarh"   // Location //
              global.owner = ['94771263209','94771263209','94771263209']
              global.ownertag = '918811074852'  // Tag number //
-             global.linkz = "https://wa.me/+918811074852"  // Theme url which will be displayed on whatsapp //
-             global.premium = ['94771263209 × King ✘ Pika™ ✓" // Your own watermark //
+             global.linkz = "https://wa.me/+94771263209"  // Theme url which will be displayed on whatsapp //
+             global.premium = ['94771263209 × ⾐Cʏʙᴇʀ  D͏u͏l͏a͏ᥫ᭡፝֟፝֟__" // Your own watermark //
 
 global.prefa = ['','-']
 
