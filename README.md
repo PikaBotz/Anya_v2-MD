@@ -1,13 +1,13 @@
 <div align="center">
    
-## 𝐀𝖓𝐲𝖆 𝖇𝐲 𝕻𝖎𝖐𝖆𝖈𝖍𝖚
+## faheem mod
 <p align="center">
 <img src="./AnyaPikaMedia/HomeScreen/Anyapic.jpg" alt="Pika" height= "auto" width="auto"/>
 
 
 </p>
 <p align="center">
-<a href="#"><img title="𝐐𝐔𝚵𝚵𝚴 𝚫𝚴𝐘𝚫 𝐦𝐮𝐥𝐭𝐢 𝐝𝐞𝐯𝐢𝐜𝐞." src="https://img.shields.io/badge/𝐐𝐔𝚵𝚵𝚴 𝚫𝚴𝐘𝚫 𝐦𝐮𝐥𝐭𝐢 𝐝𝐞𝐯𝐢𝐜𝐞.-red?colorA=%23ff0000&colorB=%23ff0000&style=for-the-badge"></a>
+<a href="#"><img title="FAHEEM MOD 𝐦𝐮𝐥𝐭𝐢 𝐝𝐞𝐯𝐢𝐜𝐞." src="https://img.shields.io/badge/𝐐𝐔𝚵𝚵𝚴 𝚫𝚴𝐘𝚫 𝐦𝐮𝐥𝐭𝐢 𝐝𝐞𝐯𝐢𝐜𝐞.-red?colorA=%23ff0000&colorB=%23ff0000&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/PikaBotz"><img title="Author" src="https://img.shields.io/badge/Author-PikaBotz-red.svg?style=for-the-badge&logo=github"></a>
@@ -85,8 +85,8 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/PikaBotz/Anya-pika-MD-v2
-cd Anya-pika-MD-v2
+git clone https://github.com/Faheemxyz/faheem-v1
+cd faheem-v1
 npm start
 ```
 ## `For VPS`
