@@ -14,10 +14,11 @@
     {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
-    ],
-     "addons": [
-		{
-                "plan": "heroku-postgresql"
-		}
-    ]
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
 }
