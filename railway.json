@@ -5,7 +5,8 @@
 "dockerfilePath": "./Dockerfile"
 },
 "deploy": {
-"restartPolicyType": "ON_FAILURE",
+"startCommand": "npm start",
+"restartPolicyType": "ALWAYS",
 "restartPolicyMaxRetries": 10
 }
 } 
