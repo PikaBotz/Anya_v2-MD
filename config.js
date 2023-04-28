@@ -26,7 +26,7 @@ global.author = "𝙋𝙄𝙆𝘼"
 global.packname = "𝙌𝙐𝙀𝙀𝙉✯𝘼𝙉𝙔𝘼✯𝘽𝙊𝙏"  
 global.myweb = "https://github.com/PikaBotz" // You can put any link 
 global.waterMark = "×͜× King ✘ Pika™ ✓" // Your own watermark 
-global.footer = "𓄂⍣⃝🇦𝚗𝚢𝚊ㅤꪜ⃢𝟤ㅤ𓆩×͜×𓆪ꪾ"
+global.footer = "© Queen Anya Bot"
 global.prefa = ['-'] // single prefix
 global.themeemoji = '🔥'
 global.socialText = `*⪧⪢ Please join this group for by bot's announcement.*`
@@ -55,7 +55,7 @@ global.greet4 = "Good night 😴" // after 8:30 PM
 
 //------------ 🌟 Premium Users 🌟-------------\\
 global.premium = ['916900******','917355******']  // available soon
-global.sudo = ['9169004828']  // Co - Owners //
+global.sudo = ['916900******','91881107****']  // Co - Owners
 
 
 //--------------- Tip ----------------\\
@@ -66,9 +66,9 @@ global.tip3 = `If you got a bug or error, then please report to developer asap b
 //--------------- Menu images ----------------\\
 global.nullImage = fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg')
 global.nullDoc = fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Anya.xlsx')
-global.Menuimage = fs.readFileSync("./AnyaPikaMedia/theme/Menu/Menuimg.jpg")
+global.Menuimage = fs.readFileSync("./AnyaPikaMedia/theme/Menu/Menuimg.jpg") // Thumbnail for Dashboard
 global.thumnnaiIs = fs.readFileSync("./AnyaPikaMedia/theme/Menu/Menuimg2.jpeg")
-global.allmenuImg = fs.readFileSync('./AnyaPikaMedia/theme/Commandsimgs/Allmenu.jpg')
+global.allmenuImg = fs.readFileSync('./AnyaPikaMedia/theme/Commandsimgs/Allmenu.jpg') // Thumbnail for Allmenu command 
  
 //--------------- Systemic Function --------------\\
 global.autoTyping = false 
