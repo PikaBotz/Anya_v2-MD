@@ -22,23 +22,23 @@ global.lApiKey = [ // if this API key get expired then please go to https://api.
 
 
 global.botname = "Queen Anya" 
-global.author = "𝙋𝙄𝙆𝘼"  
+global.author = "levis"  
 global.packname = "𝙌𝙐𝙀𝙀𝙉✯𝘼𝙉𝙔𝘼✯𝘽𝙊𝙏"  
 global.myweb = "https://github.com/PikaBotz" // You can put any link 
 global.waterMark = "×͜× King ✘ Pika™ ✓" // Your own watermark 
 global.footer = "© Queen Anya Bot"
-global.prefa = ['-'] // single prefix
+global.prefa = !. // single prefix
 global.themeemoji = '🔥'
 global.socialText = `*⪧⪢ Please join this group for by bot's announcement.*`
 global.socialLink = `*⪧⪢ https://chat.whatsapp.com/HshHS6kHF9NHnA9lfMwwSM 💝*`
 
 
-global.ownername = "𝕻𝖎𝖐𝖆♰𝕶𝖚𝖓"   // Owner name //        
-global.ownernumber = ['918811074852'] 
+global.ownername = " 🥀⃞⃕𝔰𝔬𝔪𝔟𝔯𝔢༆𝔪𝔞𝔡𝔞𝔯𝔞⟫۞"  // Owner name //        
+global.ownernumber = ['+2250545752448'] 
 global.socialm = "𝗜𝗻𝘀𝘁𝗮 : 3.69_pika" // 𝗜𝗻𝘀𝘁𝗮 : || 𝗚𝗶𝘁𝗵𝘂𝗯 : || 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : \\
 global.ytname = "YT: Ytname"   // Yt chanel name //
 global.continent = "Asia" // your continent name 
-global.region = "India" // your country name
+global.region = "cote dˋivoire" // your country name
 global.state = "Assam" // your state name
 global.district = "Dibrugarh" // your district name
 global.timezone = "Asia/Kolkata" // search on google if you don't know the timezone of your country //
