@@ -21,28 +21,28 @@ global.lApiKey = [ // if this API key get expired then please go to https://api.
 ]
 
 
-global.botname = "Queen Anya" 
-global.author = "𝙋𝙄𝙆𝘼"  
-global.packname = "𝙌𝙐𝙀𝙀𝙉✯𝘼𝙉𝙔𝘼✯𝘽𝙊𝙏"  
-global.myweb = "https://github.com/PikaBotz" // You can put any link 
-global.waterMark = "×͜× King ✘ Pika™ ✓" // Your own watermark 
-global.footer = "© Queen Anya Bot"
+global.botname = "Rahul's bot" 
+global.author = "RAHUL"  
+global.packname = "RS BOT"  
+global.myweb = "https://GitHub.com" // You can put any link 
+global.waterMark = "×͜× RS™ ✓" // Your own watermark 
+global.footer = "© RS Bot"
 global.prefa = ['-'] // single prefix
 global.themeemoji = '🔥'
 global.socialText = `*⪧⪢ Please join this group for by bot's announcement.*`
-global.socialLink = `*⪧⪢ https://chat.whatsapp.com/HshHS6kHF9NHnA9lfMwwSM 💝*`
+global.socialLink = `*⪧⪢ https://chat.whatsapp.com/HshHS6kHFNHnA9lfMwwSM 💝*`
 
 
-global.ownername = "𝕻𝖎𝖐𝖆♰𝕶𝖚𝖓"   // Owner name //        
-global.ownernumber = ['918811074852'] 
-global.socialm = "𝗜𝗻𝘀𝘁𝗮 : 3.69_pika" // 𝗜𝗻𝘀𝘁𝗮 : || 𝗚𝗶𝘁𝗵𝘂𝗯 : || 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : \\
+global.ownername = "Rahul"   // Owner name //        
+global.ownernumber = ['919311270802'] 
+global.socialm = "𝗜𝗻𝘀𝘁𝗮 : wizard_rahul" // 𝗜𝗻𝘀𝘁𝗮 : || 𝗚𝗶𝘁𝗵𝘂𝗯 : || 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : \\
 global.ytname = "YT: Ytname"   // Yt chanel name //
 global.continent = "Asia" // your continent name 
 global.region = "India" // your country name
-global.state = "Assam" // your state name
-global.district = "Dibrugarh" // your district name
+global.state = "Delhi" // your state name
+global.district = "Delhi" // your district name
 global.timezone = "Asia/Kolkata" // search on google if you don't know the timezone of your country //
-global.instagramId = "3.69_pika" // Your insta ID
+global.instagramId = "wizard_rahul" // Your insta ID
 global.email = "example@exmaple.com" // put your email here
 
 
