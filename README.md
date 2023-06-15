@@ -175,7 +175,7 @@ node .
 * [`Xeon`](https://github.com/DGXeon) - | ✅ For Cheems v4 Base
 * [`OldUser`](https://github.com/Teamolduser) - | ✅ For web and modules compatibility
 * [`ImYanXiao`](https://github.com/ImYanXiao) - | ✅ For README.md code
-* [`AdirajShing`](https://github.com/adiwajshing/Baileys) - | For a huge library
+* [`AdirajShing`](https://github.com/adiwajshing/Baileys) - | ✅ For a huge library
 
 ## ```Repo Statistics ✏️```
     
