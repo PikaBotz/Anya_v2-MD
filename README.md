@@ -7,9 +7,9 @@
 
 > **Warning**: This script is not for trading with permission. 
 
-<h1 align="center">Anya_v2 - MD</h1>
+<h1 align="center">Anya_v2 - MultiDevice</h1>
 <p align="center">
-  <a href="https://github.com/PikaBotz"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Queen+Anya+v2+MultiDevice;Developed+on+Cheems+v4+Base;Developed+by+Pika+Kun+(PikaBotz+inc.);Give+star+and+forks+this+Repo+🎐" alt="AnyaReadme">
+  <a href="https://github.com/PikaBotz"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Queen+Anya+v2+MultiDevice;Developed+on+Cheems+v4+Base;Developed+by+Pika~Kun;Give+star+and+forks+this+Repo+🎐" alt="AnyaReadme">
 </p>
 
 <p align="center">
@@ -22,11 +22,16 @@
 
 ## ```Tap Here For Help ⛩️``` 
   <a href="https://wa.me/918811074852?text=Hello%20*master%20Pika~Kun*%20sir...%20I%20need%20some%20help%20in%20Anya%20v2...%20🥲">
-    <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
-  </a> &nbsp;&nbsp;
+    <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Whatsapp.svg" />
+  
+    Tap here for contact me on WhatsApp Messenger 🎐
+    
   <a href="My email: alammdarif07@gmail.com">
-    <img align="left" alt="SIEGRIN | Gmail" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Gmail.svg" />
-  </a> &nbsp;&nbsp;
+    <img align="left" alt="SIEGRIN | Gmail" width="26px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Gmail.svg" />
+  
+    My email Adress : alammdarif07@gmail.com 🎐
+     
+    
 ---------
 
 [![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT%20BY%20PIKA~-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/918811074852?text=*Hello%20Dear%20Pika~*) 
@@ -37,7 +42,7 @@
 - ✔️ | **Button Free Template** 
 - ✔️ | **Multi Device** 
 ---------
-### Some of the features include
+### Some of the features included
 - ✔️ | AntiCall
 - ✔️ | AntiLink
 - ✔️ | AntiAntiToxic
@@ -118,7 +123,7 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 
 ---------
 
-[ INSTALLING NODEJS & ELAINABOT-MD]
+[ INSTALLING NODEJS & ANYA_v2-MultiDevice]
 
 ```bash
 ubuntu
@@ -157,11 +162,11 @@ node .
 ---------
 
 
-### 📮 S&K
+### 📮 Terms & Conditions
 1. This repo is not for sale trade.
 2. Don't forget give `star` this repo 🌟
 3. This script is not made for `illegal` purpose.
-4. If you have problem, [`Tap Here`](https://wa.me/918811074852?text=Hello%20*master%20Pika~Kun*%20sir...%20I%20need%20some%20help%20in%20Anya%20v2...%20🥲)
+4. If you have problem, [`Tap Here`](https://wa.me/918811074852?text=Hello%20*master%20Pika~Kun*%20sir...%20I%20need%20some%20help%20in%20Anya%20v2...%20🥲) for help
 
 ---------
 
@@ -173,6 +178,7 @@ node .
 * [`AdirajShing`](https://github.com/adiwajshing/Baileys) - | For a huge library
 
 ## ```Repo Statistics ✏️```
+    
 <p align="center">
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=PikaBotz&repo=Anya_v2-MD&theme=vision-friendly-dark)](https://github.com/PikaBotz/Anya_v2-MD)
