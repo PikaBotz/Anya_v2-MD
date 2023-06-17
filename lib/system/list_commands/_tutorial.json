@@ -2,35 +2,35 @@
  "header": "Browser based free terminal!",
  "title": "Codespace",
  "desc": "Tap here to get codespace full tutorial.",
- "link": "*⌈ 𝘊𝘰𝘥𝘦𝘚𝘱𝘢𝘤𝘦 ⌋*\nhttps://youtu.be/nQRy96da2jw"
+ "link": "https://youtu.be/nQRy96da2jw"
 },{
  "header": "Cloud based paid terminal!",
  "title": "Heroku",
  "desc": "Tap here to get heroku tutorial.",
- "link": "*⌈ 𝘏𝘦𝘳𝘰𝘬𝘶 ⌋*\nComing soon"
+ "link": "Coming soon"
 },{
  "header": "Cloud based free terminal!",
  "title": "Mogenius",
  "desc": "Tap here to get mogenius full tutorial.",
- "link": "*⌈ 𝘔𝘰𝘨𝘦𝘯𝘪𝘰𝘶𝘴 ⌋*\nComing soon"
+ "link": "Coming soon"
 },{
  "header": "Cloud based paid(only for login) terminal!",
  "title": "Koyeb",
  "desc": "Tap here to get Koyeb tutorial.",
- "link": "*⌈ 𝘒𝘰𝘺𝘦𝘣 ⌋*\nComing soon"
+ "link": "Coming soon"
 },{
  "header": "Cloud based paid + free terminal!",
  "title": "Railway",
  "desc": "Tap here to get Railway full tutorial.",
- "link": "*⌈ 𝘙𝘢𝘪𝘭𝘸𝘢𝘺 ⌋*\nComing soon"
+ "link": "Coming soon"
 },{
  "header": "Device based free terminal!",
  "title": "Termux",
  "desc": "Tap here to get termux full tutorial.",
- "link": "*⌈ 𝘛𝘦𝘳𝘮𝘶𝘹 ⌋*\nhttps://youtu.be/CdczZBjf7z0"
+ "link": "https://youtu.be/CdczZBjf7z0"
 },{
  "header": "Request Developer for more terminals",
  "title": "Others",
  "desc": "Tap here to request developer for more!",
- "link": "*⌈ 𝘙𝘦𝘲𝘶𝘦𝘴𝘵 ⌋*\nPlease type *request* and then request developer for the tutorial you want!"
+ "link": "Please type *request* and then request developer for the tutorial you want!"
 }]
