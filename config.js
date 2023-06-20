@@ -29,8 +29,8 @@ global.waterMark = "×͜× King ✘ Pika™ ✓" // Your own watermark
 global.footer = "© Queen Anya Bot"
 global.prefa = ['-'] // single prefix
 global.themeemoji = '🔥'
-global.socialText = `*⪧⪢ Please join this group for by bot's announcement.*`
-global.socialLink = `*⪧⪢ https://chat.whatsapp.com/HshHS6kHF9NHnA9lfMwwSM 💝*`
+global.socialText = `*⪧⪢ Please join this group for my bot's announcement.*`
+global.socialLink = `*⪧⪢ http://gg.gg/PikaBotz_inc*`
 
 
 global.ownername = "𝕻𝖎𝖐𝖆♰𝕶𝖚𝖓"   // Owner name //        
