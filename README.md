@@ -3,7 +3,7 @@
     <img src="./AnyaPikaMedia/HomeScreen/Anyapic.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 
-## PENTING
+## IMPORTANT
 
 > **Warning**: This script is not for trading with permission. 
 
