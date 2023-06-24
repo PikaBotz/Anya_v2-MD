@@ -1,1 +1,1 @@
-worker: node Anyaindex.js
+worker: yarn start
