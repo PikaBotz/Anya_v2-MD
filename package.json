@@ -90,5 +90,5 @@
     "youtube-yts": "npm:@queenanya/ytsearch",
     "youtubedl-core": "npm:@queenanya/ytdlcore"
   },
-  "packageManager": "yarn@lastest"
+  "packageManager": "yarn@latest"
 }
