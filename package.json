@@ -87,8 +87,9 @@
     "util": "^0.12.5",
     "xfarr-api": "^1.0.3",
     "yargs": "^17.6.0",
+    "yarn": "1.22.19",
     "youtube-yts": "npm:@queenanya/ytsearch",
     "youtubedl-core": "npm:@queenanya/ytdlcore"
   },
-  "packageManager": "yarn@latest"
+  "packageManager": "yarn@1.22.19"
 }
