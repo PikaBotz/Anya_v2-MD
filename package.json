@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "bash start.sh",
-    "start2": "node Anyaindex.js"
+    "starts": "node Anyaindex.js"
   },
   "keywords": [
     "termux",
