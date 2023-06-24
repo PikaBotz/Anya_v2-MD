@@ -21,7 +21,7 @@
 ---------
 
 ## ```Tap Here For Help ⛩️``` 
-  <a href="https://wa.me/918811074852?text=Hello%20*master%20Pika~Kun*%20sir...%20I%20need%20some%20help%20in%20Anya%20v2...%20🥲">
+  <a href="https://wa.me/918811074852?text=Hello%20Pika~Kun%20sir...%20I%20need%20some%20help%20in%20Anya%20v2">
     <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Whatsapp.svg" />
   
     Tap here for contact me on WhatsApp Messenger 🎐
