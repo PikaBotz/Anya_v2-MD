@@ -5,7 +5,8 @@
   "main": "Anyaindex.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node Anyaindex.js"
+    "start": "bash start.sh",
+    "start2": "node Anyaindex.js"
   },
   "keywords": [
     "termux",
@@ -17,6 +18,14 @@
     "bot-md",
     "multi-device"
   ],
+    "homepage": "https://github.com/PikaBotz/Anya-pika-MD-v2#readme",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PikaBotz/Anya-pika-MD-v2"
+  },
+  "bugs": {
+    "url": "https://github.com/PikaBotz/Anya-pika-MD-v2/issues"
+  },
   "author": "Pika",
   "license": "GPL-3.0",
   "dependencies": {
@@ -81,16 +90,5 @@
     "youtube-yts": "npm:@queenanya/ytsearch",
     "youtubedl-core": "npm:@queenanya/ytdlcore"
   },
-  "directories": {
-    "lib": "lib",
-    "src": "src"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PikaBotz/Anya-pika-MD-v2"
-  },
-  "bugs": {
-    "url": "https://github.com/PikaBotz/Anya-pika-MD-v2/issues"
-  },
-  "homepage": "https://github.com/PikaBotz/Anya-pika-MD-v2#readme"
+  "packageManager": "yarn@lastest"
 }
