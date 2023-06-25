@@ -65,7 +65,7 @@
 
 ## ```Scan QR Here```
 
-<a href="https://tetstingg.teamolduser.repl.co/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" />
+<a href="http://anya-qr.teamolduser.repl.co/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" />
   
 ## ```Deploy On Railway```
 
