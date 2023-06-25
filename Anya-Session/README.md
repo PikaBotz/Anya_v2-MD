@@ -1,1 +1,1 @@
-# Upload your session here ⛩️🎐
+# Don't upload your session here ⛔⚠️

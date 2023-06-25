@@ -32,36 +32,7 @@
     My email Adress : alammdarif07@gmail.com 🎐
      
     
----------
 
-[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20Support-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/ILKQsNW42v4GmEsMRuyB2i) 
----------
-
-### Info About This Bot 🦋
-- ✔️ | **Simple But Advanced** 
-- ✔️ | **Button Free Template** 
-- ✔️ | **Multi Device** 
----------
-### Some of the features included
-- ✔️ | AntiCall
-- ✔️ | AntiLink
-- ✔️ | AntiAntiToxic
-- ✔️ | AntiMedia
-- ✔️ | Auto Restart
-- ✔️ | Anime
-- ✔️ | ChatBot
-- ✔️ | Fancy Text
-- ✔️ | Menfess
-- ✔️ | Nsfw 
-- ✔️ | Only Admins (BETA)
-- ✔️ | Promote & Demote Message
-- ✔️ | Public & Private
-- ✔️ | Tools 
-- ✔️ | RandomMenu
-- ✔️ | Stalker
-- ✔️ | Sticker
-- ✔️ | Welcome & Left Message
----------
 
 ## ```Scan QR Here```
 
@@ -78,6 +49,9 @@
 ## ```Deploy On Heroku```
 
 [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PikaBotz/Anya_v2-MD)
+
+
+
 
 
 ### 📮 Terms & Conditions
