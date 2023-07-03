@@ -1,6 +1,6 @@
 {
   "name": "QueenAnya-MD-V2",
-  "version": "2.0.8",
+  "version": "2.0.8_2",
   "description": "A modular whatsApp bot created by node.js",
   "main": "Anyaindex.js",
   "type": "commonjs",
