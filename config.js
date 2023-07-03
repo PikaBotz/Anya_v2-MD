@@ -34,7 +34,7 @@ global.socialLink = `*⪧⪢ https://chat.whatsapp.com/HshHS6kHF9NHnA9lfMwwSM �
 
 
 global.ownername = "Enter Owner Name Here"    
-global.ownernumber = ["918811074852"]
+global.ownernumber = ["917902627801"]
 global.ytname = "YT: Enter Your Channel Name Here"
 global.continent = "Asia" // your continent name 
 global.region = "Enter Your Country Name Here"
