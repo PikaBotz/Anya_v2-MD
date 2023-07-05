@@ -21,9 +21,9 @@
 ---------
 ## Now You Can Start Bot With Yarn only Just Type yarn In Terminal
 
-``
+```
 yarn
-``
+```
 
 ---------
 
