@@ -19,6 +19,13 @@
 <a href="https://github.com/PikaBotz"><img title="Author" src="https://img.shields.io/badge/AUTHOR-PikaBotz-green.svg?style=for-the-badge&logo=github"></a>
 
 ---------
+## Now You Can Start Bot With Yarn only Just Type yarn In Terminal
+
+``
+yarn
+``
+
+---------
 
 ## ```Tap Here For Help ⛩️``` 
   <a href="https://wa.me/918811074852?text=Hello%20Pika~Kun%20sir...%20I%20need%20some%20help%20in%20Anya%20v2">
