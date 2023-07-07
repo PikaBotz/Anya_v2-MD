@@ -1,0 +1,45 @@
+{
+  "name": "caliph-api",
+  "version": "0.4.9",
+  "description": "Simple API by Caliph",
+  "depecrated": false,
+  "main": "index.js",
+  "directories": {
+    
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "caliph-api",
+    "api",
+    "rest-api",
+    "scraper",
+    "downloader",
+    "tools"
+  ],
+  "homepage": "https://caliphapi.com",
+  "author": {
+    "name": "Caliph91",
+    "email": "admin@caliph.my.id"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caliph91/caliph-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caliph91/caliph-api/issues"
+  },
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "axios": "^0.24.0",
+   "cheerio": "^1.0.0-rc.5",
+   "@vitalets/google-translate-api": "^7.0.0",
+    "node-fetch": "^2.6.1",
+    "yt-search": "^2.7.4",
+    "ytdl-core": "^4.9.1",
+    "instatouch": "^2.3.14",
+    "fs": "^0.0.1-security"
+  }
+}
