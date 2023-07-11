@@ -27,7 +27,7 @@ global.author = "🅽🅾🆅🅰"
 global.packname = "˚✧⑅ꪶꫀᧁꪖᥴꪗ☆•ू❁✯𝘽𝙊𝙏"  
 global.myweb = "https://wa.me/qr/POYVZKD4CRMZD1"
 global.footer = "©\t" + "Enter Your Watermark Here"
-global.prefa = ['.'] // single prefix
+global.prefa = ['@'] // single prefix
 global.themeemoji = "🎐"
 global.socialText = `*⪧⪢ Please join this group for by bot's announcement.*`
 global.socialLink = `*⪧⪢ https://chat.whatsapp.com/HshHS6kHF9NHnA9lfMwwSM 💝*`
@@ -65,7 +65,7 @@ global.allmenuImg = fs.readFileSync('./AnyaPikaMedia/Allmenu.jpg') // Thumbnail 
 global.mess = {
     success: 'Nova te donne la permission✅',
     admin: 'Ta maîtrise du mana est insuffisante.',
-    botAdmin: 'Aies l' obligeance de me mettre administrateur.',
+    botAdmin: 'Aies l obligeance de me mettre administrateur.',
     owner: 'Tu n'a pas assez de haine en toi.',
     group: 'This command is only made for group chats.',
     private: 'This command is only for private chats.',
