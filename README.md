@@ -43,7 +43,7 @@ yarn
 
 ## ```Scan QR Here```
 
-<a href="http://anyaqr.ap-1.evennode.com"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" />
+<a href="https://qr.queenanya.me/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" /> </a>
   
 ## ```Deploy On Railway```
 
