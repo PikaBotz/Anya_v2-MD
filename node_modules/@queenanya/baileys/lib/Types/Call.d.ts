@@ -1,5 +1,5 @@
-export declare type WACallUpdateType = 'offer' | 'ringing' | 'timeout' | 'reject' | 'accept';
-export declare type WACallEvent = {
+export type WACallUpdateType = 'offer' | 'ringing' | 'timeout' | 'reject' | 'accept';
+export type WACallEvent = {
     chatId: string;
     from: string;
     isGroup?: boolean;

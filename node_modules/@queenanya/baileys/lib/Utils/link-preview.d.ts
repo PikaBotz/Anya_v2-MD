@@ -1,7 +1,7 @@
 import { AxiosRequestConfig } from 'axios';
 import { Logger } from 'pino';
 import { WAMediaUploadFunction, WAUrlInfo } from '../Types';
-export declare type URLGenerationOptions = {
+export type URLGenerationOptions = {
     thumbnailWidth: number;
     fetchOpts: {
         /** Timeout in ms */

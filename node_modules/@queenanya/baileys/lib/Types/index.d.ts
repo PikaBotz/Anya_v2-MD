@@ -11,7 +11,7 @@ export * from './Call';
 export * from './Signal';
 import { AuthenticationState } from './Auth';
 import { SocketConfig } from './Socket';
-export declare type UserFacingSocketConfig = Partial<SocketConfig> & {
+export type UserFacingSocketConfig = Partial<SocketConfig> & {
     auth: AuthenticationState;
 };
 export declare enum DisconnectReason {
@@ -24,18 +24,18 @@ export declare enum DisconnectReason {
     restartRequired = 515,
     multideviceMismatch = 411
 }
-export declare type WAInitResponse = {
+export type WAInitResponse = {
     ref: string;
     ttl: number;
     status: 200;
 };
-export declare type WABusinessHoursConfig = {
+export type WABusinessHoursConfig = {
     day_of_week: string;
     mode: string;
     open_time?: number;
     close_time?: number;
 };
-export declare type WABusinessProfile = {
+export type WABusinessProfile = {
     description: string;
     email: string | undefined;
     business_hours: {
@@ -48,7 +48,7 @@ export declare type WABusinessProfile = {
     wid?: string;
     address?: string;
 };
-export declare type CurveKeyPair = {
+export type CurveKeyPair = {
     private: Uint8Array;
     public: Uint8Array;
 };

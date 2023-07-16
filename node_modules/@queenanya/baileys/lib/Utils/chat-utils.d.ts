@@ -4,8 +4,8 @@ import type { Logger } from 'pino';
 import { proto } from '../../WAProto';
 import { BaileysEventEmitter, ChatModification, ChatMutation, Contact, InitialAppStateSyncOptions, LTHashState, WAPatchCreate, WAPatchName } from '../Types';
 import { BinaryNode } from '../WABinary';
-declare type FetchAppStateSyncKey = (keyId: string) => Promise<proto.Message.IAppStateSyncKeyData | null | undefined>;
-export declare type ChatMutationMap = {
+type FetchAppStateSyncKey = (keyId: string) => Promise<proto.Message.IAppStateSyncKeyData | null | undefined>;
+export type ChatMutationMap = {
     [index: string]: ChatMutation;
 };
 export declare const newLTHashState: () => LTHashState;
@@ -62,10 +62,10 @@ export declare const decodeSyncdSnapshot: (name: WAPatchName, snapshot: proto.IS
     state: LTHashState;
     mutationMap: ChatMutationMap;
 }>;
-export declare const decodePatches: (name: WAPatchName, syncds: proto.ISyncdPatch[], initial: LTHashState, getAppStateSyncKey: FetchAppStateSyncKey, options: AxiosRequestConfig<any>, minimumVersionNumber?: number | undefined, logger?: Logger<import("pino").LoggerOptions> | undefined, validateMacs?: boolean) => Promise<{
+export declare const decodePatches: (name: WAPatchName, syncds: proto.ISyncdPatch[], initial: LTHashState, getAppStateSyncKey: FetchAppStateSyncKey, options: AxiosRequestConfig<any>, minimumVersionNumber?: number, logger?: Logger, validateMacs?: boolean) => Promise<{
     state: LTHashState;
     mutationMap: ChatMutationMap;
 }>;
 export declare const chatModificationToAppPatch: (mod: ChatModification, jid: string) => WAPatchCreate;
-export declare const processSyncAction: (syncAction: ChatMutation, ev: BaileysEventEmitter, me: Contact, initialSyncOpts?: InitialAppStateSyncOptions | undefined, logger?: Logger<import("pino").LoggerOptions> | undefined) => void;
+export declare const processSyncAction: (syncAction: ChatMutation, ev: BaileysEventEmitter, me: Contact, initialSyncOpts?: InitialAppStateSyncOptions, logger?: Logger) => void;
 export {};

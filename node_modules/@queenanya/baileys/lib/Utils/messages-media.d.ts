@@ -1,4 +1,6 @@
 /// <reference types="node" />
+/// <reference types="node" />
+/// <reference types="node" />
 import { Boom } from '@hapi/boom';
 import { AxiosRequestConfig } from 'axios';
 import type { Logger } from 'pino';
@@ -26,7 +28,7 @@ export declare const mediaMessageSHA256B64: (message: WAMessageContent) => strin
 export declare function getAudioDuration(buffer: Buffer | string | Readable): Promise<number | undefined>;
 export declare const toReadable: (buffer: Buffer) => Readable;
 export declare const toBuffer: (stream: Readable) => Promise<Buffer>;
-export declare const getStream: (item: WAMediaUpload, opts?: AxiosRequestConfig<any> | undefined) => Promise<{
+export declare const getStream: (item: WAMediaUpload, opts?: AxiosRequestConfig) => Promise<{
     readonly stream: Readable;
     readonly type: "buffer";
 } | {
@@ -52,7 +54,7 @@ export declare function generateThumbnail(file: string, mediaType: 'video' | 'im
 export declare const getHttpStream: (url: string | URL, options?: AxiosRequestConfig & {
     isStream?: true;
 }) => Promise<Readable>;
-declare type EncryptedStreamOptions = {
+type EncryptedStreamOptions = {
     saveOriginalFileIfRequired?: boolean;
     logger?: Logger;
     opts?: AxiosRequestConfig;
@@ -67,7 +69,7 @@ export declare const encryptedStream: (media: WAMediaUpload, mediaType: MediaTyp
     fileLength: number;
     didSaveToTmpPath: boolean;
 }>;
-export declare type MediaDownloadOptions = {
+export type MediaDownloadOptions = {
     startByte?: number;
     endByte?: number;
     options?: AxiosRequestConfig<any>;

@@ -3,12 +3,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.waMessageID = exports.waChatKey = void 0;
+exports.waLabelAssociationKey = exports.waMessageID = exports.waChatKey = void 0;
 const WAProto_1 = require("../../WAProto");
 const Defaults_1 = require("../Defaults");
+const LabelAssociation_1 = require("../Types/LabelAssociation");
 const Utils_1 = require("../Utils");
 const WABinary_1 = require("../WABinary");
 const make_ordered_dictionary_1 = __importDefault(require("./make-ordered-dictionary"));
+const object_repository_1 = require("./object-repository");
 const waChatKey = (pin) => ({
     key: (c) => (pin ? (c.pinned ? '1' : '0') : '') + (c.archived ? '0' : '1') + (c.conversationTimestamp ? c.conversationTimestamp.toString(16).padStart(8, '0') : '') + c.id,
     compare: (k1, k2) => k2.localeCompare(k1)
@@ -16,10 +18,53 @@ const waChatKey = (pin) => ({
 exports.waChatKey = waChatKey;
 const waMessageID = (m) => m.key.id || '';
 exports.waMessageID = waMessageID;
+exports.waLabelAssociationKey = {
+    key: (la) => (la.type === LabelAssociation_1.LabelAssociationType.Chat ? la.chatId + la.labelId : la.chatId + la.messageId + la.labelId),
+    compare: (k1, k2) => k2.localeCompare(k1)
+};
 const makeMessagesDictionary = () => (0, make_ordered_dictionary_1.default)(exports.waMessageID);
-exports.default = ({ logger: _logger, chatKey }) => {
-    const logger = _logger || Defaults_1.DEFAULT_CONNECTION_CONFIG.logger.child({ stream: 'in-mem-store' });
+const predefinedLabels = Object.freeze({
+    '0': {
+        id: '0',
+        name: 'New customer',
+        predefinedId: '0',
+        color: 0,
+        deleted: false
+    },
+    '1': {
+        id: '1',
+        name: 'New order',
+        predefinedId: '1',
+        color: 1,
+        deleted: false
+    },
+    '2': {
+        id: '2',
+        name: 'Pending payment',
+        predefinedId: '2',
+        color: 2,
+        deleted: false
+    },
+    '3': {
+        id: '3',
+        name: 'Paid',
+        predefinedId: '3',
+        color: 3,
+        deleted: false
+    },
+    '4': {
+        id: '4',
+        name: 'Order completed',
+        predefinedId: '4',
+        color: 4,
+        deleted: false
+    }
+});
+exports.default = ({ logger: _logger, chatKey, labelAssociationKey }) => {
+    // const logger = _logger || DEFAULT_CONNECTION_CONFIG.logger.child({ stream: 'in-mem-store' })
     chatKey = chatKey || (0, exports.waChatKey)(true);
+    labelAssociationKey = labelAssociationKey || exports.waLabelAssociationKey;
+    const logger = _logger || Defaults_1.DEFAULT_CONNECTION_CONFIG.logger.child({ stream: 'in-mem-store' });
     const KeyedDB = require('@adiwajshing/keyed-db').default;
     const chats = new KeyedDB(chatKey, c => c.id);
     const messages = {};
@@ -27,6 +72,8 @@ exports.default = ({ logger: _logger, chatKey }) => {
     const groupMetadata = {};
     const presences = {};
     const state = { connection: 'close' };
+    const labels = new object_repository_1.ObjectRepository(predefinedLabels);
+    const labelAssociations = new KeyedDB(labelAssociationKey, labelAssociationKey.key);
     const assertMessageList = (jid) => {
         if (!messages[jid]) {
             messages[jid] = makeMessagesDictionary();
@@ -40,6 +87,11 @@ exports.default = ({ logger: _logger, chatKey }) => {
             contacts[contact.id] = Object.assign(contacts[contact.id] || {}, contact);
         }
         return oldContacts;
+    };
+    const labelsUpsert = (newLabels) => {
+        for (const label of newLabels) {
+            labels.upsertById(label.id, label);
+        }
     };
     /**
      * binds to a BaileysEventEmitter.
@@ -61,16 +113,21 @@ exports.default = ({ logger: _logger, chatKey }) => {
             const chatsAdded = chats.insertIfAbsent(...newChats).length;
             logger.debug({ chatsAdded }, 'synced chats');
             const oldContacts = contactsUpsert(newContacts);
-            for (const jid of oldContacts) {
-                delete contacts[jid];
+            if (isLatest) {
+                for (const jid of oldContacts) {
+                    delete contacts[jid];
+                }
             }
-            logger.debug({ deletedContacts: oldContacts.size, newContacts }, 'synced contacts');
+            logger.debug({ deletedContacts: isLatest ? oldContacts.size : 0, newContacts }, 'synced contacts');
             for (const msg of newMessages) {
                 const jid = msg.key.remoteJid;
                 const list = assertMessageList(jid);
                 list.upsert(msg, 'prepend');
             }
             logger.debug({ messages: newMessages.length }, 'synced messages');
+        });
+        ev.on('contacts.upsert', contacts => {
+            contactsUpsert(contacts);
         });
         ev.on('contacts.update', updates => {
             for (const update of updates) {
@@ -97,6 +154,28 @@ exports.default = ({ logger: _logger, chatKey }) => {
                 if (!result) {
                     logger.debug({ update }, 'got update for non-existant chat');
                 }
+            }
+        });
+        ev.on('labels.edit', (label) => {
+            if (label.deleted) {
+                return labels.deleteById(label.id);
+            }
+            // WhatsApp can store only up to 20 labels
+            if (labels.count() < 20) {
+                return labels.upsertById(label.id, label);
+            }
+            logger.error('Labels count exceed');
+        });
+        ev.on('labels.association', ({ type, association }) => {
+            switch (type) {
+                case 'add':
+                    labelAssociations.upsert(association);
+                    break;
+                case 'remove':
+                    labelAssociations.delete(association);
+                    break;
+                default:
+                    console.error(`unknown operation type [${type}]`);
             }
         });
         ev.on('presence.update', ({ id, presences: update }) => {
@@ -132,8 +211,17 @@ exports.default = ({ logger: _logger, chatKey }) => {
             }
         });
         ev.on('messages.update', updates => {
+            var _a;
             for (const { update, key } of updates) {
-                const list = assertMessageList(key.remoteJid);
+                const list = assertMessageList((0, WABinary_1.jidNormalizedUser)(key.remoteJid));
+                if (update === null || update === void 0 ? void 0 : update.status) {
+                    const listStatus = (_a = list.get(key.id)) === null || _a === void 0 ? void 0 : _a.status;
+                    if (listStatus && (update === null || update === void 0 ? void 0 : update.status) <= listStatus) {
+                        logger.debug({ update, storedStatus: listStatus }, 'status stored newer then update');
+                        delete update.status;
+                        logger.debug({ update }, 'new update object');
+                    }
+                }
                 const result = list.updateAssign(key.id, update);
                 if (!result) {
                     logger.debug({ update }, 'got update for non-existent message');
@@ -208,11 +296,15 @@ exports.default = ({ logger: _logger, chatKey }) => {
     const toJSON = () => ({
         chats,
         contacts,
-        messages
+        messages,
+        labels,
+        labelAssociations
     });
     const fromJSON = (json) => {
         chats.upsert(...json.chats);
+        labelAssociations.upsert(...json.labelAssociations || []);
         contactsUpsert(Object.values(json.contacts));
+        labelsUpsert(Object.values(json.labels || {}));
         for (const jid in json.messages) {
             const list = assertMessageList(jid);
             for (const msg of json.messages[jid]) {
@@ -227,6 +319,8 @@ exports.default = ({ logger: _logger, chatKey }) => {
         groupMetadata,
         state,
         presences,
+        labels,
+        labelAssociations,
         bind,
         /** loads messages from the store, if not found -- uses the legacy connection */
         loadMessages: async (jid, count, cursor) => {
@@ -252,6 +346,34 @@ exports.default = ({ logger: _logger, chatKey }) => {
                 messages = [];
             }
             return messages;
+        },
+        /**
+         * Get all available labels for profile
+         *
+         * Keep in mind that the list is formed from predefined tags and tags
+         * that were "caught" during their editing.
+         */
+        getLabels: () => {
+            return labels;
+        },
+        /**
+         * Get labels for chat
+         *
+         * @returns Label IDs
+         **/
+        getChatLabels: (chatId) => {
+            return labelAssociations.filter((la) => la.chatId === chatId).all();
+        },
+        /**
+         * Get labels for message
+         *
+         * @returns Label IDs
+         **/
+        getMessageLabels: (messageId) => {
+            const associations = labelAssociations
+                .filter((la) => la.messageId === messageId)
+                .all();
+            return associations.map(({ labelId }) => labelId);
         },
         loadMessage: async (jid, id) => { var _a; return (_a = messages[jid]) === null || _a === void 0 ? void 0 : _a.get(id); },
         mostRecentMessage: async (jid) => {

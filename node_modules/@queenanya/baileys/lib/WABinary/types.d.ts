@@ -6,13 +6,13 @@ import * as constants from './constants';
  * This is done for easy serialization, to prevent running into issues with prototypes &
  * to maintain functional code structure
  * */
-export declare type BinaryNode = {
+export type BinaryNode = {
     tag: string;
     attrs: {
         [key: string]: string;
     };
     content?: BinaryNode[] | string | Uint8Array;
 };
-export declare type BinaryNodeAttributes = BinaryNode['attrs'];
-export declare type BinaryNodeData = BinaryNode['content'];
-export declare type BinaryNodeCodingOptions = typeof constants;
+export type BinaryNodeAttributes = BinaryNode['attrs'];
+export type BinaryNodeData = BinaryNode['content'];
+export type BinaryNodeCodingOptions = typeof constants;

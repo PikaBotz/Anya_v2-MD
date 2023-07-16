@@ -7,8 +7,8 @@ import { BaileysEventEmitter, BaileysEventMap } from '../Types';
  * this can make processing events extremely efficient -- since everything
  * can be done in a single transaction
  */
-declare type BaileysEventData = Partial<BaileysEventMap>;
-declare type BaileysBufferableEventEmitter = BaileysEventEmitter & {
+type BaileysEventData = Partial<BaileysEventMap>;
+type BaileysBufferableEventEmitter = BaileysEventEmitter & {
     /** Use to process events in a batch */
     process(handler: (events: BaileysEventData) => void | Promise<void>): (() => void);
     /**

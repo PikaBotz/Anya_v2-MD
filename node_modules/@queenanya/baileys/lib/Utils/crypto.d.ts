@@ -31,6 +31,7 @@ export declare function aesEncrypt(buffer: Buffer | Uint8Array, key: Buffer): Bu
 export declare function aesEncrypWithIV(buffer: Buffer, key: Buffer, IV: Buffer): Buffer;
 export declare function hmacSign(buffer: Buffer | Uint8Array, key: Buffer | Uint8Array, variant?: 'sha256' | 'sha512'): Buffer;
 export declare function sha256(buffer: Buffer): Buffer;
+export declare function md5(buffer: Buffer): Buffer;
 export declare function hkdf(buffer: Uint8Array | Buffer, expandedLength: number, info: {
     salt?: Buffer;
     info?: string;

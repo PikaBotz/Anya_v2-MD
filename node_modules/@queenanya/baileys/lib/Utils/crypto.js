@@ -26,7 +26,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.hkdf = exports.sha256 = exports.hmacSign = exports.aesEncrypWithIV = exports.aesEncrypt = exports.aesDecryptWithIV = exports.aesDecrypt = exports.aesDecryptGCM = exports.aesEncryptGCM = exports.signedKeyPair = exports.Curve = exports.generateSignalPubKey = void 0;
+exports.hkdf = exports.md5 = exports.sha256 = exports.hmacSign = exports.aesEncrypWithIV = exports.aesEncrypt = exports.aesDecryptWithIV = exports.aesDecrypt = exports.aesDecryptGCM = exports.aesEncryptGCM = exports.signedKeyPair = exports.Curve = exports.generateSignalPubKey = void 0;
 const crypto_1 = require("crypto");
 const futoin_hkdf_1 = __importDefault(require("futoin-hkdf"));
 const libsignal = __importStar(require("libsignal"));
@@ -126,6 +126,10 @@ function sha256(buffer) {
     return (0, crypto_1.createHash)('sha256').update(buffer).digest();
 }
 exports.sha256 = sha256;
+function md5(buffer) {
+    return (0, crypto_1.createHash)('md5').update(buffer).digest();
+}
+exports.md5 = md5;
 // HKDF key expansion
 function hkdf(buffer, expandedLength, info) {
     return (0, futoin_hkdf_1.default)(!Buffer.isBuffer(buffer) ? Buffer.from(buffer) : buffer, expandedLength, info);

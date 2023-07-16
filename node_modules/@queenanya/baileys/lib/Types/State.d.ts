@@ -1,6 +1,6 @@
 import { Contact } from './Contact';
-export declare type WAConnectionState = 'open' | 'connecting' | 'close';
-export declare type ConnectionState = {
+export type WAConnectionState = 'open' | 'connecting' | 'close';
+export type ConnectionState = {
     /** connection is now open, connecting or closed */
     connection: WAConnectionState;
     /** the error that caused the connection to close */
