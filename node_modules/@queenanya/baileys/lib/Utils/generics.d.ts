@@ -24,9 +24,9 @@ export declare const encodeBigEndian: (e: number, t?: number) => Uint8Array;
 export declare const toNumber: (t: Long | number | null | undefined) => number;
 /** unix timestamp of a date in seconds */
 export declare const unixTimestampSeconds: (date?: Date) => number;
-export declare type DebouncedTimeout = ReturnType<typeof debouncedTimeout>;
-export declare const debouncedTimeout: (intervalMs?: number, task?: (() => void) | undefined) => {
-    start: (newIntervalMs?: number | undefined, newTask?: (() => void) | undefined) => void;
+export type DebouncedTimeout = ReturnType<typeof debouncedTimeout>;
+export declare const debouncedTimeout: (intervalMs?: number, task?: () => void) => {
+    start: (newIntervalMs?: number, newTask?: () => void) => void;
     cancel: () => void;
     setTask: (newTask: () => void) => () => void;
     setInterval: (newInterval: number) => number;
@@ -38,8 +38,8 @@ export declare const delayCancellable: (ms: number) => {
 };
 export declare function promiseTimeout<T>(ms: number | undefined, promise: (resolve: (v: T) => void, reject: (error: any) => void) => void): Promise<T>;
 export declare const generateMessageID: () => string;
-export declare function bindWaitForEvent<T extends keyof BaileysEventMap>(ev: BaileysEventEmitter, event: T): (check: (u: BaileysEventMap[T]) => boolean | undefined, timeoutMs?: number | undefined) => Promise<void>;
-export declare const bindWaitForConnectionUpdate: (ev: BaileysEventEmitter) => (check: (u: Partial<import("../Types").ConnectionState>) => boolean | undefined, timeoutMs?: number | undefined) => Promise<void>;
+export declare function bindWaitForEvent<T extends keyof BaileysEventMap>(ev: BaileysEventEmitter, event: T): (check: (u: BaileysEventMap[T]) => boolean | undefined, timeoutMs?: number) => Promise<void>;
+export declare const bindWaitForConnectionUpdate: (ev: BaileysEventEmitter) => (check: (u: Partial<import("../Types").ConnectionState>) => boolean | undefined, timeoutMs?: number) => Promise<void>;
 export declare const printQRIfNecessaryListener: (ev: BaileysEventEmitter, logger: Logger) => void;
 /**
  * utility that fetches latest baileys version from the master branch.

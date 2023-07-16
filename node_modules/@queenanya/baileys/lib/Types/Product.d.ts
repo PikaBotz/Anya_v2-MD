@@ -1,5 +1,5 @@
 import { WAMediaUpload } from './Message';
-export declare type CatalogResult = {
+export type CatalogResult = {
     data: {
         paging: {
             cursors: {
@@ -10,23 +10,23 @@ export declare type CatalogResult = {
         data: any[];
     };
 };
-export declare type ProductCreateResult = {
+export type ProductCreateResult = {
     data: {
         product: {};
     };
 };
-export declare type CatalogStatus = {
+export type CatalogStatus = {
     status: string;
     canAppeal: boolean;
 };
-export declare type CatalogCollection = {
+export type CatalogCollection = {
     id: string;
     name: string;
     products: Product[];
     status: CatalogStatus;
 };
-export declare type ProductAvailability = 'in stock';
-export declare type ProductBase = {
+export type ProductAvailability = 'in stock';
+export type ProductBase = {
     name: string;
     retailerId?: string;
     url?: string;
@@ -35,14 +35,14 @@ export declare type ProductBase = {
     currency: string;
     isHidden?: boolean;
 };
-export declare type ProductCreate = ProductBase & {
+export type ProductCreate = ProductBase & {
     /** ISO country code for product origin. Set to undefined for no country */
     originCountryCode: string | undefined;
     /** images of the product */
     images: WAMediaUpload[];
 };
-export declare type ProductUpdate = Omit<ProductCreate, 'originCountryCode'>;
-export declare type Product = ProductBase & {
+export type ProductUpdate = Omit<ProductCreate, 'originCountryCode'>;
+export type Product = ProductBase & {
     id: string;
     imageUrls: {
         [_: string]: string;
@@ -52,11 +52,11 @@ export declare type Product = ProductBase & {
     };
     availability: ProductAvailability;
 };
-export declare type OrderPrice = {
+export type OrderPrice = {
     currency: string;
     total: number;
 };
-export declare type OrderProduct = {
+export type OrderProduct = {
     id: string;
     imageUrl: string;
     name: string;
@@ -64,12 +64,12 @@ export declare type OrderProduct = {
     currency: string;
     price: number;
 };
-export declare type OrderDetails = {
+export type OrderDetails = {
     price: OrderPrice;
     products: OrderProduct[];
 };
-export declare type CatalogCursor = string;
-export declare type GetCatalogOptions = {
+export type CatalogCursor = string;
+export type GetCatalogOptions = {
     /** cursor to start from */
     cursor?: CatalogCursor;
     /** number of products to fetch */

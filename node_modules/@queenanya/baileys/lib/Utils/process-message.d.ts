@@ -2,7 +2,7 @@ import { AxiosRequestConfig } from 'axios';
 import type { Logger } from 'pino';
 import { proto } from '../../WAProto';
 import { AuthenticationCreds, BaileysEventEmitter, SignalKeyStoreWithTransaction, SocketConfig } from '../Types';
-declare type ProcessMessageContext = {
+type ProcessMessageContext = {
     shouldProcessHistoryMsg: boolean;
     creds: AuthenticationCreds;
     keyStore: SignalKeyStoreWithTransaction;
@@ -20,7 +20,7 @@ export declare const shouldIncrementChatUnread: (message: proto.IWebMessageInfo)
  * Typically -- that'll be the remoteJid, but for broadcasts, it'll be the participant
  */
 export declare const getChatId: ({ remoteJid, participant, fromMe }: proto.IMessageKey) => string;
-declare type PollContext = {
+type PollContext = {
     /** normalised jid of the person that created the poll */
     pollCreatorJid: string;
     /** ID of the poll creation message */

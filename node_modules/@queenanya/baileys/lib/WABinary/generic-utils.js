@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getBinaryNodeMessages = exports.reduceBinaryNodeToDictionary = exports.assertNodeErrorFree = exports.getBinaryNodeChildUInt = exports.getBinaryNodeChildString = exports.getBinaryNodeChildBuffer = exports.getBinaryNodeChild = exports.getAllBinaryNodeChildren = exports.getBinaryNodeChildren = void 0;
+exports.binaryNodeToString = exports.getBinaryNodeMessages = exports.reduceBinaryNodeToDictionary = exports.assertNodeErrorFree = exports.getBinaryNodeChildUInt = exports.getBinaryNodeChildString = exports.getBinaryNodeChildBuffer = exports.getBinaryNodeChild = exports.getAllBinaryNodeChildren = exports.getBinaryNodeChildren = void 0;
 const boom_1 = require("@hapi/boom");
 const WAProto_1 = require("../../WAProto");
 // some extra useful utilities
@@ -85,3 +85,26 @@ function bufferToUInt(e, t) {
     }
     return a;
 }
+const tabs = (n) => '\t'.repeat(n);
+function binaryNodeToString(node, i = 0) {
+    if (!node) {
+        return node;
+    }
+    if (typeof node === 'string') {
+        return tabs(i) + node;
+    }
+    if (node instanceof Uint8Array) {
+        return tabs(i) + Buffer.from(node).toString('hex');
+    }
+    if (Array.isArray(node)) {
+        return node.map((x) => tabs(i + 1) + binaryNodeToString(x, i + 1)).join('\n');
+    }
+    const children = binaryNodeToString(node.content, i + 1);
+    const tag = `<${node.tag} ${Object.entries(node.attrs || {})
+        .filter(([, v]) => v !== undefined)
+        .map(([k, v]) => `${k}='${v}'`)
+        .join(' ')}`;
+    const content = children ? `>\n${children}\n${tabs(i)}</${node.tag}>` : '/>';
+    return tag + content;
+}
+exports.binaryNodeToString = binaryNodeToString;

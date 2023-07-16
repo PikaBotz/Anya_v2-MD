@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.processSyncAction = exports.chatModificationToAppPatch = exports.decodePatches = exports.decodeSyncdSnapshot = exports.downloadExternalPatch = exports.downloadExternalBlob = exports.extractSyncdPatches = exports.decodeSyncdPatch = exports.decodeSyncdMutations = exports.encodeSyncdPatch = exports.newLTHashState = void 0;
 const boom_1 = require("@hapi/boom");
 const WAProto_1 = require("../../WAProto");
+const LabelAssociation_1 = require("../Types/LabelAssociation");
 const WABinary_1 = require("../WABinary");
 const crypto_1 = require("./crypto");
 const generics_1 = require("./generics");
@@ -476,6 +477,72 @@ const chatModificationToAppPatch = (mod, jid) => {
             operation: OP.SET,
         };
     }
+    else if ('addChatLabel' in mod) {
+        patch = {
+            syncAction: {
+                labelAssociationAction: {
+                    labeled: true,
+                }
+            },
+            index: [LabelAssociation_1.LabelAssociationType.Chat, mod.addChatLabel.labelId, jid],
+            type: 'regular',
+            apiVersion: 3,
+            operation: OP.SET,
+        };
+    }
+    else if ('removeChatLabel' in mod) {
+        patch = {
+            syncAction: {
+                labelAssociationAction: {
+                    labeled: false,
+                }
+            },
+            index: [LabelAssociation_1.LabelAssociationType.Chat, mod.removeChatLabel.labelId, jid],
+            type: 'regular',
+            apiVersion: 3,
+            operation: OP.SET,
+        };
+    }
+    else if ('addMessageLabel' in mod) {
+        patch = {
+            syncAction: {
+                labelAssociationAction: {
+                    labeled: true,
+                }
+            },
+            index: [
+                LabelAssociation_1.LabelAssociationType.Message,
+                mod.addMessageLabel.labelId,
+                jid,
+                mod.addMessageLabel.messageId,
+                '0',
+                '0'
+            ],
+            type: 'regular',
+            apiVersion: 3,
+            operation: OP.SET,
+        };
+    }
+    else if ('removeMessageLabel' in mod) {
+        patch = {
+            syncAction: {
+                labelAssociationAction: {
+                    labeled: false,
+                }
+            },
+            index: [
+                LabelAssociation_1.LabelAssociationType.Message,
+                mod.removeMessageLabel.labelId,
+                jid,
+                mod.removeMessageLabel.messageId,
+                '0',
+                '0'
+            ],
+            type: 'regular',
+            apiVersion: 3,
+            operation: OP.SET,
+        };
+    }
     else {
         throw new boom_1.Boom('not supported');
     }
@@ -541,13 +608,15 @@ const processSyncAction = (syncAction, ev, me, initialSyncOpts, logger) => {
             }]);
     }
     else if ((action === null || action === void 0 ? void 0 : action.deleteMessageForMeAction) || type === 'deleteMessageForMe') {
-        ev.emit('messages.delete', { keys: [
+        ev.emit('messages.delete', {
+            keys: [
                 {
                     remoteJid: id,
                     id: msgId,
                     fromMe: fromMe === '1'
                 }
-            ] });
+            ]
+        });
     }
     else if (action === null || action === void 0 ? void 0 : action.contactAction) {
         ev.emit('contacts.upsert', [{ id, name: action.contactAction.fullName }]);
@@ -590,6 +659,35 @@ const processSyncAction = (syncAction, ev, me, initialSyncOpts, logger) => {
             ev.emit('chats.delete', [id]);
         }
     }
+    else if (action === null || action === void 0 ? void 0 : action.labelEditAction) {
+        const { name, color, deleted, predefinedId } = action.labelEditAction;
+        ev.emit('labels.edit', {
+            id,
+            name: name,
+            color: color,
+            deleted: deleted,
+            predefinedId: predefinedId ? String(predefinedId) : undefined
+        });
+    }
+    else if (action === null || action === void 0 ? void 0 : action.labelAssociationAction) {
+        ev.emit('labels.association', {
+            type: action.labelAssociationAction.labeled
+                ? 'add'
+                : 'remove',
+            association: type === LabelAssociation_1.LabelAssociationType.Chat
+                ? {
+                    type: LabelAssociation_1.LabelAssociationType.Chat,
+                    chatId: syncAction.index[2],
+                    labelId: syncAction.index[1]
+                }
+                : {
+                    type: LabelAssociation_1.LabelAssociationType.Message,
+                    chatId: syncAction.index[2],
+                    messageId: syncAction.index[3],
+                    labelId: syncAction.index[1]
+                }
+        });
+    }
     else {
         logger === null || logger === void 0 ? void 0 : logger.debug({ syncAction, id }, 'unprocessable update');
     }
@@ -604,8 +702,8 @@ const processSyncAction = (syncAction, ev, me, initialSyncOpts, logger) => {
             : undefined;
     }
     function isValidPatchBasedOnMessageRange(chat, msgRange) {
-        const lastMsgTimestamp = (msgRange === null || msgRange === void 0 ? void 0 : msgRange.lastMessageTimestamp) || (msgRange === null || msgRange === void 0 ? void 0 : msgRange.lastSystemMessageTimestamp) || 0;
-        const chatLastMsgTimestamp = (chat === null || chat === void 0 ? void 0 : chat.lastMessageRecvTimestamp) || 0;
+        const lastMsgTimestamp = Number((msgRange === null || msgRange === void 0 ? void 0 : msgRange.lastMessageTimestamp) || (msgRange === null || msgRange === void 0 ? void 0 : msgRange.lastSystemMessageTimestamp) || 0);
+        const chatLastMsgTimestamp = Number((chat === null || chat === void 0 ? void 0 : chat.lastMessageRecvTimestamp) || 0);
         return lastMsgTimestamp >= chatLastMsgTimestamp;
     }
 };
