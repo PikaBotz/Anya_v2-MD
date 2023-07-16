@@ -5,7 +5,6 @@
   "main": "Anyaindex.js",
   "type": "commonjs",
   "scripts": {
-    "prepare": "bash start.sh",
     "start": "bash start.sh",
     "starts": "node Anyaindex.js"
   },
