@@ -54,9 +54,11 @@ global.greet4 = "Good night 😴" // after 8:30 PM
 
 //--------------- Tip ----------------\\
 global.Tips = [
-`Type *$prefix info* for more information....`,
+`Type *$prefix info* for more information...`,
 `Type *$prefix settings* to commit changes in the bot.`,
-`If you got a bug or error, then please report to developer asap by *$prefix report* command.`
+`If you got a bug or error, then please report to developer asap by *$prefix report* command.`,
+"if you want only admins could use this bot, type *$prefix only_admin*.",
+"You can change your prefix type to single prefix or multi prefix, just type *$prefix singlePrefix* or *$prefix multiPrefix* or *$prefix allPrefix*"
 ]
 
 //--------------- Menu images ----------------\\
