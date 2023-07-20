@@ -1,7 +1,7 @@
 {
-  "name": "QueenAnya-MD-V2",
+  "name": "Poppy",
   "version": "2.0.8_3",
-  "description": "A modular whatsApp bot created by node.js",
+  "description": "What's time? Playtime",
   "main": "Anyaindex.js",
   "type": "commonjs",
   "scripts": {
