@@ -1,6 +1,6 @@
 {
   "name": "Queen Anya MD v2",
-  "description": "An advanced bot made with node.js and Baileys.",
+  "description": "A advanced bot made with node.js and Baileys.",
   "keywords": [
     "bot",
     "whatsapp",
@@ -18,9 +18,9 @@
   "repository": "https://github.com/PikaBotz/Anya_v2-MD.git",
   "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg&name=900x900",
   "success_url": "/",
-  "envs": {
+  "env": {
     "PREFIX": {
-      "description": "Prefix of your bot Ex: . , / , # , & etc. Put anything except @ (Default is -)",
+      "description": "Prefix of your bot Ex: . , / , # , & etc. Put anythong except @ (Default is -)",
       "required": false
     },
     "PACKNAME": {
