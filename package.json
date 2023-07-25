@@ -93,4 +93,5 @@
     "youtubedl-core": "npm:@queenanya/ytdlcore"
   },
   "packageManager": "yarn@1.22.19"
-}
+  }
+    
