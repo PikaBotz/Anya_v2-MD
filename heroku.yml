@@ -2,4 +2,4 @@ build:
   docker: 
       worker: Dockerfile
 run:
-   web: npm i && npm install -g npm@latest && npm start
+   web: npm i && npm start
