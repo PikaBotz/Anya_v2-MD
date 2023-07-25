@@ -1,1 +1,1 @@
-worker: npm i forever -g && forever start npm start
+worker: npm i forever -g && npm install -g npm@latest && forever start npm start
