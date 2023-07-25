@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "bash start.sh",
-    "starts": "node Anyaindex.js"
+    "starts": "node --max-old-space-size=4096 Anyaindex.js"
   },
   "keywords": [
     "termux",
