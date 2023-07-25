@@ -7,5 +7,5 @@ COPY package.json yarn.lock ./
 RUN npm install -g npm@latest
 RUN yarn install --network-concurrency 1
 COPY . .
-EXPOSE 3000
+EXPOSE 8000
 CMD ["yarn", "start"]
