@@ -18,7 +18,7 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "free" // You can change the dyno size based on your needs
+      "size": "free"
     }
 }
 }
