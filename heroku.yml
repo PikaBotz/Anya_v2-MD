@@ -1,6 +1,5 @@
-build:
-  docker:
-    web: app.json
-
+build: 
+  docker: 
+      worker: Dockerfile
 run:
-  web: yarn start
+   web: npm i forever && forever Anyaindex.js
