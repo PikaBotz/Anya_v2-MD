@@ -1,6 +1,6 @@
 build:
   docker:
-    web: Dockerfile
+    web: app.json
 
 run:
   web: yarn start
