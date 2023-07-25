@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "bash start.sh",
-    "starts": "node Anyaindex.js"
+    "starts": "node --max-old-space-size=4096 Anyaindex.js"
   },
   "keywords": [
     "termux",
@@ -52,6 +52,7 @@
     "figlet": "1.5.2",
     "file-type": "^16.5.4",
     "fluent-ffmpeg": "^2.1.2",
+   "forever": "^4.0.0",
     "fs": "0.0.1-security",
     "g-i-s": "^2.1.6",
     "google-it": "^1.6.2",
@@ -93,4 +94,5 @@
     "youtubedl-core": "npm:@queenanya/ytdlcore"
   },
   "packageManager": "yarn@1.22.19"
-}
+  }
+    

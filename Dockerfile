@@ -1,22 +1,18 @@
-# Use a smaller base image for optimization
-FROM node:14-slim
+FROM node:lts-buster
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends ffmpeg && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  npm i pm2 -g && \
+  rm -rf /var/lib/apt/lists/*
 
-ENV YARN_CACHE_FOLDER /root/.cache/yarn
+COPY package.json .
 
-WORKDIR /usr/src/app
-
-COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN yarn install
 
 COPY . .
 
-# Expose the application port
-EXPOSE 8000
-
-# Start the application
-CMD ["yarn", "start"]
+CMD ["pm2-runtime", "."]

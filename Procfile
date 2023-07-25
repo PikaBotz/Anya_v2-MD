@@ -1,1 +1,2 @@
-web: yarn start --optimize_for_size --max-old-space-size=4096
+worker: npm i forever && npm start     # After scanning qr use this to keep it alive forever
+# web: npm i forever && npm start        # Use it first time to get the QR

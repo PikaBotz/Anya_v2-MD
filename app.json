@@ -1,24 +1,39 @@
 {
-  "name": "𝐐𝐮𝐞𝐞𝐧 𝐀𝐧𝐲𝐚 𝐌𝐃-𝐯𝟐",
-  "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.COM/PikaBotz/Anya-pika-MD-V2",
-  "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg&name=900x900",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "name": "Atlas-MD",
+  "description": "The future of WhatsApp bots now with plugin support.",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "stickers",
+    "whatsapp-stickers",
+    "anime",
+    "whatsapp-bot",
+    "whatsapp-sticker-bot",
+    "whatsapp-botto",
+    "baileys",
+    "baileys-md",
+    "md-bot"
+  ],
+  "website": "https://github.com/FantoX001/Atlas-MD#readme",
+  "repository": "https://github.com/FantoX001/Atlas-MD.git",
+  "logo": "https://graph.org/file/02abf0fd8fc2a13cc67a1.jpg",
+  "success_url": "/",
+  "stack": "container",
   "buildpacks": [
     {
       "url": "heroku/nodejs"
     },
     {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     },
     {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "free"
-    }
-}
+   "formation": {
+      "worker": {
+          "quantity": 1,
+          "size": "free"
+      }
+   }
 }
