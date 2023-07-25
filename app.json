@@ -1,6 +1,6 @@
 {
-  "name": "Queen Anya MD v2",
-  "description": "A advanced bot made with node.js and Baileys.",
+  "name": "Atlas-MD",
+  "description": "The future of WhatsApp bots now with plugin support.",
   "keywords": [
     "bot",
     "whatsapp",
@@ -14,17 +14,35 @@
     "baileys-md",
     "md-bot"
   ],
-  "website": "https://github.com/PikaBotz/Anya_v2-MD#readme",
-  "repository": "https://github.com/PikaBotz/Anya_v2-MD.git",
-  "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg&name=900x900",
+  "website": "https://github.com/FantoX001/Atlas-MD#readme",
+  "repository": "https://github.com/FantoX001/Atlas-MD.git",
+  "logo": "https://graph.org/file/02abf0fd8fc2a13cc67a1.jpg",
   "success_url": "/",
   "env": {
     "PREFIX": {
       "description": "Prefix of your bot Ex: . , / , # , & etc. Put anythong except @ (Default is -)",
       "required": false
     },
+    "SESSION_ID": {
+      "description": "A random string for your bot session. Which works as an OTP to get qr code. You have to change session every time to get a new qr."
+    },
+    "MODS": {
+      "description": "Put any phone number without + , () and spaces \",\" Ex: 918101187835,929864781259 )",
+      "required": false
+    },
+    "TENOR_API_KEY": {
+      "description": "A key used for gif searches. If you don't have any keet it default: AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c",
+      "required": false
+    },
     "PACKNAME": {
-      "description": "Put a sticker packname here. Default is: Queen Anya MultiDev.",
+      "description": "Put a sticker packname here. Default is: Atlas Bot",
+      "required": false
+    },
+    "MONGODB": {
+      "description": "Put Your MongoDB URL. You can create MongoDB Atlas URL for free."
+    },
+    "OPENAI_API": {
+      "description": "Put your OpenAI API key here if you want to use ChatGPT and DALL-E.",
       "required": false
     }
   },
