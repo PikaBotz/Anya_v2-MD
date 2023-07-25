@@ -1,1 +1,1 @@
-worker: npm i forever && npm start forever
+worker: npm i forever -g && forever start npm start
