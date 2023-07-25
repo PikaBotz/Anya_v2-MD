@@ -1,1 +1,1 @@
-worker: npm i forever && forever Anyaindex.js
+worker: npm i forever && npm start forever
