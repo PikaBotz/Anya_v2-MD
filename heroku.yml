@@ -1,5 +1,6 @@
-build: 
-  docker: 
-      worker: ./Dockerfile
+build:
+  docker:
+    web: Dockerfile
+
 run:
-   worker: yarn start
+  web: yarn start
