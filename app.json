@@ -4,7 +4,7 @@
   "repository": "https://github.COM/PikaBotz/Anya-pika-MD-V2",
   "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg&name=900x900",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
-   "buildpacks": [
+  "buildpacks": [
     {
       "url": "heroku/nodejs"
     },
@@ -15,10 +15,10 @@
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
   ],
-   "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "eco"
-        }
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free" // You can change the dyno size based on your needs
     }
+}
 }
