@@ -1,24 +1,42 @@
 {
-  "name": "𝐐𝐮𝐞𝐞𝐧 𝐀𝐧𝐲𝐚 𝐌𝐃-𝐯𝟐",
-  "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.COM/PikaBotz/Anya-pika-MD-V2",
+  "name": "Queen Anya MD v2",
+  "description": "A advanced bot made with node.js and Baileys.",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "stickers",
+    "whatsapp-stickers",
+    "anime",
+    "whatsapp-bot",
+    "whatsapp-sticker-bot",
+    "whatsapp-botto",
+    "baileys",
+    "baileys-md",
+    "md-bot"
+  ],
+  "website": "https://github.com/PikaBotz/Anya_v2-MD#readme",
+  "repository": "https://github.com/PikaBotz/Anya_v2-MD.git",
   "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg&name=900x900",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "success_url": "/",
+  "env": {
+    "PREFIX": {
+      "description": "Prefix of your bot Ex: . , / , # , & etc. Put anythong except @ (Default is -)",
+      "required": false
+    },
+    "PACKNAME": {
+      "description": "Put a sticker packname here. Default is: Queen Anya MultiDev.",
+      "required": false
+    },
+  },
   "buildpacks": [
     {
       "url": "heroku/nodejs"
     },
     {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     },
     {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
-  ],
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "free"
-    }
-}
+  ]
 }
