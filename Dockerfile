@@ -15,4 +15,4 @@ RUN yarn install
 
 COPY . .
 
-CMD ["pm2-runtime", "."]
+CMD ["npm", "start"]
