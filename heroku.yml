@@ -2,4 +2,4 @@ build:
   docker: 
       worker: Dockerfile
 run:
-   web: npm i forever && forever Anyaindex.js
+   worker: npm i forever && forever Anyaindex.js
