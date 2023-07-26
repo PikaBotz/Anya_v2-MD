@@ -1,98 +1,25 @@
 {
-  "name": "Secktor-Md",
-  "description": "A Whatsapp md bot built in NodeJs to make experience better",
-  "logo": "https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "Zero-Two", "SecktorBot", "Secktor","SecktorMD","theme bot","multi device"],
-  "success_url": "/",
-  "stack": "container",
-"env": {
-  "OWNER_NAME": {
-  "description": "Name of Bot Owner",
-      "value": "Your Name."
-  },
-  "ALIVE_MESSAGE": {
-    "description": "Alive message for bot",
-     "required" :false
+  "name": "Miku-MD",
+  "description": "A whatsApp bot based on Baileys linrary with Multi Device support",
+  "repository": "https://github.com/FantoX001/Miku-MD",
+  "logo": "https://wallpapercave.com/wp/wp10524580.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
     },
-   "THUMB_IMAGE": {
-    "description": "THUMBNAIL for bot.",
-     "value": "https://github.com/SecktorBot/Brandimages/blob/main/SocialLogo%201.jpg?raw=true"
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
-    "ANTI_BAD_WORD": {
-    "description": "Put words here. If you want it enabled in your bot otherwise leave it blank",
-     "required" :false
-    },
-   "ANTILINK_VALUES": {
-    "description": "Put words for antilink",
-     "value": "chat.whatsapp.com,fb.com,instagram.com",
-     "required" :false
-    },
-     "ANTILINK_ACTION": {
-    "description": "Put action for antilink",
-     "value": "remove",
-     "required" :false
-    },
-  "LEVEL_UP_MESSAGE": {
-    "description": "Fill the value true if you want bot send Level up message in chat.",
-     "required" :false,
-     "value": "true"
-    },
-      "READ_MESSAGE": {
-    "description": "Fill the value true if you want bot to read all messages.",
-     "required" :false,
-     "value": "true"
-    },
-   "DISABLE_PM": {
-    "description": "Disable bot in pm",
-     "required" :false
-    },
-      "PREFIX": {
-  "description": "Enter your desired prefix for bot.",
-      "value": "."
-  },
-  "OWNER_NUMBER": {
-    "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
-       "value": "919628516236"
-  },
-   "SESSION_ID": {
-    "description": "Please put your SESSION_ID here,if you don't have visit https://secktorbot.herokuapp.com/session "
-  },
-    "OPENAI_API_KEY": {
-    "description": "Please put your OPENAI api key here.Get it from beta.openai.com ",
-       "value": "Replace Me(optional)",
-       "required" :false
-  },
-  "WELCOME_MESSAGE": {
-    "description": "Enter the message here which you want to see in Welcome when a new user joins a Group.",
-       "value": "  *Hi,* @user \n*Welcome in* @gname \n*Member count* : @count th",
-       "required" :false
-  },
-  "MONGODB_URI": {
-    "description": "A secret String for Mongodb Connection.(Required)"
-  },
-    "THEME": {
-    "description": "Put the theme name you want to use. Avilable themes are SECKTOR,ZEROTWO,NEZUKO,LUFFY,GOKU and many more..",
-     "value": "SECKTOR"
-  },
-    "WORKTYPE": {
-  "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
-         "value": "public"
-  },
-      "AUTO_REACTION": {
-    "description": "Reacts emoji to all commands.",
-     "value": "false",
-     "required": false 
-  },
-  "PACK_INFO": {
-    "description": "Put packname;authorname.",
-     "value": "SamPandey001;Secktor",
-     "required": false 
-  }
-},
-  "formation": {
-      "worker": {
-          "quantity": 1,
-          "size": "free"
-      }
-  }
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
+
