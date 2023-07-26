@@ -14,4 +14,4 @@ else
   echo "Valid creds.json ✅"
 fi
 cp -r creds.json Anya-Session
-npm runner
+npm starts
