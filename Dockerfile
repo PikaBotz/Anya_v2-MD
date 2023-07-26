@@ -6,15 +6,12 @@ RUN apt-get update && \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
-  npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
 
 COPY package.json .
 
 RUN npm install
 
-RUN npm install -g npm@latest
-
 COPY . .
 
-CMD ["pm2-runtime", "start"]
+CMD ["npm", "start"]
