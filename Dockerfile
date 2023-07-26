@@ -11,7 +11,9 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN yarn install
+RUN npm install
+
+RUN npm install -g npm@latest
 
 COPY . .
 
