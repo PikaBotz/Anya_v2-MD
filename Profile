@@ -1,1 +1,2 @@
-worker: npm i -g forever && forever Anyaindex.js
+web: npm i forever && forever npm start    # Turn it off if it's turned on!
+worker: npm i forever && forever npm start    # Now turn it on🧧
