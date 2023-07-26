@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "bash start.sh",
-    "run": "pm2 start Anyaindex.js --deep-monitoring --attach --name Queen_Anya"
+    "runner": "pm2 start Anyaindex.js --deep-monitoring --attach --name Queen_Anya"
   },
   "keywords": [
     "termux",
