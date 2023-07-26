@@ -17,4 +17,4 @@ RUN npm install -g npm@latest
 
 COPY . .
 
-CMD ["pm2-runtime", "."]
+CMD ["pm2-runtime", "start"]
