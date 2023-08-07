@@ -1,0 +1,130 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+Styles for image background on mobile view */
+.background-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;  /* We can use image link or locally from Assets for background */
+  background-image: url("https://w0.peakpx.com/wallpaper/892/708/HD-wallpaper-japan-night-street-almoe-anime-japan-street-town.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  /* Hide the video background for mobile view */
+  .background-video {
+    display: none;
+  }
+
+  /* Show the image background for mobile view */
+  .background-image {
+    display: block;
+  }
+}
+
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .button-container {
+    left: 50%; /* Move the buttons to the horizontal center */
+    transform: translateX(-50%) translateY(-50%); /* Center the buttons horizontally and vertically */
+  }
+}
+
+
+/* Style for the watermark */
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  left: 50%; /* Move the watermark to the horizontal center */
+  transform: translateX(-50%); /* Center the watermark horizontally */
+  background-color: rgba(0, 0, 0, 0.5); /* Increase alpha value to make it more transparent */
+  padding: 2px 6px; /* Decrease padding to make it smaller */
+  color: white;
+  font-size: 8px; /* Decrease font-size to make it smaller */
+  border-radius: 3px;
+  text-align: left;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+button {
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button1 {
+  background-color: rgba(245, 80, 80, 0.7);
+}
+
+.button2 {
+  background-color: rgba(60, 184, 120, 0.7);
+}
+
+.button3 {
+  background-color: rgba(100, 181, 246, 0.7);
+}
+
+.button4 {
+  background-color: rgba(255, 171, 64, 0.7);
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+button.active {
+  transform: scale(0.95);
+}

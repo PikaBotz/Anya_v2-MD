@@ -1,0 +1,31 @@
+{
+  "name": "Queen Anya MD v2",
+  "description": "An advanced WhatsApp bot made with node.js in Baileys library.",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "stickers",
+    "whatsapp-stickers",
+    "anime",
+    "whatsapp-bot",
+    "whatsapp-sticker-bot",
+    "whatsapp-botto",
+    "baileys",
+    "baileys-md",
+    "md-bot"
+  ],
+  "website": "https://github.com/PikaBotz/Anya_v2-MD#readme",
+  "repository": "https://github.com/PikaBotz/Anya_v2-MD.git",
+  "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg&name=900x900",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ]
+}

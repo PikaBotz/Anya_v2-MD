@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://citel-x.herokuapp.com/id -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Queen Anya Session</title>
+  <link rel="icon" type="image/x-icon" href="https://www.secktorbot.tech/main.jpg">
+  <link rel="stylesheet" href="style-qr.css">
+    <meta property="og:image" content="https://www.secktorbot.tech/main.jpg">
+    <meta property="og:title" content="Queen Anya QR">
+    <meta property="og:description" content="Introducing Secktor,Secktor is designed to bring a whole new level of excitement to your boring WhatsApp use.">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queen Anya QR</title>
+
+
+  <!--  Thanks to frontendmentor.io for the challenge.  -->
+
+
+  <div class="bg">
+    <h1>Anya</h1>
+  </div>
+  <div class="nft">
+    <div class="main">
+      <img class="tokenImage" src="session" alt="">
+      <h2>Queen Anya</h2>
+      <p class="description">QR not connected? Just wait for some seconds and refresh this page.</p>
+      <div class="tokenInfo">
+        <div class="price">
+          <ins>◘</ins>
+          <p>T.N.C.S</p>
+        </div>
+        <div class="duration">
+          <ins>◷</ins>
+          <p>Scan within 15 sec</p>
+        </div>
+      </div>
+      <hr>
+      <div class="creator">
+        <div class="wrapper">
+          <img src="1103378141" alt="Creator">
+        </div>
+        <p><ins>Made With </ins>PikaBotz inc.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="socket.io.js.download"></script>
+  <script>
+    var socket = io();
+    socket.on("message", (data) => {
+      window.location.href = `/session`;
+    });
+  </script>
+
+</body></html>
