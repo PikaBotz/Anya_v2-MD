@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="QR Code of WhatsApp Web">
+    <link rel="shortcut icon" href="https://hermit.adithyan.xyz/images/wa-logo.png" type="image/x-icon">
+    <title>Hermit Md - Web Qr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="css2.css" rel="stylesheet">
+  </head>
+  <body>
+    <style type="text/css">
+      body,
+      html {
+        height: 100%
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Outfit;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0 50%
+        }
+
+        50% {
+          background-position: 100% 50%
+        }
+
+        100% {
+          background-position: 0 50%
+        }
+      }
+
+      main.code {
+        border-radius: 1em;
+        background-color: #000;
+        width: 21em;
+        height: 28em
+      }
+
+      div.card {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+      }
+
+      img.code_1 {
+        width: 19em;
+        border-radius: .3em;
+        margin-top: 1em
+      }
+
+      h1.title,
+      p.legend {
+        text-align: center
+      }
+
+      h1.title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.4em;
+        margin-top: 1em;
+        padding: 0 1em
+      }
+
+      p.legend {
+        color: #7b869d;
+        font-size: 1em;
+        font-weight: 400;
+        padding: 0 1.1em;
+        margin-top: .1em
+      }
+    </style>
+    <main class="code">
+      <div class="card">
+        <img id="qr" class="code_1" src="">
+        <h1 class="title">SCAN THE QR CODE</h1>
+        <p class="legend">Scan the QR code within 30 seconds</p>
+      </div>
+    </main>
+    <script src="socket.js"></script>
+    <script>
+      function _0x11d0(n,t){const r=_0x527b();return(_0x11d0=function(n,t){return r[n-=260]})(n,t)}function _0x15f9(){const n=_0x11d0,t={pVONA:n(355),EJufg:n(467)+n(393),kkeqx:n(412),VnBRQ:n(319)+"kt",RoOtS:n(280),CfnNx:n(490),MZwaT:n(269),joEjT:n(472),RzLuD:n(406),gHMSw:n(430),OlcKB:n(358),YIPBN:n(322),FhvCy:n(396),UvQJE:n(331),IdyRC:n(429),yoMJk:n(366),RtjCJ:n(379),howjp:n(394)+"jh",UXGcP:n(432),JVfPU:n(386),vkpbX:n(321),bANUe:n(442),daGyK:n(291)+n(383),BWGNY:n(283)+"uz",KTHuD:n(433)+"uz",nuJIR:n(488),lzhgV:n(360),INzDp:n(289),PHfGH:n(405),avCNY:n(404),Uwthf:n(459),uWuqe:n(476),fIrZG:n(384),IijNO:n(456),GMGuu:n(377),LUjsP:n(418),bscUr:n(310),VmVaA:n(453),JQBKx:n(378),EqXxg:n(265),kPSsQ:n(356),MFwCi:n(495),HIsnP:n(431),cqJNA:n(395),LaXCe:n(486),GMKMq:n(452),fdMCd:n(314),KPfPQ:n(290),PdCKL:n(493),jumSC:n(372),VMedD:n(338),BWXFB:n(334),aJZlQ:n(309),GyuMD:n(340),pzsbc:n(262),isMYR:n(369),lDGPR:n(487),Xoxct:n(400),TqbUK:n(427),HyyYq:n(370)+"Vi",tffRj:n(260),wOtgk:n(417),ZNHGW:function(n){return n()}},r=[t[n(492)],t[n(305)],t[n(403)],t[n(352)],t[n(299)],t[n(478)],t[n(423)],t[n(318)],t[n(376)],t[n(407)],t[n(293)],t[n(274)],t[n(349)],t[n(344)],t[n(312)],t[n(333)],t[n(489)],t[n(408)],t[n(330)],t[n(282)],t[n(281)],t[n(329)],t[n(363)],t[n(434)],t[n(328)],t[n(446)],t[n(480)],t[n(307)],t[n(342)],t[n(468)],t[n(345)],t[n(264)],t[n(261)],t[n(415)],t[n(371)],t[n(275)],t[n(311)],t[n(288)],t[n(460)],t[n(461)],t[n(475)],t[n(439)],t[n(271)],t[n(483)],t[n(335)],t[n(343)],t[n(337)],t[n(419)],t[n(443)],t[n(270)],t[n(313)],t[n(491)],t[n(392)],t[n(273)],t[n(277)],t[n(497)],t[n(332)],t[n(484)],t[n(422)],t[n(268)],t[n(499)],t[n(348)]];return _0x15f9=function(){return r},t[n(398)](_0x15f9)}!function(n,t){const r=_0x11d0,u=_0x527b();for(;;)try{if(701221===parseInt(r(381))/1*(parseInt(r(346))/2)+parseInt(r(362))/3*(parseInt(r(416))/4)+-parseInt(r(450))/5*(-parseInt(r(327))/6)+-parseInt(r(482))/7+-parseInt(r(402))/8*(parseInt(r(391))/9)+-parseInt(r(481))/10*(-parseInt(r(287))/11)+-parseInt(r(276))/12)break;u.push(u.shift())}catch(n){u.push(u.shift())}}();const _0x4de980=_0x5a3d;function _0x5a3d(n,t){const r=_0x11d0,u={bHFUQ:function(n,t){return n-t},zaRXP:function(n,t){return n+t},fluFO:function(n,t){return n+t},jMPkt:function(n,t){return n*t},pmYdX:function(n){return n()},hUxVN:function(n,t,r){return n(t,r)}},e=u[r(382)](_0x15f9);return _0x5a3d=function(n,t){const o=r;return n=u[o(339)](n,u[o(303)](u[o(421)](-4056,u[o(375)](-1910,2)),u[o(375)](8145,1))),e[n]},u[r(380)](_0x5a3d,n,t)}!function(n,t){const r=_0x11d0,u={xOBVV:function(n){return n()},dhSPo:function(n,t){return n+t},SQYim:function(n,t){return n+t},lZOvC:function(n,t){return n+t},FzgQc:function(n,t){return n+t},yaJGd:function(n,t){return n/t},uwltk:function(n,t){return n(t)},KlHOg:function(n,t){return n(t)},AxblN:function(n,t){return n+t},scWBx:function(n,t){return n*t},yOvSy:function(n,t){return n+t},avhgq:function(n,t){return n+t},sCaLM:function(n,t){return n(t)},rxDTl:function(n,t){return n(t)},nVWgE:function(n,t){return n+t},JSQZR:function(n,t){return n+t},lwurp:function(n,t){return n*t},ucLht:function(n,t){return n/t},PtCCG:function(n,t){return n(t)},SwxMm:function(n,t){return n(t)},UtZKD:function(n,t){return n+t},qfebZ:function(n,t){return n+t},DuQHi:function(n,t){return n*t},bIxxR:function(n,t){return n(t)},qoPiF:function(n,t){return n+t},yyqok:function(n,t){return n*t},MTXJg:function(n,t){return n/t},tYZcU:function(n,t){return n(t)},IMtts:function(n,t){return n+t},JNOIR:function(n,t){return n*t},jfUuB:function(n,t){return n/t},Hgdde:function(n,t){return n(t)},YclCg:function(n,t){return n(t)},zJAde:function(n,t){return n+t},sRFlb:function(n,t){return n*t},xDrGp:function(n,t){return n===t},xnBTh:r(351),asQfo:r(300)},e=_0x5a3d,o=u[r(411)](n);for(;;)try{const n=u[r(385)](u[r(448)](u[r(361)](u[r(361)](u[r(385)](u[r(455)](u[r(500)](-u[r(336)](parseInt,u[r(263)](e,296)),u[r(341)](u[r(448)](-6097,u[r(298)](774,-7)),u[r(298)](4,2879))),u[r(500)](u[r(336)](parseInt,u[r(263)](e,297)),u[r(373)](u[r(428)](4193,-4928),737))),u[r(500)](-u[r(441)](parseInt,u[r(477)](e,290)),u[r(469)](u[r(471)](u[r(298)](-1576,-1),8514),u[r(298)](-1441,7)))),u[r(298)](u[r(500)](-u[r(441)](parseInt,u[r(477)](e,276)),u[r(448)](u[r(448)](-5396,-8343),u[r(354)](-1,-13743))),u[r(294)](-u[r(266)](parseInt,u[r(284)](e,271)),u[r(326)](u[r(451)](-6349,u[r(286)](7897,-1)),14251)))),u[r(294)](u[r(474)](parseInt,u[r(336)](e,270)),u[r(297)](u[r(428)](4475,-5373),u[r(473)](226,4)))),u[r(425)](-u[r(477)](parseInt,u[r(414)](e,295)),u[r(469)](u[r(438)](1040,u[r(292)](-4e3,2)),6967))),u[r(272)](u[r(479)](parseInt,u[r(324)](e,274)),u[r(428)](u[r(302)](u[r(292)](4,-534),-5294),u[r(447)](2,3719))));if(u[r(323)](n,239626))break;o[u[r(285)]](o[u[r(317)]]())}catch(n){o[u[r(285)]](o[u[r(317)]]())}}(_0x15f9);const socket=io(),params=new URLSearchParams(window[_0x4de980(289)][_0x4de980(288)]),id=params[_0x4de980(325)]("id");function _0x527b(){const n=["YIPBN","LUjsP","5096184DBsqHa","pzsbc","Fmnhe","xuhVp","IUkra","vkpbX","JVfPU","293299wQvU","SwxMm","xnBTh","DuQHi","88qbrhZC","VmVaA","role","ement","2650739yKy","JNOIR","OlcKB","ucLht","FBHXW","Jpchh","qoPiF","scWBx","RoOtS","shift","rxgtF","zJAde","zaRXP","JAKMy","EJufg","gekZv","INzDp","HBYSr","get","clipboard","bscUr","IdyRC","VMedD","SESSION_ID","yefQQ","OQlrN","asQfo","joEjT","734748quRF","OWemL","nMyEU","PDvAE","xDrGp","YclCg","WTJae","UtZKD","42BQNrGU","KTHuD","bANUe","UXGcP","span","lDGPR","yoMJk","addEventLi","LaXCe","uwltk","fdMCd","lipboard","bHFUQ","SLFoD","AxblN","PHfGH","GMKMq","UvQJE","Uwthf","1730GziQCO","HFzrt","wOtgk","FhvCy","zyrVm","push","VnBRQ","ogHJV","lwurp","className","RYxCw","tZiTo","VOiZI","ORecH","Your brows","lZOvC","168iiWfnL","daGyK","eYGJb","QKxaH","search","bQDfw","QcGJh","documentEl","745440iyGs","GMGuu"," support c","yOvSy","lSfvz","jMPkt","RzLuD","innerHTML","session_id","location","hUxVN","148zSqjyj","pmYdX","nrc","ById","dhSPo","appendChil","WXBQp","uOkvj","wnLLl","yBFWK","45ahvOgL","aJZlQ","SOr","888633qwtI","stener","createElem","oTDyw","ZNHGW","tWmEE","eYWlG","TefKC","1418744UFfsVf","kkeqx","html","ewIxz","button","gHMSw","howjp","xPsGf","afnKe","xOBVV","message","uwOCI","tYZcU","IijNO","31364uCeDKW","card","Copy Sessi","KPfPQ","fOriF","fluFO","TqbUK","MZwaT","BuEit","MTXJg","qJNqa","src","avhgq","Copied!",'s="text">C',"n</span>","ESIXc","782100zJLw","BWGNY","KmaLT","YxTGG","AECrF","IMtts","MFwCi","ieyEV","sCaLM","ent","PdCKL","sXtXR","JLvaC","nuJIR","sRFlb","SQYim","fhXYJ","385310zfnwnJ","qfebZ","cTzni",'<span id="',"aLOfp","FzgQc",'span" clas',"JLgio","cmDwv","boNWc","JQBKx","EqXxg","LpMSX","CsKbE","zKUBT","BkWDY","ASVNJ","2601192pfu","avCNY","nVWgE","adROO","JSQZR","getElement","yyqok","bIxxR","kPSsQ","new-qrcode","rxDTl","CfnNx","Hgdde","lzhgV","1147530xxVDNY","83692rUDolo","cqJNA","Xoxct","wUZPe","opy Sessio","emit","kcaGi","RtjCJ","writeText","BWXFB","pVONA","PVMGe","RUUJZ","outerHTML","eWbUp","isMYR","YJlzx","tffRj","yaJGd","CtMpr","10nTpBIb","fIrZG","click","KlHOg","uWuqe","er doesn't","PtCCG","ZwAVG","HyyYq","textConten","jumSC","HIsnP","jfUuB","GyuMD"];return(_0x527b=function(){return n})()}socket.on(_0x4de980(304),(async n=>{const t=_0x11d0,r={aLOfp:function(n,t){return n!==t},YxTGG:function(n,t){return n(t)},QcGJh:function(n,t){return n+t},YJlzx:function(n,t){return n(t)},ogHJV:function(n,t){return n(t)},WTJae:function(n,t){return n(t)}},u=_0x4de980;({PVMGe:function(n,t){return r[_0x11d0(454)](n,t)}})[r[t(436)](u,321)](n.id,id)||(document[r[t(368)](r[t(498)](u,280),r[t(353)](u,305))]("qr")[r[t(325)](u,269)]=n.qr)})),socket.on(_0x4de980(275),(async n=>{const t=_0x11d0,r={bQDfw:function(n,t){return n(t)},ASVNJ:function(n,t){return n!==t},ZwAVG:function(n,t){return n+t},AECrF:function(n,t){return n(t)},gekZv:function(n,t){return n(t)},HBYSr:function(n,t){return n(t)},afnKe:function(n,t){return n+t},BuEit:function(n,t){return n(t)},wnLLl:function(n,t){return n+t},OWemL:function(n,t){return n+t},xuhVp:function(n,t){return n(t)},CtMpr:function(n,t){return n(t)},BkWDY:function(n,t){return n(t)},QKxaH:function(n,t){return n(t)},uwOCI:function(n,t){return n(t)},qJNqa:function(n,t){return n+t},Fmnhe:function(n,t){return n+t},HFzrt:function(n,t){return n+t},oTDyw:function(n,t){return n(t)},fhXYJ:function(n,t){return n(t)},eYGJb:function(n,t){return n(t)},FBHXW:function(n,t){return n(t)},Jpchh:function(n,t){return n(t)},KmaLT:function(n,t){return n(t)},lSfvz:function(n,t){return n(t)},fOriF:function(n,t){return n(t)},ORecH:function(n,t){return n+t},cmDwv:function(n,t){return n(t)},adROO:function(n,t){return n(t)},LpMSX:function(n,t){return n+t},CsKbE:function(n,t){return n(t)},yBFWK:function(n,t){return n(t)},rxgtF:function(n,t){return n(t)},RUUJZ:function(n,t){return n+t},TefKC:function(n,t){return n(t)},JLgio:function(n,t){return n+t},WXBQp:function(n,t){return n(t)},JAKMy:function(n,t){return n+t},OQlrN:function(n,t){return n(t)},wUZPe:function(n,t){return n(t)},tZiTo:function(n,t){return n(t)},zyrVm:function(n,t){return n(t)},eWbUp:function(n,t){return n(t)},xPsGf:function(n,t){return n(t)},tWmEE:function(n,t){return n+t},ieyEV:function(n,t){return n(t)},sXtXR:function(n,t){return n(t)},zKUBT:function(n,t){return n+t},JLvaC:function(n,t){return n(t)},uOkvj:function(n,t){return n(t)},yefQQ:function(n,t){return n(t)}},u=_0x4de980,e={boNWc:r[t(308)](u,286),kcaGi:function(n,u){return r[t(367)](n,u)},ESIXc:r[t(389)](r[t(320)](r[t(267)](r[t(279)](u,299),r[t(501)](u,312)),r[t(465)](u,322)),r[t(308)](u,323)),IUkra:r[t(365)](u,287),nMyEU:r[t(320)](r[t(437)](u,308),"on"),SLFoD:function(n,u){return r[t(466)](n,u)},ewIxz:r[t(501)](u,272),eYWlG:r[t(413)](u,281),RYxCw:r[t(389)](r[t(365)](u,319),": "),cTzni:r[t(426)](r[t(389)](r[t(278)](r[t(347)](r[t(501)](u,310),r[t(465)](u,306)),r[t(413)](u,282)),r[t(306)](u,317)),r[t(501)](u,315)),VOiZI:r[t(397)](u,327),PDvAE:r[t(449)](u,275)};if(e[r[t(397)](u,326)](n.id,id))return;document[r[t(267)](r[t(397)](u,328),r[t(364)](u,320))][r[t(295)](u,307)]=n[r[t(296)](u,302)];const o=n[r[t(435)](u,311)],c=document[r[t(389)](r[t(374)](u,280),r[t(435)](u,305))](e[r[t(420)](u,301)]),i=document[r[t(359)](r[t(365)](u,285),r[t(458)](u,294))](e[r[t(470)](u,330)]),f=document[r[t(462)](r[t(463)](u,285),r[t(458)](u,294))]("h1"),s=document[r[t(426)](r[t(390)](u,285),r[t(296)](u,294))]("h2");f.id="h1",s.id="h2",c[r[t(347)](r[t(301)](u,292),"d")](f),c[r[t(494)](r[t(401)](u,292),"d")](s);for(const n of e[r[t(465)](u,313)])await new Promise((n=>setTimeout(n,30))),f[r[t(457)](r[t(387)](u,279),"t")]+=n;for(const n of o)await new Promise((n=>setTimeout(n,35))),s[r[t(304)](r[t(316)](u,279),"t")]+=n;i.id=e[r[t(485)](u,330)],i[r[t(357)](u,273)]=e[r[t(449)](u,330)],i[r[t(350)](u,300)]=e[r[t(496)](u,330)],i[r[t(387)](u,307)]=e[r[t(296)](u,318)],c[r[t(267)](r[t(409)](u,292),"d")](i),i[r[t(399)](r[t(440)](u,324),r[t(444)](u,316))](e[r[t(449)](u,283)],(async()=>{const n=t,c=u,i=document[r[n(267)](r[n(367)](c,280),r[n(367)](c,305))](e[r[n(437)](c,303)]);try{await navigator[r[n(367)](c,309)][r[n(367)](c,278)](o)}catch(t){return e[r[n(306)](c,298)](alert,e[r[n(308)](c,291)])}i[r[n(267)](r[n(308)](c,279),"t")]=e[r[n(306)](c,277)],await new Promise((n=>setTimeout(n,200))),i[r[n(410)](r[n(437)](c,279),"t")]=e[r[n(424)](c,293)]}));const a=document[r[t(464)](r[t(445)](u,328),r[t(458)](u,320))][r[t(364)](u,314)];socket[r[t(388)](u,329)](e[r[t(315)](u,284)],{id:n.id,html:a})}));
+    </script>
+  
+</body></html>
