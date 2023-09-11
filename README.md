@@ -55,7 +55,7 @@ yarn
 
 ## ```Deploy On Heroku```
 
-[![Deploy on Heroku](https://heroku.deploy.queenanya.work.gd/)
+[Deploy on Heroku](https://heroku.deploy.queenanya.work.gd/)
 
 
 
