@@ -34,8 +34,8 @@ global.socialText = `*⪧⪢ Please join this group for by bot's announcement.*`
 global.socialLink = `*⪧⪢ https://chat.whatsapp.com/HshHS6kHF9NHnA9lfMwwSM 💝*`
 
 
-global.ownername = "Enter Owner Name Here"    
-global.ownernumber = ["918811074852"]
+global.ownername = "LEON GAMER"    
+global.ownernumber = ["918982860407"]
 global.ytname = "YT: Enter Your Channel Name Here"
 global.continent = "Asia" // your continent name 
 global.region = "Enter Your Country Name Here"
@@ -46,10 +46,10 @@ global.email = "Enter Your Email ID Here"
 
 
 // Greeting messages
-global.greet1 = "Good morning ☀️" // after 3 AM
+global.greet1 = "Good morning ☀️" // after 05 AM
 global.greet2 = "Good afternoon 🏜️" // after 12 PM
 global.greet3 = "Good evening 🌆" // after 4 PM
-global.greet4 = "Good night 😴" // after 8:30 PM
+global.greet4 = "Good night 😴" // after 11:30 PM
 
 
 //--------------- Tip ----------------\\
