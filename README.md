@@ -43,7 +43,7 @@ yarn
 
 ## ```Scan QR Here```
 
-<a href="http://bit.ly/scanner_queenanya"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" /> </a>
+<a href="http://pikabotz.queenanya.run.place/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" /> </a>
   
 ## ```Deploy On Railway```
 
