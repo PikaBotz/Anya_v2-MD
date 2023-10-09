@@ -1,0 +1,77 @@
+{
+  "name": "𝐐𝐮𝐞𝐞𝐧 𝐀𝐧𝐲𝐚 𝐌𝐃-𝐯𝟐",
+  "description": "Your WhatsApp assistant for smarter, automated interactions.",
+  "repository": "https://github.COM/PikaBotz/Anya_v2-MD",
+  "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg&name=900x900",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "success_url": "/",
+  "stack": "container",
+      "env": {
+       "Author": { 
+       "description": "Author Name For Sticker",
+            "required": true,
+            "value": "© Pika~Kun"
+       },
+       "BotName": { 
+       "description": "Bot Name For Sticker",
+            "required": true,
+            "value": "QueenAnya Stickers"
+       },
+       "Email_Id": { 
+       "description": "Mail Id",
+            "required": false,
+            "value": "example@example.com"
+       },
+       "Footer": { 
+       "description": "Footer Name",
+            "required": false,
+            "value": "© Queen Anya"
+       },
+       "Insta": { 
+       "description": "Instagram Id",
+            "required": true,
+            "value": "8.08_only_mine"
+       },
+       "MongoDB": {
+            "description": "Your MongoDB URL. If you don't have or dont how to get it just leave blank it will connect thorugh public Mongo Url",
+            "required": false,
+            "value": ""
+        },
+        "Owner_Number": {
+            "description": "Owner Number",
+            "required": true,
+            "value": ""
+        },
+        "Owner_Name": {
+            "description": "Owner Name",
+            "required": true,
+            "value": ""
+        },
+        "PREFIX": {
+            "description": "Prefix of your bot Ex: - , / , # , & etc. Put anythong except @",
+            "required": true,
+            "value": "."
+        },
+       "ThemeEmoji": { 
+       "description": "Theme Emoji",
+            "required": true,
+            "value": "🎐"
+       },
+       "SESSION_ID": {
+            "description": "That you got after scan the external QR or Pair with external Pairing Code",
+            "required": true,
+            "value": ""
+        },
+        "Warns_Limits": {
+          "description": "Limit After Exceed to Remove User",
+            "required": true,
+            "value": "3"
+            }
+    },
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
