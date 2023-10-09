@@ -1,0 +1,34 @@
+{
+  "name": "nconf",
+  "description": "Hierarchical node.js configuration with files, environment variables, command-line arguments, and atomic object merging.",
+  "version": "0.6.9",
+  "author": "Nodejitsu Inc. <info@nodejitsu.com>",
+  "maintainers": [
+    "indexzero <charlie@nodejitsu.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/flatiron/nconf.git"
+  },
+  "keywords": [
+    "configuration",
+    "key value store",
+    "plugabble"
+  ],
+  "dependencies": {
+    "async": "0.2.9",
+    "ini": "1.x.x",
+    "optimist": "0.6.0"
+  },
+  "devDependencies": {
+    "vows": "0.7.x"
+  },
+  "main": "./lib/nconf",
+  "scripts": {
+    "test": "vows test/*-test.js test/**/*-test.js --spec"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  }
+}
+
