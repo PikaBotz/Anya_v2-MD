@@ -1,18 +1,7 @@
-FROM node:lts-buster
+FROM quay.io/teamolduser/docker
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  npm i pm2 -g && \
-  rm -rf /var/lib/apt/lists/*
-
-COPY package.json .
-
-RUN yarn install
-
-COPY . .
-
-CMD ["pm2-runtime", "."]
+COPY . /root/Anyav2
+WORKDIR /root/Anyav2
+RUN yarn install --network-concurrency 1
+EXPOSE 8000
+CMD ["yarn", "start"]
