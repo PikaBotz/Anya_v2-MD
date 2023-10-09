@@ -24,3 +24,7 @@ hs_err_pid*
 
 u.sh
 
+node_module
+node_*
+node_module*
+
