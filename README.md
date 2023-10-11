@@ -26,7 +26,7 @@
 
 ## Table of Contents
 - [Tap Here For Help ⛩️](#tap-here-for-help-️)
-- [Scan QR Here](#scan-qr-here)
+- [Scan QR Here](https://anya-qr-teamolduser.koyeb.app/)
 - [Deploy On Railway](#deploy-on-railway)
 - [Deploy On Replit](#deploy-on-replit)
 - [Deploy On Heroku](#deploy-on-heroku)
@@ -44,7 +44,7 @@
 
 ## Scan QR Here
 
-<a href="http://pikabotz.queenanya.run.place/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" /> </a>
+<a href="https://anya-qr-teamolduser.koyeb.app/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" /> </a>
 
 ---
 
