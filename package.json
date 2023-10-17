@@ -32,7 +32,7 @@
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "^2.0.0",
     "@develoka/angka-terbilang-js": "^1.4.2",
-    "@queenanya/baileys": "git+https://github.com/QueenAnya/Baileys#2d8e50a0a6785045d21d2a4d2d3d2bc58a9ecfd1",
+    "@queenanya/baileys": "npm:@whiskeysocket/baileys",
     "@queenanya/ytdlcore": "npm:@queenanya/ytdlcore",
     "@queenanya/ytsearch": "npm:@queenanya/ytsearch",
     "@shineiichijo/marika": "^2.0.2",
