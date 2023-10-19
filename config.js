@@ -128,5 +128,19 @@ module.exports = {
   image_1: readFileSync('./lib/Assets/image_1.jpg'), // Thumbnail for allmenu command
   image_2: readFileSync('./lib/Assets/image_2.jpg'), // null image
   image_3: readFileSync("./lib/Assets/image_3.jpg"), // Thumbnail for Dashboard
-  menu_pic: "https://i.ibb.co/PhDcZTM/Thumbnail.png",  
-}
+  menu_pic: "https://i.ibb.co/PhDcZTM/Thumbnail.png",
+  message: {
+    success: 'Done ✅',
+    admin: 'You must be an admin to use this command.',
+    botAdmin: 'The bot needs to be an admin to process this command.',
+    owner: 'You are not the owner of this bot so you cannot use this command.',
+    group: 'This command is only made for group chats.',
+    private: 'This command is only for private chats.',
+    wait: '🔄 Loading...',
+    link: 'I need a link to process this command.',
+    error: '```404 Error```',
+    ban: `You're banned from using this bot!`,
+    nsfw: 'This group is not *NSFW* enabled.',
+    banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
+  },
+       }
