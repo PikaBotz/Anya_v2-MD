@@ -32,7 +32,7 @@
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "^2.0.0",
     "@develoka/angka-terbilang-js": "^1.4.2",
-    "@queenanya/baileys": "npm:@whiskeysockets/baileys",
+    "@queenanya/baileys": "latest",
     "@queenanya/ytdlcore": "npm:@queenanya/ytdlcore",
     "@queenanya/ytsearch": "npm:@queenanya/ytsearch",
     "@shineiichijo/marika": "^2.0.2",
