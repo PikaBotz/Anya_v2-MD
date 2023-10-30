@@ -47,7 +47,7 @@
             "required": true,
             "value": ""
         },
-        "PREFIX": {
+        "Prefix": {
             "description": "Prefix of your bot Ex: - , / , # , & etc. Put anythong except @",
             "required": true,
             "value": "."

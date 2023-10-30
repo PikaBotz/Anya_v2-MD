@@ -1,6 +1,6 @@
 {
   "name": "QueenAnya-MD-V2",
-  "version": "2.0.9#3 [BETA]",
+  "version": "2.0.9#4 [BETA]",
   "description": "A modular whatsApp bot created by node.js",
   "main": "Anyaindex.js",
   "type": "commonjs",
@@ -33,6 +33,7 @@
     "@bochilteam/scraper": "^2.0.0",
     "@develoka/angka-terbilang-js": "^1.4.2",
     "@queenanya/baileys": "latest",
+    "@queenanya/baileys2": "git+https://github.com/QueenAnya/Baileys#2d8e50a0a6785045d21d2a4d2d3d2bc58a9ecfd1",
     "@queenanya/ytdlcore": "npm:@queenanya/ytdlcore",
     "@queenanya/ytsearch": "npm:@queenanya/ytsearch",
     "@shineiichijo/marika": "^2.0.2",
@@ -66,7 +67,7 @@
     "hxz-api": "^1.0.1",
     "image-to-base64": "^2.1.1",
     "instagram-url-direct": "^1.0.12",
-    "jimp": "^0.3.5",
+    "jimp": "^0.3.5 || ^0.16.2",
     "jsdom": "^16.4.0",
     "lowdb": "^2.1.0",
     "moment-timezone": "^0.5.34",
@@ -78,8 +79,8 @@
     "node-id3": "^0.2.3",
     "node-webpmux": "^3.1.3",
     "node-youtube-music": "^0.7.0",
-    "os": "^0.1.2",
     "opencage-api-client": "^1.0.2",
+    "os": "^0.1.2",
     "path": "^0.12.7",
     "perf_hooks": "0.0.1",
     "pino": "^7.11.0",
@@ -95,6 +96,12 @@
     "yargs": "^17.6.0",
     "youtube-yts": "npm:@queenanya/ytsearch",
     "youtubedl-core": "npm:@queenanya/ytdlcore"
+  },
+    "devDependencies": {
+    "@hapi/boom": "^9.1.4",
+    "jimp": "^0.3.5 || ^0.16.2",
+    "pino": "^8.1.0",
+    "qrcode-terminal": "^0.12.0"
   },
   "packageManager": "yarn@1.22.19"
 }
