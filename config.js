@@ -22,7 +22,7 @@ global.timezone = process.env.TimeZone || "Asia/Kolkata"
 global.instagramId = process.env.Insta || "8.08_only_mine" 
 global.email = process.env.Email_Id || "example@example.com" 
 
-global.mongoUrl = process.env.MongoDB || "Enter"; 
+global.mongoUrl = process.env.MongoDB || "mongodb+srv://thisispass:thisispass@wbot.fnerzho.mongodb.net/?retryWrites=true&w=majority"; 
 
 global.warns = process.env.Warns_Limits || 3; 
 
@@ -115,7 +115,7 @@ module.exports = {
   instagramId: process.env.Insta || "8.08_only_mine",
   email: process.env.Email_Id || "example@example.com",
   warns: process.env.Warns_Limits || 3,
-  mongoUrl: process.env.MongoDB || "Enter",
+  mongoUrl: process.env.MongoDB || "mongodb+srv://thisispass:thisispass@wbot.fnerzho.mongodb.net/?retryWrites=true&w=majority",
   welcome: process.env.Welcome_Msg || '*@$user* joined this group today as $membersth member.\n\n_$prefix welcome off to disable this message._',
   left: process.env.Left_Msg || 'Ex-member *@$user* is no longer available in this group chat.\n\n_$prefix goodbye off to disable this message._',
   promote: process.env.Promote_Msg || '*@$user* has been promoted as an admin in this group.\n\n_$prefix promotem off to disable this message._',
