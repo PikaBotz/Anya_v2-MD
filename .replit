@@ -1,7 +1,7 @@
 entrypoint = "index.js"
 modules = ["nodejs-18:v3-20230608-f4cd419"]
 hidden = [".config", "yarn.lock"]
-run = "yarn start"
+run = "bash start.sh"
 
 [nix]
 channel = "stable-23_05"
