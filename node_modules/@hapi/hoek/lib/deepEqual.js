@@ -271,7 +271,8 @@ internals.isDeepEqualObj = function (instanceType, obj, ref, options, seen) {
         const refSymbols = new Set(getOwnPropertySymbols(ref));
 
         for (const key of objSymbols) {
-            if (!options.skip?.includes(key)) {
+            if (!options.skip ||
+                !options.skip.includes(key)) {
 
                 if (hasOwnEnumerableProperty(obj, key)) {
                     if (!hasOwnEnumerableProperty(ref, key)) {

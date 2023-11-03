@@ -79,7 +79,7 @@ internals.array = function (ref, values, options) {
             }
         }
         else {
-            compare = compare ?? internals.compare(options);
+            compare = compare || internals.compare(options);
 
             let found = false;
             for (const [key, existing] of map.entries()) {
@@ -108,7 +108,7 @@ internals.array = function (ref, values, options) {
             match = map.get(item);
         }
         else {
-            compare = compare ?? internals.compare(options);
+            compare = compare || internals.compare(options);
 
             for (const [key, existing] of map.entries()) {
                 if (compare(key, item)) {

@@ -1,6 +1,6 @@
 {
   "name": "sshpk",
-  "version": "1.17.0",
+  "version": "1.18.0",
   "description": "A library for finding and using SSH public keys",
   "main": "lib/index.js",
   "scripts": {
@@ -49,8 +49,7 @@
     "ecc-jsbn": "~0.1.1",
     "bcrypt-pbkdf": "^1.0.0"
   },
-  "optionalDependencies": {
-  },
+  "optionalDependencies": {},
   "devDependencies": {
     "tape": "^3.5.0",
     "benchmark": "^1.0.0",

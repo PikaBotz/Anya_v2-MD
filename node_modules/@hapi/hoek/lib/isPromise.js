@@ -5,5 +5,5 @@ const internals = {};
 
 module.exports = function (promise) {
 
-    return typeof promise?.then === 'function';
+    return !!promise && typeof promise.then === 'function';
 };

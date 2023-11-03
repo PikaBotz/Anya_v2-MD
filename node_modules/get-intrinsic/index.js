@@ -214,7 +214,7 @@ var LEGACY_ALIASES = {
 };
 
 var bind = require('function-bind');
-var hasOwn = require('has');
+var hasOwn = require('hasown');
 var $concat = bind.call(Function.call, Array.prototype.concat);
 var $spliceApply = bind.call(Function.apply, Array.prototype.splice);
 var $replace = bind.call(Function.call, String.prototype.replace);

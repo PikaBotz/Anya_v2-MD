@@ -7,6 +7,7 @@ var inspect = require('object-inspect');
 var has = require('has');
 var hasPropertyDescriptors = require('has-property-descriptors')();
 var getOwnPropertyDescriptors = require('object.getownpropertydescriptors');
+var ownKeys = require('reflect.ownkeys');
 
 var defineDataProperty = require('../');
 
@@ -88,7 +89,7 @@ test('defineDataProperty', function (t) {
 		st.end();
 	});
 
-	t.test('loose mode', function (st) {
+	t.test('loose mode', { skip: !hasPropertyDescriptors }, function (st) {
 		var obj = { existing: 'existing property' };
 
 		defineDataProperty(obj, 'added', 'added value 1', true, null, null, true);
@@ -177,17 +178,11 @@ test('defineDataProperty', function (t) {
 		);
 
 		st.deepEqual(
-			getOwnPropertyDescriptors(obj),
-			{
-				existing: {
-					configurable: true,
-					enumerable: true,
-					value: 'existing property',
-					writable: true
-				}
-			},
-			'obj still has expected descriptors'
+			ownKeys(obj),
+			['existing'],
+			'obj still has expected keys'
 		);
+		st.equal(obj.existing, 'existing property', 'obj still has expected values');
 
 		st.end();
 	});

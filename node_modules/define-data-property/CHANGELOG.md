@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.1](https://github.com/ljharb/define-data-property/compare/v1.1.0...v1.1.1) - 2023-10-12
+
+### Commits
+
+- [Tests] fix tests in ES3 engines [`5c6920e`](https://github.com/ljharb/define-data-property/commit/5c6920edd1f52f675b02f417e539c28135b43f94)
+- [Dev Deps] update `@types/es-value-fixtures`, `@types/for-each`, `@types/gopd`, `@types/has-property-descriptors`, `tape`, `typescript` [`7d82dfc`](https://github.com/ljharb/define-data-property/commit/7d82dfc20f778b4465bba06335dd53f6f431aea3)
+- [Fix] IE 8 has a broken `Object.defineProperty` [`0672e1a`](https://github.com/ljharb/define-data-property/commit/0672e1af2a9fcc787e7c23b96dea60d290df5548)
+- [meta] emit types on prepack [`73acb1f`](https://github.com/ljharb/define-data-property/commit/73acb1f903c21b314ec7156bf10f73c7910530c0)
+- [Dev Deps] update `tape`, `typescript` [`9489a77`](https://github.com/ljharb/define-data-property/commit/9489a7738bf2ecf0ac71d5b78ec4ca6ad7ba0142)
+
 ## [v1.1.0](https://github.com/ljharb/define-data-property/compare/v1.0.1...v1.1.0) - 2023-09-13
 
 ### Commits

@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.1](https://github.com/inspect-js/has-property-descriptors/compare/v1.0.0...v1.0.1) - 2023-10-20
+
+### Commits
+
+- [meta] use `npmignore` to autogenerate an npmignore file [`5bbf4da`](https://github.com/inspect-js/has-property-descriptors/commit/5bbf4dae1b58950d87bb3af508bee7513e640868)
+- [actions] update rebase action to use reusable workflow [`3a5585b`](https://github.com/inspect-js/has-property-descriptors/commit/3a5585bf74988f71a8f59e67a07d594e62c51fd8)
+- [Dev Deps] update `@ljharb/eslint-config`, `aud`, `tape` [`e5c1212`](https://github.com/inspect-js/has-property-descriptors/commit/e5c1212048a8fda549794c47863724ca60b89cae)
+- [Dev Deps] update `aud`, `tape` [`e942917`](https://github.com/inspect-js/has-property-descriptors/commit/e942917b6c2f7c090d5623048989cf20d0834ebf)
+- [Deps] update `get-intrinsic` [`f4a44ec`](https://github.com/inspect-js/has-property-descriptors/commit/f4a44ec6d94146fa6c550d3c15c31a2062c83ef4)
+- [Deps] update `get-intrinsic` [`eeb275b`](https://github.com/inspect-js/has-property-descriptors/commit/eeb275b473e5d72ca843b61ca25cfcb06a5d4300)
+
 ## v1.0.0 - 2022-04-14
 
 ### Commits

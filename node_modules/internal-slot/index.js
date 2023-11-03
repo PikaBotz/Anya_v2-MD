@@ -1,7 +1,7 @@
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
-var has = require('has');
+var hasOwn = require('hasown');
 var channel = require('side-channel')();
 
 var $TypeError = GetIntrinsic('%TypeError%');
@@ -37,7 +37,7 @@ var SLOT = {
 			throw new $TypeError('`slot` must be a string');
 		}
 		var slots = channel.get(O);
-		return !!slots && has(slots, '$' + slot);
+		return !!slots && hasOwn(slots, '$' + slot);
 	},
 	set: function (O, slot, V) {
 		if (!O || (typeof O !== 'object' && typeof O !== 'function')) {

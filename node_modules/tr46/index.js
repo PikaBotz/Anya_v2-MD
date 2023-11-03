@@ -6,7 +6,7 @@ const mappingTable = require("./lib/mappingTable.json");
 const { STATUS_MAPPING } = require("./lib/statusMapping.js");
 
 function containsNonASCII(str) {
-  return /[^\x00-\x7F]/.test(str);
+  return /[^\x00-\x7F]/u.test(str);
 }
 
 function findStatus(val, { useSTD3ASCIIRules }) {
@@ -204,10 +204,11 @@ function processing(domainName, options) {
     if (error) {
       continue;
     }
-    const validation = validateLabel(label, Object.assign({}, options, {
+    const validation = validateLabel(label, {
+      ...options,
       processingOption: curProcessing,
       checkBidi: options.checkBidi && isBidi
-    }));
+    });
     if (!validation) {
       error = true;
     }
@@ -242,7 +243,7 @@ function toASCII(domainName, {
   labels = labels.map(l => {
     if (containsNonASCII(l)) {
       try {
-        return "xn--" + punycode.encode(l);
+        return `xn--${punycode.encode(l)}`;
       } catch (e) {
         result.error = true;
       }

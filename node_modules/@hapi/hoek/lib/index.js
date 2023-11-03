@@ -4,8 +4,6 @@ exports.applyToDefaults = require('./applyToDefaults');
 
 exports.assert = require('./assert');
 
-exports.AssertError = require('./assertError');
-
 exports.Bench = require('./bench');
 
 exports.block = require('./block');
@@ -15,6 +13,8 @@ exports.clone = require('./clone');
 exports.contain = require('./contain');
 
 exports.deepEqual = require('./deepEqual');
+
+exports.Error = require('./error');
 
 exports.escapeHeaderAttribute = require('./escapeHeaderAttribute');
 

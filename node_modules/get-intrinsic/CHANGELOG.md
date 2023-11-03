@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.2.2](https://github.com/ljharb/get-intrinsic/compare/v1.2.1...v1.2.2) - 2023-10-20
+
+### Commits
+
+- [Dev Deps] update `@ljharb/eslint-config`, `aud`, `call-bind`, `es-abstract`, `mock-property`, `object-inspect`, `tape` [`f51bcf2`](https://github.com/ljharb/get-intrinsic/commit/f51bcf26412d58d17ce17c91c9afd0ad271f0762)
+- [Refactor] use `hasown` instead of `has` [`18d14b7`](https://github.com/ljharb/get-intrinsic/commit/18d14b799bea6b5765e1cec91890830cbcdb0587)
+- [Deps] update `function-bind` [`6e109c8`](https://github.com/ljharb/get-intrinsic/commit/6e109c81e03804cc5e7824fb64353cdc3d8ee2c7)
+
 ## [v1.2.1](https://github.com/ljharb/get-intrinsic/compare/v1.2.0...v1.2.1) - 2023-05-13
 
 ### Commits

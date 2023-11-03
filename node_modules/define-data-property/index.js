@@ -5,6 +5,14 @@ var hasPropertyDescriptors = require('has-property-descriptors')();
 var GetIntrinsic = require('get-intrinsic');
 
 var $defineProperty = hasPropertyDescriptors && GetIntrinsic('%Object.defineProperty%', true);
+if ($defineProperty) {
+	try {
+		$defineProperty({}, 'a', { value: 1 });
+	} catch (e) {
+		// IE 8 has a broken defineProperty
+		$defineProperty = false;
+	}
+}
 
 var $SyntaxError = GetIntrinsic('%SyntaxError%');
 var $TypeError = GetIntrinsic('%TypeError%');

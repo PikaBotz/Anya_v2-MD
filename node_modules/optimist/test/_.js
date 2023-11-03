@@ -1,71 +1,66 @@
 var spawn = require('child_process').spawn;
-var test = require('tap').test;
+var assert = require('assert');
 
-test('dotSlashEmpty', testCmd('./bin.js', []));
+exports.dotSlashEmpty = function () {
+    testCmd('./bin.js', []);
+};
 
-test('dotSlashArgs', testCmd('./bin.js', [ 'a', 'b', 'c' ]));
+exports.dotSlashArgs = function () {
+    testCmd('./bin.js', [ 'a', 'b', 'c' ]);
+};
 
-test('nodeEmpty', testCmd('node bin.js', []));
+exports.nodeEmpty = function () {
+    testCmd('node bin.js', []);
+};
 
-test('nodeArgs', testCmd('node bin.js', [ 'x', 'y', 'z' ]));
+exports.nodeArgs = function () {
+    testCmd('node bin.js', [ 'x', 'y', 'z' ]);
+};
 
-test('whichNodeEmpty', function (t) {
+exports.whichNodeEmpty = function () {
     var which = spawn('which', ['node']);
     
     which.stdout.on('data', function (buf) {
-        t.test(
-            testCmd(buf.toString().trim() + ' bin.js', [])
-        );
-        t.end();
+        testCmd(buf.toString().trim() + ' bin.js', []);
     });
     
     which.stderr.on('data', function (err) {
-        assert.error(err);
-        t.end();
+        assert.fail(err.toString());
     });
-});
+};
 
-test('whichNodeArgs', function (t) {
+exports.whichNodeArgs = function () {
     var which = spawn('which', ['node']);
-
+    
     which.stdout.on('data', function (buf) {
-        t.test(
-            testCmd(buf.toString().trim() + ' bin.js', [ 'q', 'r' ])
-        );
-        t.end();
+        testCmd(buf.toString().trim() + ' bin.js', [ 'q', 'r' ]);
     });
     
     which.stderr.on('data', function (err) {
-        t.error(err);
-        t.end();
+        assert.fail(err.toString());
     });
-});
+};
 
 function testCmd (cmd, args) {
-
-    return function (t) {
-        var to = setTimeout(function () {
-            assert.fail('Never got stdout data.')
-        }, 5000);
-        
-        var oldDir = process.cwd();
-        process.chdir(__dirname + '/_');
-        
-        var cmds = cmd.split(' ');
-        
-        var bin = spawn(cmds[0], cmds.slice(1).concat(args.map(String)));
-        process.chdir(oldDir);
-        
-        bin.stderr.on('data', function (err) {
-            t.error(err);
-            t.end();
-        });
-        
-        bin.stdout.on('data', function (buf) {
-            clearTimeout(to);
-            var _ = JSON.parse(buf.toString());
-            t.same(_.map(String), args.map(String));
-            t.end();
-        });
-    };
+    var to = setTimeout(function () {
+        assert.fail('Never got stdout data.')
+    }, 5000);
+    
+    var oldDir = process.cwd();
+    process.chdir(__dirname + '/_');
+    
+    var cmds = cmd.split(' ');
+    
+    var bin = spawn(cmds[0], cmds.slice(1).concat(args.map(String)));
+    process.chdir(oldDir);
+    
+    bin.stderr.on('data', function (err) {
+        assert.fail(err.toString());
+    });
+    
+    bin.stdout.on('data', function (buf) {
+        clearTimeout(to);
+        var _ = JSON.parse(buf.toString());
+        assert.eql(_.map(String), args.map(String));
+    });
 }

@@ -1,20 +1,20 @@
 var Hash = require('hashish');
 var optimist = require('../index');
-var test = require('tap').test;
+var assert = require('assert');
 
-test('usageFail', function (t) {
+exports.usageFail = function () {
     var r = checkUsage(function () {
         return optimist('-x 10 -z 20'.split(' '))
             .usage('Usage: $0 -x NUM -y NUM')
             .demand(['x','y'])
             .argv;
     });
-    t.same(
+    assert.deepEqual(
         r.result,
         { x : 10, z : 20, _ : [], $0 : './usage' }
     );
-
-    t.same(
+    
+    assert.deepEqual(
         r.errors.join('\n').split(/\n+/),
         [
             'Usage: ./usage -x NUM -y NUM',
@@ -24,29 +24,26 @@ test('usageFail', function (t) {
             'Missing required arguments: y',
         ]
     );
-    t.same(r.logs, []);
-    t.ok(r.exit);
-    t.end();
-});
+    assert.deepEqual(r.logs, []);
+    assert.ok(r.exit);
+};
 
-
-test('usagePass', function (t) {
+exports.usagePass = function () {
     var r = checkUsage(function () {
         return optimist('-x 10 -y 20'.split(' '))
             .usage('Usage: $0 -x NUM -y NUM')
             .demand(['x','y'])
             .argv;
     });
-    t.same(r, {
+    assert.deepEqual(r, {
         result : { x : 10, y : 20, _ : [], $0 : './usage' },
         errors : [],
         logs : [],
         exit : false,
     });
-    t.end();
-});
+};
 
-test('checkPass', function (t) {
+exports.checkPass = function () {
     var r = checkUsage(function () {
         return optimist('-x 10 -y 20'.split(' '))
             .usage('Usage: $0 -x NUM -y NUM')
@@ -56,16 +53,15 @@ test('checkPass', function (t) {
             })
             .argv;
     });
-    t.same(r, {
+    assert.deepEqual(r, {
         result : { x : 10, y : 20, _ : [], $0 : './usage' },
         errors : [],
         logs : [],
         exit : false,
     });
-    t.end();
-});
+};
 
-test('checkFail', function (t) {
+exports.checkFail = function () {
     var r = checkUsage(function () {
         return optimist('-x 10 -z 20'.split(' '))
             .usage('Usage: $0 -x NUM -y NUM')
@@ -75,115 +71,110 @@ test('checkFail', function (t) {
             })
             .argv;
     });
-
-    t.same(
+    
+    assert.deepEqual(
         r.result,
         { x : 10, z : 20, _ : [], $0 : './usage' }
     );
-
-    t.same(
+    
+    assert.deepEqual(
         r.errors.join('\n').split(/\n+/),
         [
             'Usage: ./usage -x NUM -y NUM',
             'You forgot about -y'
         ]
     );
+    
+    assert.deepEqual(r.logs, []);
+    assert.ok(r.exit);
+};
 
-    t.same(r.logs, []);
-    t.ok(r.exit);
-    t.end();
-});
-
-test('checkCondPass', function (t) {
+exports.checkCondPass = function () {
     function checker (argv) {
         return 'x' in argv && 'y' in argv;
     }
-
+    
     var r = checkUsage(function () {
         return optimist('-x 10 -y 20'.split(' '))
             .usage('Usage: $0 -x NUM -y NUM')
             .check(checker)
             .argv;
     });
-    t.same(r, {
+    assert.deepEqual(r, {
         result : { x : 10, y : 20, _ : [], $0 : './usage' },
         errors : [],
         logs : [],
         exit : false,
     });
-    t.end();
-});
+};
 
-test('checkCondFail', function (t) {
+exports.checkCondFail = function () {
     function checker (argv) {
         return 'x' in argv && 'y' in argv;
     }
-
+    
     var r = checkUsage(function () {
         return optimist('-x 10 -z 20'.split(' '))
             .usage('Usage: $0 -x NUM -y NUM')
             .check(checker)
             .argv;
     });
-
-    t.same(
+    
+    assert.deepEqual(
         r.result,
         { x : 10, z : 20, _ : [], $0 : './usage' }
     );
-
-    t.same(
+    
+    assert.deepEqual(
         r.errors.join('\n').split(/\n+/).join('\n'),
         'Usage: ./usage -x NUM -y NUM\n'
         + 'Argument check failed: ' + checker.toString()
     );
+    
+    assert.deepEqual(r.logs, []);
+    assert.ok(r.exit);
+};
 
-    t.same(r.logs, []);
-    t.ok(r.exit);
-    t.end();
-});
-
-test('countPass', function (t) {
+exports.countPass = function () {
     var r = checkUsage(function () {
         return optimist('1 2 3 --moo'.split(' '))
             .usage('Usage: $0 [x] [y] [z] {OPTIONS}')
             .demand(3)
             .argv;
     });
-    t.same(r, {
+    assert.deepEqual(r, {
         result : { _ : [ '1', '2', '3' ], moo : true, $0 : './usage' },
         errors : [],
         logs : [],
         exit : false,
     });
-    t.end();
-});
+};
 
-test('countFail', function (t) {
+exports.countFail = function () {
     var r = checkUsage(function () {
         return optimist('1 2 --moo'.split(' '))
             .usage('Usage: $0 [x] [y] [z] {OPTIONS}')
             .demand(3)
             .argv;
     });
-    t.same(
+    assert.deepEqual(
         r.result,
         { _ : [ '1', '2' ], moo : true, $0 : './usage' }
     );
-
-    t.same(
+    
+    assert.deepEqual(
         r.errors.join('\n').split(/\n+/),
         [
             'Usage: ./usage [x] [y] [z] {OPTIONS}',
             'Not enough non-option arguments: got 2, need at least 3',
         ]
     );
+    
+    assert.deepEqual(r.logs, []);
+    assert.ok(r.exit);
+};
 
-    t.same(r.logs, []);
-    t.ok(r.exit);
-    t.end();
-});
-
-test('defaultSingles', function (t) {
+exports.defaultSingles = function () {
     var r = checkUsage(function () {
         return optimist('--foo 50 --baz 70 --powsy'.split(' '))
             .default('foo', 5)
@@ -192,7 +183,7 @@ test('defaultSingles', function (t) {
             .argv
         ;
     });
-    t.same(r.result, {
+    assert.eql(r.result, {
         foo : '50',
         bar : 6,
         baz : '70',
@@ -200,89 +191,62 @@ test('defaultSingles', function (t) {
         _ : [],
         $0 : './usage',
     });
-    t.end();
-});
+};
 
-test('defaultAliases', function (t) {
-    var r = checkUsage(function () {
-        return optimist('')
-            .alias('f', 'foo')
-            .default('f', 5)
-            .argv
-        ;
-    });
-    t.same(r.result, {
-        f : '5',
-        foo : '5',
-        _ : [],
-        $0 : './usage',
-    });
-    t.end();
-});
-
-test('defaultHash', function (t) {
+exports.defaultHash = function () {
     var r = checkUsage(function () {
         return optimist('--foo 50 --baz 70'.split(' '))
             .default({ foo : 10, bar : 20, quux : 30 })
             .argv
         ;
     });
-    t.same(r.result, {
+    assert.eql(r.result, {
+        foo : '50',
+        bar : 20,
+        baz : 70,
+        quux : 30,
         _ : [],
         $0 : './usage',
-        foo : 50,
-        baz : 70,
-        bar : 20,
-        quux : 30,
     });
-    t.end();
-});
+};
 
-test('rebase', function (t) {
-    t.equal(
+exports.rebase = function () {
+    assert.equal(
         optimist.rebase('/home/substack', '/home/substack/foo/bar/baz'),
         './foo/bar/baz'
     );
-    t.equal(
+    assert.equal(
         optimist.rebase('/home/substack/foo/bar/baz', '/home/substack'),
         '../../..'
     );
-    t.equal(
+    assert.equal(
         optimist.rebase('/home/substack/foo', '/home/substack/pow/zoom.txt'),
         '../pow/zoom.txt'
     );
-    t.end();
-});
+};
 
 function checkUsage (f) {
-
+    var _process = process;
+    process = Hash.copy(process);
     var exit = false;
-
-    process._exit = process.exit;
-    process._env = process.env;
-    process._argv = process.argv;
-
-    process.exit = function (t) { exit = true };
+    process.exit = function () { exit = true };
     process.env = Hash.merge(process.env, { _ : 'node' });
     process.argv = [ './usage' ];
-
+    
     var errors = [];
     var logs = [];
-
+    
     console._error = console.error;
     console.error = function (msg) { errors.push(msg) };
     console._log = console.log;
     console.log = function (msg) { logs.push(msg) };
-
+    
     var result = f();
-
-    process.exit = process._exit;
-    process.env = process._env;
-    process.argv = process._argv;
-
+    
+    process = _process;
     console.error = console._error;
     console.log = console._log;
-
+    
     return {
         errors : errors,
         logs : logs,

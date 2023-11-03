@@ -1,8 +1,8 @@
 {
   "name": "tr46",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   },
   "description": "An implementation of the Unicode UTS #46: Unicode IDNA Compatibility Processing",
   "main": "index.js",
@@ -36,11 +36,12 @@
     "punycode": "^2.1.1"
   },
   "devDependencies": {
-    "eslint": "^7.27.0",
-    "mocha": "^8.4.0",
-    "node-fetch": "^2.6.0",
-    "regenerate": "^1.4.2",
-    "unicode-13.0.0": "^0.8.0"
+    "@domenic/eslint-config": "^1.4.0",
+    "@unicode/unicode-14.0.0": "^1.2.1",
+    "eslint": "^7.32.0",
+    "minipass-fetch": "^1.4.1",
+    "mocha": "^9.1.1",
+    "regenerate": "^1.4.2"
   },
-  "unicodeVersion": "13.0.0"
+  "unicodeVersion": "14.0.0"
 }

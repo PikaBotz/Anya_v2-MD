@@ -1,6 +1,6 @@
 {
   "name": "@smithy/types",
-  "version": "2.3.5",
+  "version": "2.4.0",
   "scripts": {
     "build": "concurrently 'yarn:build:cjs' 'yarn:build:es' 'yarn:build:types && yarn build:types:downlevel'",
     "build:cjs": "yarn g:tsc -p tsconfig.cjs.json",

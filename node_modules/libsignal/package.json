@@ -1,6 +1,6 @@
 {
-  "name": "libsignal",
-  "version": "2.0.1",
+  "name": "@queenanya/libsignal",
+  "version": "3.0.2",
   "description": "Open Whisper Systems' libsignal for Node.js",
   "repository": "ForstaLabs/libsignal-node",
   "main": "index.js",

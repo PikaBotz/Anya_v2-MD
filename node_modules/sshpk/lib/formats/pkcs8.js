@@ -385,13 +385,17 @@ function readPkcs8EdDSAPrivate(der) {
 	var k = der.readString(asn1.Ber.OctetString, true);
 	k = utils.zeroPadToLength(k, 32);
 
-	var A;
-	if (der.peek() === asn1.Ber.BitString) {
-		A = utils.readBitString(der);
-		A = utils.zeroPadToLength(A, 32);
-	} else {
-		A = utils.calculateED25519Public(k);
+	var A, tag;
+	while ((tag = der.peek()) !== null) {
+		if (tag === (asn1.Ber.Context | 1)) {
+			A = utils.readBitString(der, tag);
+		} else {
+			der.readSequence(tag);
+			der._offset += der.length;
+		}
 	}
+	if (A === undefined)
+		A = utils.calculateED25519Public(k);
 
 	var key = {
 		type: 'ed25519',
@@ -435,8 +439,11 @@ function writePkcs8(der, key) {
 	der.startSequence();
 
 	if (PrivateKey.isPrivateKey(key)) {
-		var sillyInt = Buffer.from([0]);
-		der.writeBuffer(sillyInt, asn1.Ber.Integer);
+		var version = 0;
+		if (key.type === 'ed25519')
+			version = 1;
+		var vbuf = Buffer.from([version]);
+		der.writeBuffer(vbuf, asn1.Ber.Integer);
 	}
 
 	der.startSequence();
@@ -465,9 +472,9 @@ function writePkcs8(der, key) {
 	case 'ed25519':
 		der.writeOID('1.3.101.112');
 		if (PrivateKey.isPrivateKey(key))
-			throw (new Error('Ed25519 private keys in pkcs8 ' +
-			    'format are not supported'));
-		writePkcs8EdDSAPublic(key, der);
+			writePkcs8EdDSAPrivate(key, der);
+		else
+			writePkcs8EdDSAPublic(key, der);
 		break;
 	default:
 		throw (new Error('Unsupported key type: ' + key.type));
@@ -624,8 +631,13 @@ function writePkcs8EdDSAPublic(key, der) {
 function writePkcs8EdDSAPrivate(key, der) {
 	der.endSequence();
 
-	var k = utils.mpNormalize(key.part.k.data, true);
 	der.startSequence(asn1.Ber.OctetString);
+	var k = utils.mpNormalize(key.part.k.data);
+	/* RFCs call for storing exactly 32 bytes, so strip any leading zeros */
+	while (k.length > 32 && k[0] === 0x00)
+		k = k.slice(1);
 	der.writeBuffer(k, asn1.Ber.OctetString);
 	der.endSequence();
+
+	utils.writeBitString(der, key.part.A.data, asn1.Ber.Context | 1);
 }
