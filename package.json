@@ -1,6 +1,6 @@
 {
   "name": "QueenAnya-MD-V2",
-  "version": "2.0.9#4 [BETA]",
+  "version": "2.0.9#5 [BETA]",
   "description": "A modular whatsApp bot created by node.js",
   "main": "Anyaindex.js",
   "type": "commonjs",
@@ -81,6 +81,7 @@
     "node-youtube-music": "^0.7.0",
     "opencage-api-client": "^1.0.2",
     "os": "^0.1.2",
+    "pastebin-js": "^1.0.6",
     "path": "^0.12.7",
     "perf_hooks": "0.0.1",
     "pino": "^7.11.0",
