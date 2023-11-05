@@ -16,13 +16,13 @@ global.footer = process.env.Footer || "© Queen Anya Bot";
 global.prefa = process.env.Prefix || ['-']
 global.themeemoji = process.env.ThemeEmoji || "🎐";
 global.ownername = process.env.Owner_Name || "Pika~Kun";
-global.ownernumber = process.env.Owner_Number || "916900904828";
+global.ownernumber = process.env.Owner_Number || "918527789843";
 global.adress = process.env.Continent || "Asia, India, Assam";
 global.timezone = process.env.TimeZone || "Asia/Kolkata";
 global.instagramId = process.env.Insta || "8.08_only_mine";
 global.email = process.env.Email_Id || "example@example.com";
 
-global.mongoUrl = process.env.MongoDB || "Enter"; 
+global.mongoUrl = process.env.MongoDB || "mongodb+srv://thisispass:thisispass@wbot.fnerzho.mongodb.net/?retryWrites=true&w=majority"; 
 
 global.warns = process.env.Warns_Limits || 3; 
 
@@ -32,9 +32,9 @@ global.left = process.env.Left_Msg || 'Ex-member *@$user* is no longer available
 global.promote = process.env.Promote_Msg || '*@$user* has been promoted as an admin in this group.\n\n_$prefix promotem off to disable this message._';
 global.demote = process.env.Demote_Msg || '*@$user* has been demoted to a member in this group.\n\n_$prefix demotem off to disable this message._';
 
-global.sessionId = process.env.SESSION_ID || "GeneticsP_AN_YA_rotests";
+global.sessionId = process.env.SESSION_ID || "ReturnD_AN_YA_oomed";
 global.auto_read_status  = process.env.AUTO_READ_STATUS || "true";
-global.alwaysonline = process.env.ALWAYS_ONLINE || "true";
+global.alwaysonline = process.env.ALWAYS_ONLINE || "false";
 global.readmessage = process.env.READ_MESSAGE || "true";
 global.auto_status_saver = process.env.AUTO_STATUS_SAVER || "true";
 
