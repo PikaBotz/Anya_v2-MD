@@ -1,6 +1,6 @@
 {
   "name": "QueenAnya-MD-V2",
-  "version": "2.0.9#5 [BETA]",
+  "version": "2.0.9",
   "description": "A modular whatsApp bot created by node.js",
   "main": "Anyaindex.js",
   "type": "commonjs",
@@ -18,7 +18,7 @@
     "bot-md",
     "multi-device"
   ],
-  "homepage": "https://github.com/PikaBotz/Anya_v2-MD#readme",
+  "homepage": "https://github.com/Normturtle/Anya_v2-MD#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PikaBotz/Anya_v2-MD"
