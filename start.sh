@@ -21,20 +21,7 @@ platform=$(detect_platform)
 # Run different code based on the platform
 case $platform in
   "Linux")
-    echo "Running Linux-specific code"
-    yarn install && yarn start
-    ;;
-  "macOS")
-    echo "Running macOS-specific code"
-    # Add your macOS-specific code here
-    ;;
-  "replit")
-    echo "Running On repl "
-    yarn && yarn start 
-    ;;
-"Replit")
-    echo "Running On Replit "
-    echo "Linux OS Platform Detected"
+    echo " Linux OS Platform Detected"
     yarn install && yarn start
     ;;
   "macOS")
