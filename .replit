@@ -7,6 +7,6 @@ run = "bash start.sh"
 channel = "stable-23_05"
 
 [deployment]
-run = ["node", "index.js"]
+run = ["node", "Anyaindex.js"]
 deploymentTarget = "cloudrun"
 ignorePorts = false
