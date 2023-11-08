@@ -8,35 +8,23 @@ global.zApiKey = {// if this API key get expired then please go to https://www.f
 }
 
 
-global.botname = process.env.BotName || "Queen Anya";
-global.author = process.env.Author || "@PikaBotz";
-global.packname = process.env.PackName || "Queen Anya v2 MD";
-global.myweb = process.env.Web || "https://github.com/PikaBotz";
-global.footer = process.env.Footer || "© Queen Anya Bot";
-global.prefa = process.env.Prefix || ['-']
-global.themeemoji = process.env.ThemeEmoji || "🎐";
-global.ownername = process.env.Owner_Name || "Pika~Kun";
-global.ownernumber = process.env.Owner_Number || "916900904828";
-global.adress = process.env.Continent || "Asia, India, Assam";
-global.timezone = process.env.TimeZone || "Asia/Kolkata";
-global.instagramId = process.env.Insta || "8.08_only_mine";
-global.email = process.env.Email_Id || "example@example.com";
+global.botname = process.env.BotName || "Queen Anya" 
+global.author = process.env.Author || "@PikaBotz" 
+global.packname = process.env.PackName || "Queen Anya v2 MD" 
+global.myweb = process.env.Web || "https://github.com/PikaBotz" 
+global.footer = process.env.Footer || "© Queen Anya Bot" 
+global.prefa = process.env.Prefix || ['-'] 
+global.themeemoji = process.env.ThemeEmoji || "🎐" 
+global.ownername = process.env.Owner_Name || "Pika~Kun" 
+global.ownernumber = process.env.Owner_Number || "916900904828" 
+global.adress = process.env.Continent || "Asia, India, Assam" 
+global.timezone = process.env.TimeZone || "Asia/Kolkata" 
+global.instagramId = process.env.Insta || "8.08_only_mine" 
+global.email = process.env.Email_Id || "example@example.com" 
 
 global.mongoUrl = process.env.MongoDB || "Enter"; 
 
 global.warns = process.env.Warns_Limits || 3; 
-
-
-global.welcome = process.env.Welcome_Msg || '*@$user* joined this group today as $membersth member.\n\n_$prefix welcome off to disable this message._';
-global.left = process.env.Left_Msg || 'Ex-member *@$user* is no longer available in this group chat.\n\n_$prefix goodbye off to disable this message._';
-global.promote = process.env.Promote_Msg || '*@$user* has been promoted as an admin in this group.\n\n_$prefix promotem off to disable this message._';
-global.demote = process.env.Demote_Msg || '*@$user* has been demoted to a member in this group.\n\n_$prefix demotem off to disable this message._';
-
-global.sessionId = process.env.SESSION_ID || "GeneticsP_AN_YA_rotests";
-global.auto_read_status  = process.env.AUTO_READ_STATUS || "true";
-global.alwaysonline = process.env.ALWAYS_ONLINE || "true";
-global.readmessage = process.env.READ_MESSAGE || "true";
-global.auto_status_saver = process.env.AUTO_STATUS_SAVER || "true";
 
 global.badWords = [
   "vagina",
@@ -113,35 +101,34 @@ global.message = {
 },
 
 module.exports = {
-  botname: global.botname, 
-  author: global.author,
-  packname: global.packname,
-  myweb: global.myweb,
-  footer: global.footer,
-  prefa: global.prefa,
-  themeemoji: global.themeemoji,
-  ownername: global.ownername,
-  ownernumber: global.ownernumber,
-  adress: global.adress,
-  timezone: global.timezone, 
-  instagramId: global.instagramId,
-  email: global.email,
-  warns: global.warns,
-  mongoUrl: global.mongoUrl,
-  welcome: global.welcome,
-  left: global.left,
-  promote: global.promote,
-  demote: global.demote,
-  sessionId: global.sessionId, 
-  auto_read_status : global.auto_read_status,
-  alwaysonline: global.alwaysonline,
-  readmessage: global.readmessage, 
-  auto_status_saver: global.auto_status_saver,
-  image_1: global.image_1,
-  image_2: global.image_2,
-  image_3: global.image_3,
-  menu_pic: global.menu_pic,
-  
+  botname: process.env.BotName || "Queen Anya", 
+  author: process.env.Author || "@PikaBotz",
+  packname: process.env.PackName || "Queen Anya v2 MD",
+  myweb: process.env.Web || "https://github.com/PikaBotz",
+  footer: process.env.Footer || "© Queen Anya Bot",
+  prefa: process.env.Prefix || ['-'],
+  themeemoji: process.env.ThemeEmoji || "🎐",
+  ownername: process.env.Owner_Name || "Pika~Kun",
+  ownernumber: process.env.Owner_Number || "916900904828",
+  adress: process.env.Continent || "Asia, India, Assam",
+  timezone: process.env.TimeZone || "Asia/Kolkata", 
+  instagramId: process.env.Insta || "8.08_only_mine",
+  email: process.env.Email_Id || "example@example.com",
+  warns: process.env.Warns_Limits || 3,
+  mongoUrl: process.env.MongoDB || "Enter",
+  welcome: process.env.Welcome_Msg || '*@$user* joined this group today as $membersth member.\n\n_$prefix welcome off to disable this message._',
+  left: process.env.Left_Msg || 'Ex-member *@$user* is no longer available in this group chat.\n\n_$prefix goodbye off to disable this message._',
+  promote: process.env.Promote_Msg || '*@$user* has been promoted as an admin in this group.\n\n_$prefix promotem off to disable this message._',
+  demote: process.env.Demote_Msg || '*@$user* has been demoted to a member in this group.\n\n_$prefix demotem off to disable this message._',
+  sessionId: process.env.SESSION_ID || "Queen Anya", 
+  auto_read_status : process.env.AUTO_READ_STATUS || "true",
+  alwaysonline: process.env.ALWAYS_ONLINE || "true", 
+  readmessage: process.env.READ_MESSAGE || "true", 
+  auto_status_saver: process.env.AUTO_STATUS_SAVER || "true",
+  image_1: readFileSync('./lib/Assets/image_1.jpg'), // Thumbnail for allmenu command
+  image_2: readFileSync('./lib/Assets/image_2.jpg'), // null image
+  image_3: readFileSync("./lib/Assets/image_3.jpg"), // Thumbnail for Dashboard
+  menu_pic: "https://i.ibb.co/PhDcZTM/Thumbnail.png",
   message: {
     success: "✅ 𝚂𝚞𝚌𝚌𝚎𝚜𝚜! 𝙾𝚙𝚛𝚊𝚝𝚒𝚘𝚗 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍.",
     admin: "*👤 A𝙳𝙼𝙸𝙽 N𝙴𝙴𝙳𝙴𝙳!*\n\n- Dear, this command is only for Admins. You have to be a admin in this group to use this command.",
@@ -156,4 +143,4 @@ module.exports = {
     nsfw: 'This group is not *NSFW* enabled.',
     banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
   },
-       }
+}
