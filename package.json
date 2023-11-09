@@ -96,6 +96,7 @@
     "util": "^0.12.5",
     "xfarr-api": "^1.0.3",
     "yargs": "^17.6.0",
+    "wa-sticker-formatter": "^4.3.2",
     "youtube-yts": "npm:@queenanya/ytsearch",
     "youtubedl-core": "npm:@queenanya/ytdlcore"
   },
