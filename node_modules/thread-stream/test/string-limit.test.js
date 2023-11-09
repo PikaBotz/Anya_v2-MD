@@ -1,6 +1,12 @@
 'use strict'
 
 const t = require('tap')
+
+if (process.env.CI) {
+  t.skip('skip on CI')
+  process.exit(0)
+}
+
 const { join } = require('path')
 const { file } = require('./helper')
 const { stat } = require('fs')

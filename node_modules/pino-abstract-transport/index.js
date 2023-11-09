@@ -2,7 +2,7 @@
 
 const metadata = Symbol.for('pino.metadata')
 const split = require('split2')
-const duplexify = require('duplexify')
+const { Duplex } = require('readable-stream')
 
 module.exports = function build (fn, opts = {}) {
   const parseLines = opts.parse === 'lines'
@@ -67,9 +67,7 @@ module.exports = function build (fn, opts = {}) {
     // set it to null to not retain a reference to the promise
     res = null
   } else if (opts.enablePipelining && res) {
-    return duplexify(stream, res, {
-      objectMode: true
-    })
+    return Duplex.from({ writable: stream, readable: res, objectMode: true })
   }
 
   return stream

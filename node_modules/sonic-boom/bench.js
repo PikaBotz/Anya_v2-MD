@@ -11,15 +11,16 @@ const sonic = new SonicBoom({ fd })
 const sonic4k = new SonicBoom({ fd, minLength: 4096 })
 const sonicSync = new SonicBoom({ fd, sync: true })
 const sonicSync4k = new SonicBoom({ fd, minLength: 4096, sync: true })
+const sonicBuffer = new SonicBoom({ fd, contentMode: 'buffer' })
+const sonic4kBuffer = new SonicBoom({ fd, contentMode: 'buffer', minLength: 4096 })
+const sonicSyncBuffer = new SonicBoom({ fd, contentMode: 'buffer', sync: true })
+const sonicSync4kBuffer = new SonicBoom({ fd, contentMode: 'buffer', minLength: 4096, sync: true })
 const dummyConsole = new Console(fs.createWriteStream('/dev/null'))
 
 const MAX = 10000
 
-let str = ''
-
-for (let i = 0; i < 10; i++) {
-  str += 'hello'
-}
+const buf = Buffer.alloc(50, 'hello', 'utf8')
+const str = buf.toString()
 
 setTimeout(doBench, 100)
 
@@ -59,6 +60,36 @@ const run = bench([
       dummyConsole.log(str)
     }
     setImmediate(cb)
+  },
+  function benchSonicBuf (cb) {
+    sonicBuffer.once('drain', cb)
+    for (let i = 0; i < MAX; i++) {
+      sonicBuffer.write(buf)
+    }
+  },
+  function benchSonicSyncBuf (cb) {
+    sonicSyncBuffer.once('drain', cb)
+    for (let i = 0; i < MAX; i++) {
+      sonicSyncBuffer.write(buf)
+    }
+  },
+  function benchSonic4kBuf (cb) {
+    sonic4kBuffer.once('drain', cb)
+    for (let i = 0; i < MAX; i++) {
+      sonic4kBuffer.write(buf)
+    }
+  },
+  function benchSonicSync4kBuf (cb) {
+    sonicSync4kBuffer.once('drain', cb)
+    for (let i = 0; i < MAX; i++) {
+      sonicSync4kBuffer.write(buf)
+    }
+  },
+  function benchCoreBuf (cb) {
+    core.once('drain', cb)
+    for (let i = 0; i < MAX; i++) {
+      core.write(buf)
+    }
   }
 ], 1000)
 

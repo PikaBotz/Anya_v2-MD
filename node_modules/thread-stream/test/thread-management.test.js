@@ -29,50 +29,16 @@ test('emit error if thread exits', async function (t) {
     stream.write('hello world\n')
   })
 
-  const [err] = await once(stream, 'error')
-  t.equal(err.message, 'The worker thread exited')
+  let [err] = await once(stream, 'error')
+  t.equal(err.message, 'the worker thread exited')
 
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
+  stream.write('noop');
+  [err] = await once(stream, 'error')
+  t.equal(err.message, 'the worker has exited')
 
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
-})
-
-test('emit error if thread exits', async function (t) {
-  const stream = new ThreadStream({
-    filename: join(__dirname, 'exit.js'),
-    sync: true
-  })
-
-  stream.on('ready', () => {
-    stream.write('hello world\n')
-  })
-
-  const [err] = await once(stream, 'error')
-  t.equal(err.message, 'The worker thread exited')
-
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
-
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
+  stream.write('noop');
+  [err] = await once(stream, 'error')
+  t.equal(err.message, 'the worker has exited')
 })
 
 test('emit error if thread have unhandledRejection', async function (t) {
@@ -85,22 +51,16 @@ test('emit error if thread have unhandledRejection', async function (t) {
     stream.write('hello world\n')
   })
 
-  const [err] = await once(stream, 'error')
+  let [err] = await once(stream, 'error')
   t.equal(err.message, 'kaboom')
 
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
+  stream.write('noop');
+  [err] = await once(stream, 'error')
+  t.equal(err.message, 'the worker has exited')
 
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
+  stream.write('noop');
+  [err] = await once(stream, 'error')
+  t.equal(err.message, 'the worker has exited')
 })
 
 test('emit error if worker stream emit error', async function (t) {
@@ -113,22 +73,16 @@ test('emit error if worker stream emit error', async function (t) {
     stream.write('hello world\n')
   })
 
-  const [err] = await once(stream, 'error')
+  let [err] = await once(stream, 'error')
   t.equal(err.message, 'kaboom')
 
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
+  stream.write('noop');
+  [err] = await once(stream, 'error')
+  t.equal(err.message, 'the worker has exited')
 
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
+  stream.write('noop');
+  [err] = await once(stream, 'error')
+  t.equal(err.message, 'the worker has exited')
 })
 
 test('emit error if thread have uncaughtException', async function (t) {
@@ -141,22 +95,16 @@ test('emit error if thread have uncaughtException', async function (t) {
     stream.write('hello world\n')
   })
 
-  const [err] = await once(stream, 'error')
+  let [err] = await once(stream, 'error')
   t.equal(err.message, 'kaboom')
 
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
+  stream.write('noop');
+  [err] = await once(stream, 'error')
+  t.equal(err.message, 'the worker has exited')
 
-  try {
-    stream.write('noop')
-    t.fail('unreacheable')
-  } catch (err) {
-    t.equal(err.message, 'the worker has exited')
-  }
+  stream.write('noop');
+  [err] = await once(stream, 'error')
+  t.equal(err.message, 'the worker has exited')
 })
 
 test('close the work if out of scope on gc', { skip: !global.WeakRef }, async function (t) {

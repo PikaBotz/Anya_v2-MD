@@ -50,17 +50,6 @@ type EnablePipelining = BuildOptions & {
   enablePipelining: true;
 };
 
-interface OnUnknown {
-  /**
-   * `unknown` is the event emitted where an unparsable line is found
-   *
-   * @param event 'unknown'
-   * @param line the unparsable line
-   * @param error the error that was thrown when parsing the line
-   */
-  on(event: "unknown", listener: (line: string, error: unknown) => void): void;
-}
-
 /**
  * Create a split2 instance and returns it. This same instance is also passed
  * to the given function, which is called synchronously.
@@ -68,9 +57,9 @@ interface OnUnknown {
  * @returns {Transform} the split2 instance
  */
 declare function build(
-  fn: (transform: Transform & OnUnknown) => void | Promise<void>,
+  fn: (transform: Transform & build.OnUnknown) => void | Promise<void>,
   opts?: BuildOptions
-): Transform & OnUnknown;
+): Transform & build.OnUnknown;
 
 /**
  * Creates a split2 instance and passes it to the given function, which is called
@@ -80,10 +69,24 @@ declare function build(
  * @returns {Transform} the wrapped split2 instance
  */
 declare function build(
-  fn: (transform: Transform & OnUnknown) => Transform & OnUnknown,
+  fn: (transform: Transform & build.OnUnknown) => Transform & build.OnUnknown,
   opts: EnablePipelining
 ): Transform;
 
-export { OnUnknown };
+declare namespace build {
+  export interface OnUnknown {
+    /**
+     * `unknown` is the event emitted where an unparsable line is found
+     *
+     * @param event 'unknown'
+     * @param line the unparsable line
+     * @param error the error that was thrown when parsing the line
+     */
+    on(
+      event: "unknown",
+      listener: (line: string, error: unknown) => void
+    ): void;
+  }
+}
 
-export default build;
+export = build;

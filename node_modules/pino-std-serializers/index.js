@@ -1,11 +1,13 @@
 'use strict'
 
 const errSerializer = require('./lib/err')
+const errWithCauseSerializer = require('./lib/err-with-cause')
 const reqSerializers = require('./lib/req')
 const resSerializers = require('./lib/res')
 
 module.exports = {
   err: errSerializer,
+  errWithCause: errWithCauseSerializer,
   mapHttpRequest: reqSerializers.mapHttpRequest,
   mapHttpResponse: resSerializers.mapHttpResponse,
   req: reqSerializers.reqSerializer,

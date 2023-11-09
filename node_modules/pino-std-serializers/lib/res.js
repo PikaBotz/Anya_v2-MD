@@ -34,7 +34,7 @@ Object.defineProperty(pinoResProto, rawSymbol, {
 
 function resSerializer (res) {
   const _res = Object.create(pinoResProto)
-  _res.statusCode = res.statusCode
+  _res.statusCode = res.headersSent ? res.statusCode : null
   _res.headers = res.getHeaders ? res.getHeaders() : res._headers
   _res.raw = res
   return _res

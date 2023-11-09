@@ -90,16 +90,17 @@
     "request": "^2.88.2",
     "scrape-primbon": "^1.1.0",
     "steno": "^1.0.0",
-    "translate-google": "^1.5.0",
     "textmaker-thiccy": "^1.3.1",
     "tod-api": "^1.0.5",
+    "translate-google": "^1.5.0",
     "util": "^0.12.5",
+    "wa-sticker-formatter": "^4.4.4",
     "xfarr-api": "^1.0.3",
     "yargs": "^17.6.0",
     "youtube-yts": "npm:@queenanya/ytsearch",
     "youtubedl-core": "npm:@queenanya/ytdlcore"
   },
-    "devDependencies": {
+  "devDependencies": {
     "@hapi/boom": "^9.1.4",
     "jimp": "^0.3.5 || ^0.16.2",
     "pino": "^8.1.0",

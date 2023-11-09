@@ -9,7 +9,7 @@ const loadTransportStreamBuilder = require('./transport-stream')
 
 /* istanbul ignore file */
 
-module.exports = async function ({ targets, levels, dedupe }) {
+module.exports = async function ({ targets, levels }) {
   targets = await Promise.all(targets.map(async (t) => {
     const fn = await loadTransportStreamBuilder(t.target)
     const stream = await fn(t.options)
@@ -38,7 +38,7 @@ module.exports = async function ({ targets, levels, dedupe }) {
   })
 
   function process (stream) {
-    const multi = pino.multistream(targets, { levels, dedupe })
+    const multi = pino.multistream(targets, { levels })
     // TODO manage backpressure
     stream.on('data', function (chunk) {
       const { lastTime, lastMsg, lastObj, lastLevel } = this

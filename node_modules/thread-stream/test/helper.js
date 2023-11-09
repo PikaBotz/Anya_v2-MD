@@ -3,7 +3,6 @@
 const { join } = require('path')
 const { tmpdir } = require('os')
 const { unlinkSync } = require('fs')
-const why = require('why-is-node-running')
 const t = require('tap')
 
 const files = []
@@ -30,4 +29,7 @@ process.on('beforeExit', () => {
 
 module.exports.file = file
 
-setInterval(why, 10000).unref()
+if (process.env.SKIP_PROCESS_EXIT_CHECK !== 'true') {
+  const why = require('why-is-node-running')
+  setInterval(why, 10000).unref()
+}

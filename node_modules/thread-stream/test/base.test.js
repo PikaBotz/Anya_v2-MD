@@ -263,7 +263,7 @@ test('destroy does not error', function (t) {
   })
 
   stream.on('error', (err) => {
-    t.equal(err.message, 'The worker thread exited')
+    t.equal(err.message, 'the worker thread exited')
     stream.flush((err) => {
       t.equal(err.message, 'the worker has exited')
     })
