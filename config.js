@@ -11,15 +11,15 @@ global.zApiKey = {// if this API key get expired then please go to https://www.f
 global.botname = process.env.BotName || "𝙶𝙾𝙹𝙾 𝚂𝙰𝚃𝙾𝚁𝚄" 
 global.author = process.env.Author || "𝕋𝕆𝔾𝔼 𝕀ℕ𝕌𝕄𝔸𝕂𝕀" 
 global.packname = process.env.PackName || "𝙶𝙾𝙹𝙾 𝚂𝙰𝚃𝙾𝚁𝚄" 
-global.myweb = process.env.Web || "https://github.com/PikaBotz" 
+global.myweb = process.env.Web || "https://www.facebook.com/profile.php?id=61553179989058" 
 global.footer = process.env.Footer || "𝙶𝙾𝙹𝙾 𝚂𝙰𝚃𝙾𝚁𝚄" 
 global.prefa = process.env.Prefix || ['-'] 
-global.themeemoji = process.env.ThemeEmoji || "🎐" 
+global.themeemoji = process.env.ThemeEmoji || "🇬🇦" 
 global.ownername = process.env.Owner_Name || "𝕋𝕆𝔾𝔼 𝕀ℕ𝕌𝕄𝔸𝕂𝕀" 
 global.ownernumber = process.env.Owner_Number || "17245423663" 
 global.adress = process.env.Continent || "Asia, India, Assam" 
 global.timezone = process.env.TimeZone || "Asia/Kolkata" 
-global.instagramId = process.env.Insta || "lawliet..off" 
+global.instagramId = process.env.Insta || "lawliet.kfx" 
 global.email = process.env.Email_Id || "tresorngalamou@gmail.com" 
 
 global.mongoUrl = process.env.MongoDB || "mongodb+srv://thisispass:thisispass@wbot.fnerzho.mongodb.net/?retryWrites=true&w=majority"; 
