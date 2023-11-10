@@ -8,19 +8,19 @@ global.zApiKey = {// if this API key get expired then please go to https://www.f
 }
 
 
-global.botname = process.env.BotName || "Queen Anya" 
-global.author = process.env.Author || "@PikaBotz" 
-global.packname = process.env.PackName || "Queen Anya v2 MD" 
+global.botname = process.env.BotName || "𝙶𝙾𝙹𝙾 𝚂𝙰𝚃𝙾𝚁𝚄" 
+global.author = process.env.Author || "𝕋𝕆𝔾𝔼 𝕀ℕ𝕌𝕄𝔸𝕂𝕀" 
+global.packname = process.env.PackName || "𝙶𝙾𝙹𝙾 𝚂𝙰𝚃𝙾𝚁𝚄" 
 global.myweb = process.env.Web || "https://github.com/PikaBotz" 
-global.footer = process.env.Footer || "© Queen Anya Bot" 
+global.footer = process.env.Footer || "𝙶𝙾𝙹𝙾 𝚂𝙰𝚃𝙾𝚁𝚄" 
 global.prefa = process.env.Prefix || ['-'] 
 global.themeemoji = process.env.ThemeEmoji || "🎐" 
-global.ownername = process.env.Owner_Name || "Pika~Kun" 
-global.ownernumber = process.env.Owner_Number || "916900904828" 
+global.ownername = process.env.Owner_Name || "𝕋𝕆𝔾𝔼 𝕀ℕ𝕌𝕄𝔸𝕂𝕀" 
+global.ownernumber = process.env.Owner_Number || "17245423663" 
 global.adress = process.env.Continent || "Asia, India, Assam" 
 global.timezone = process.env.TimeZone || "Asia/Kolkata" 
-global.instagramId = process.env.Insta || "8.08_only_mine" 
-global.email = process.env.Email_Id || "example@example.com" 
+global.instagramId = process.env.Insta || "lawliet..off" 
+global.email = process.env.Email_Id || "tresorngalamou@gmail.com" 
 
 global.mongoUrl = process.env.MongoDB || "Enter"; 
 
