@@ -1,5 +1,5 @@
 {
-  "name": "QueenAnya-MD-V2",
+  "name": "queen_anya",
   "version": "2.0.9#5 [BETA]",
   "description": "A modular whatsApp bot created by node.js",
   "main": "Anyaindex.js",
@@ -69,7 +69,7 @@
     "steno": "^1.0.0",
     "translate-google": "^1.5.0",
     "util": "^0.12.5",
-    "wa-sticker-formatter": "^4.3.2",
+    "wa-sticker-formatter": "^4.3.2"
   },
     "devDependencies": {
     "@hapi/boom": "^9.1.4",

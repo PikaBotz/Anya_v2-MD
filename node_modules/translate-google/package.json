@@ -1,0 +1,55 @@
+{
+  "name": "translate-google",
+  "version": "1.5.0",
+  "description": "A free and unlimited for Google Translate, Multi-translation support object input",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava"
+  },
+  "keywords": [
+    "translate",
+    "google",
+    "translator",
+    "free",
+    "unlimited",
+    "language",
+    "batch",
+    "multi",
+    "object",
+    "token"
+  ],
+  "author": {
+    "name": "shikar",
+    "email": "qzh.shi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shikar/NODE_GOOGLE_TRANSLATE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shikar/NODE_GOOGLE_TRANSLATE/issues"
+  },
+  "homepage": "https://github.com/shikar/NODE_GOOGLE_TRANSLATE#readme",
+  "license": "MIT",
+  "dependencies": {
+    "configstore": "^6.0.0",
+    "got": "^11.8.2",
+    "is-keyword-js": "^1.0.3",
+    "is-url": "^1.2.4",
+    "lodash": "^4.17.21",
+    "num-or-not": "^1.0.1",
+    "safe-eval": "^0.4.1",
+    "user-agents": "^1.0.779"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "nyc": "^15.1.0"
+  },
+  "xo": {
+    "space": 2,
+    "semicolon": false,
+    "ignore": [
+      "token.js"
+    ]
+  }
+}
