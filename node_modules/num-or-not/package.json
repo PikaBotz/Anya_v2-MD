@@ -1,0 +1,34 @@
+{
+  "name": "num-or-not",
+  "version": "1.0.1",
+  "description": "Check for a valid Number value.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radiovisual/num-or-not.git"
+  },
+  "keywords": [
+    "Number",
+    "num",
+    "valid",
+    "validate",
+    "check",
+    "undefined",
+    "verify"
+  ],
+  "author": "Michael Wuergler <senjudev@gmail.com> (http://numetriclabs.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radiovisual/num-or-not/issues"
+  },
+  "homepage": "https://github.com/radiovisual/num-or-not#readme",
+  "devDependencies": {
+    "ava": "^0.7.0"
+  },
+  "dependencies": {
+    "trim": "0.0.1"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "env": {
+    "testing": {
+      "presets": [
+        ["@babel/preset-env", {
+          "targets": {
+            "node": "current"
+          }
+        }],
+        "power-assert"
+      ]
+    }
+  },
+  "presets": [["@babel/preset-env", {
+    "modules": "commonjs",
+    "targets": {
+      "browsers": [
+        "last 2 chrome versions",
+        "last 2 firefox versions",
+      ],
+      "node": "6.10"
+    }
+  }]],
+  "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-transform-classes",
+      "babel-plugin-add-module-exports"
+  ]
+}
+

@@ -1,0 +1,24 @@
+{
+  "name": "safe-eval",
+  "version": "0.4.1",
+  "description": "Safer version of eval()",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "node_modules/standard/bin/cmd.js",
+    "test": "node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hacksparrow/safe-eval.git"
+  },
+  "author": "Hage Yaapa <captain@hacksparrow.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hacksparrow/safe-eval/issues"
+  },
+  "homepage": "https://github.com/hacksparrow/safe-eval",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "standard": "^11.0.1"
+  }
+}
