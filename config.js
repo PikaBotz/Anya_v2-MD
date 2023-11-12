@@ -86,15 +86,15 @@ global.image_3 = readFileSync("./lib/Assets/image_3.jpg") // Thumbnail for Dashb
 global.menu_pic = "https://i.ibb.co/PhDcZTM/Thumbnail.png";
 
 global.message = {
-    success: 'Done ✅',
-    admin: 'You must be an admin to use this command.',
-    botAdmin: 'The bot needs to be an admin to process this command.',
-    owner: 'You are not the owner of this bot so you cannot use this command.',
-    group: 'This command is only made for group chats.',
+    success: "✅ 𝚂𝚞𝚌𝚌𝚎𝚜𝚜! 𝙾𝚙𝚛𝚊𝚝𝚒𝚘𝚗 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍.",
+    admin: "*👤 A𝙳𝙼𝙸𝙽 N𝙴𝙴𝙳𝙴𝙳!*\n\n- Dear, this command is only for Admins. You have to be a admin in this group to use this command.",
+    botAdmin: "*🤖 B𝙾𝚃 A𝙳𝙼𝙸𝙽 N𝙴𝙴𝙳𝙴𝙳!*\n\n- I'm not an Admin, so I can't execute this command in this group. Please make me an Admin.",
+    owner: "*👑 O𝚆𝙽𝙴𝚁 N𝙴𝙴𝙴𝙳𝙴𝙳!*\n\n- Bruh, this command is only made for this bot's owner. So you can't use this command.",
+    group: "*👥 G𝚛𝚘𝚞𝚙 N𝚎𝚎𝚍𝚎𝚍!*\n\n- This command can only be executed in a group chat.",
     private: 'This command is only for private chats.',
-    wait: '```「▰▰▰▱▱▱▱▱▱▱」Loading...```',
+    wait: '🔄 Processing request...',
     link: 'I need a link to process this command.',
-    error: '```404 Error```',
+    error: "❌ Oops! An error occurred while processing your request. Please try again later.",
     ban: `You're banned from using this bot!`,
     nsfw: 'This group is not *NSFW* enabled.',
     banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
@@ -130,17 +130,17 @@ module.exports = {
   image_3: readFileSync("./lib/Assets/image_3.jpg"), // Thumbnail for Dashboard
   menu_pic: "https://i.ibb.co/PhDcZTM/Thumbnail.png",
   message: {
-    success: "✅ 𝚂𝚞𝚌𝚌𝚎𝚜𝚜! 𝙾𝚙𝚛𝚊𝚝𝚒𝚘𝚗 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍.",
-    admin: "*👤 A𝙳𝙼𝙸𝙽 N𝙴𝙴𝙳𝙴𝙳!*\n\n- Dear, this command is only for Admins. You have to be a admin in this group to use this command.",
-    botAdmin: "*🤖 B𝙾𝚃 A𝙳𝙼𝙸𝙽 N𝙴𝙴𝙳𝙴𝙳!*\n\n- I'm not an Admin, so I can't execute this command in this group. Please make me an Admin.",
-    owner: "*👑 O𝚆𝙽𝙴𝚁 N𝙴𝙴𝙴𝙳𝙴𝙳!*\n\n- Bruh, this command is only made for this bot's owner. So you can't use this command.",
-    group: "*👥 G𝚛𝚘𝚞𝚙 N𝚎𝚎𝚍𝚎𝚍!*\n\n- This command can only be executed in a group chat.",
-    private: 'This command is only for private chats.',
-    wait: '🔄 Processing request...',
-    link: 'I need a link to process this command.',
-    error: "❌ Oops! An error occurred while processing your request. Please try again later.",
-    ban: `You're banned from using this bot!`,
-    nsfw: 'This group is not *NSFW* enabled.',
-    banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
+    success: mess.success,
+    admin: mess.admin,
+    botAdmin: mess.botAdmin,
+    owner: mess.owner,
+    group: mess.group,
+    private: meas.private,
+    wait: mess.wait,
+    link: mess.link,
+    error: mess.error,
+    ban: mess.ban,
+    nsfw: mess.nsfw,
+    banChat: mess.banChat
   },
 }
