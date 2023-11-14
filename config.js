@@ -130,17 +130,17 @@ module.exports = {
   image_3: readFileSync("./lib/Assets/image_3.jpg"), // Thumbnail for Dashboard
   menu_pic: "https://i.ibb.co/PhDcZTM/Thumbnail.png",
   message: {
-    success: mess.success,
-    admin: mess.admin,
-    botAdmin: mess.botAdmin,
-    owner: mess.owner,
-    group: mess.group,
-    private: meas.private,
-    wait: mess.wait,
-    link: mess.link,
-    error: mess.error,
-    ban: mess.ban,
-    nsfw: mess.nsfw,
-    banChat: mess.banChat
+    success: message.success,
+    admin: message.admin,
+    botAdmin: message.botAdmin,
+    owner: message.owner,
+    group: message.group,
+    private: message.private,
+    wait: message.wait,
+    link: message.link,
+    error: message.error,
+    ban: message.ban,
+    nsfw: message.nsfw,
+    banChat: message.banChat
   },
 }
