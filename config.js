@@ -129,6 +129,7 @@ module.exports = {
   image_2: readFileSync('./lib/Assets/image_2.jpg'), // null image
   image_3: readFileSync("./lib/Assets/image_3.jpg"), // Thumbnail for Dashboard
   menu_pic: "https://i.ibb.co/PhDcZTM/Thumbnail.png",
+  aliveMedia: readFileSync("./lib/Assets/aliveMedia.mp4"),
   message: {
     success: message.success,
     admin: message.admin,
