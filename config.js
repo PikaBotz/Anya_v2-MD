@@ -16,11 +16,11 @@ global.footer = process.env.Footer || "© Queen Anya Bot"
 global.prefa = process.env.Prefix || ['-'] 
 global.themeemoji = process.env.ThemeEmoji || "🎐" 
 global.ownername = process.env.Owner_Name || "Pika~Kun" 
-global.ownernumber = process.env.Owner_Number || "916900904828" 
-global.adress = process.env.Continent || "Asia, India, Assam" 
-global.timezone = process.env.TimeZone || "Asia/Kolkata" 
+global.ownernumber = process.env.Owner_Number || "256765942138" 
+global.adress = process.env.Continent || "Africa, Uganda, Kampala" 
+global.timezone = process.env.TimeZone || "Africa/E.A.T" 
 global.instagramId = process.env.Insta || "8.08_only_mine" 
-global.email = process.env.Email_Id || "example@example.com" 
+global.email = process.env.Email_Id || "babiryephionahpro@gmail.com" 
 
 global.mongoUrl = process.env.MongoDB || "Enter"; 
 
@@ -109,11 +109,11 @@ module.exports = {
   prefa: process.env.Prefix || ['-'],
   themeemoji: process.env.ThemeEmoji || "🎐",
   ownername: process.env.Owner_Name || "Pika~Kun",
-  ownernumber: process.env.Owner_Number || "916900904828",
-  adress: process.env.Continent || "Asia, India, Assam",
-  timezone: process.env.TimeZone || "Asia/Kolkata", 
+  ownernumber: process.env.Owner_Number || "256765942138",
+  adress: process.env.Continent || "Africa, Uganda, Kampala",
+  timezone: process.env.TimeZone || "Africa/E.A.T", 
   instagramId: process.env.Insta || "8.08_only_mine",
-  email: process.env.Email_Id || "example@example.com",
+  email: process.env.Email_Id || "babiryephionahpro@gmail.com",
   warns: process.env.Warns_Limits || 3,
   mongoUrl: process.env.MongoDB || "Enter",
   welcome: process.env.Welcome_Msg || '*@$user* joined this group today as $membersth member.\n\n_$prefix welcome off to disable this message._',
@@ -123,8 +123,8 @@ module.exports = {
   sessionId: process.env.SESSION_ID || "Queen Anya", 
   auto_read_status : process.env.AUTO_READ_STATUS || "true",
   alwaysonline: process.env.ALWAYS_ONLINE || "true", 
-  readmessage: process.env.READ_MESSAGE || "true", 
-  auto_status_saver: process.env.AUTO_STATUS_SAVER || "true",
+  readmessage: process.env.READ_MESSAGE || "false", 
+  auto_status_saver: process.env.AUTO_STATUS_SAVER || "false",
   image_1: readFileSync('./lib/Assets/image_1.jpg'), // Thumbnail for allmenu command
   image_2: readFileSync('./lib/Assets/image_2.jpg'), // null image
   image_3: readFileSync("./lib/Assets/image_3.jpg"), // Thumbnail for Dashboard
