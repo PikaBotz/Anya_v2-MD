@@ -1,6 +1,6 @@
 const forever = require("forever-monitor");
 
-const boot = new forever.Monitor("index.js", {
+const boot = new forever.Monitor("Anyaindex.js", {
   silent: false,
 });
 
