@@ -118,8 +118,9 @@ anyaV2.ws.on("CB:call", async (json) => {
   const { db } = require('./lib/database/mongoDB');
   if (json.content[0].tag === "offer") {
     const callerId = json.content[0].attrs["call-creator"];
-    const isAntiCall = await findSwitch();
-    if (isAntiCall.anticall) {
+    const { Bot } = require('./lib/lib');
+    const bot = await Bot.get();
+    if (bot.anticall) {
       const vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + `FN:${Config.ownername}\n` + 'ORG: Pikabotz inc;\n' + `TEL;type=CELL;type=VOICE;waid=${Config.ownernumber}:+${Config.ownernumber}\n` + 'END:VCARD';
       anyaV2.sendMessage(callerId, { displayName: Config.ownername, contacts: [{ vcard }]})
       .then((owner) => anyaV2.sendMessage(callerId, { text: `_🎀 Calling bot is not allowed, ask to my owner to get unblocked_` }, { quoted: owner }))
