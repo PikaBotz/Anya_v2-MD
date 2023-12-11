@@ -1,12 +1,5 @@
-const { readFileSync, watchFile, unwatchFile } = require('fs')
-const { redBright } = require('chalk')
-require('./lib/config')
+const { readFileSync } = require('fs')
 require("dotenv").config();
-
-global.zApiKey = {// if this API key get expired then please go to https://www.fxacb-api.my.id and get a new api key.
-       one: "zenzkey_998568986d"
-}
-
 
 global.botname = process.env.BotName || "Queen Anya" 
 global.author = process.env.Author || "@PikaBotz" 
@@ -22,11 +15,8 @@ global.timezone = process.env.TimeZone || "Asia/Kolkata"
 global.instagramId = process.env.Insta || "8.08_only_mine" 
 global.email = process.env.Email_Id || "example@example.com" 
 
-global.mongoUrl = process.env.MongoDB || "Enter"; 
 
-global.warns = process.env.Warns_Limits || 3; 
-
-global.badWords = [
+let badWords = [
   "vagina",
   "dick",
   "mdrchod",
@@ -110,17 +100,14 @@ module.exports = {
   themeemoji: process.env.ThemeEmoji || "🎐",
   ownername: process.env.Owner_Name || "Pika~Kun",
   ownernumber: process.env.Owner_Number || "916900904828",
-  adress: process.env.Continent || "Asia, India, Assam",
-  timezone: process.env.TimeZone || "Asia/Kolkata", 
   instagramId: process.env.Insta || "8.08_only_mine",
-  email: process.env.Email_Id || "example@example.com",
   warns: process.env.Warns_Limits || 3,
-  mongoUrl: process.env.MongoDB || "Enter",
+  mongoUrl: process.env.MongoDB || "mongodb+srv://harshjain2901:5i9zbY8t2aT1BArv@cluster0.u21ypbo.mongodb.net/?retryWrites=true&w=majority",
   welcome: process.env.Welcome_Msg || '*@$user* joined this group today as $membersth member.\n\n_$prefix welcome off to disable this message._',
   left: process.env.Left_Msg || 'Ex-member *@$user* is no longer available in this group chat.\n\n_$prefix goodbye off to disable this message._',
   promote: process.env.Promote_Msg || '*@$user* has been promoted as an admin in this group.\n\n_$prefix promotem off to disable this message._',
   demote: process.env.Demote_Msg || '*@$user* has been demoted to a member in this group.\n\n_$prefix demotem off to disable this message._',
-  sessionId: process.env.SESSION_ID || "Queen Anya", 
+  sessionId: process.env.SESSION_ID || "MzYzVjJ_Queen-Anya_GeVU=", 
   auto_read_status : process.env.AUTO_READ_STATUS || "true",
   alwaysonline: process.env.ALWAYS_ONLINE || "true", 
   readmessage: process.env.READ_MESSAGE || "true", 
@@ -131,6 +118,7 @@ module.exports = {
   menu_pic: "https://i.ibb.co/PhDcZTM/Thumbnail.png",
   aliveMedia: readFileSync("./lib/Assets/aliveMedia.mp4"),
   menuMedia: readFileSync('./lib/Assets/menuMedia.mp4'),
+  badWords: badWords,
   message: {
     success: message.success,
     admin: message.admin,
