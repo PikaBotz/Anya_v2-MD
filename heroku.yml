@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: Dockerfile
+      web: Dockerfile
 run:
-   worker: yarn start
+   web: yarn start
