@@ -5,6 +5,7 @@
   "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg",
   "keywords": ["Automation", "Innovation", "Versatility", "Efficiency", "Messaging", "Chatbot", "Integration", "Customization", "Ease of Use", "Personalization"],
   "success_url": "/",
+  "stack": "container",
   "env": {
        "BotName": {
            "description": "Enter your desired bot\"s name (Ex:- Queen Anya)",
@@ -69,7 +70,7 @@
     },
    "formation": {
         "worker": {
-            "quantity": 2,
+            "quantity": 1,
             "size": "basic"
         }
     }
