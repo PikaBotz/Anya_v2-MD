@@ -1,21 +1,6 @@
 const { readFileSync } = require('fs')
 require("dotenv").config();
 
-global.botname = process.env.BotName || "Queen Anya" 
-global.author = process.env.Author || "@PikaBotz" 
-global.packname = process.env.PackName || "Queen Anya v2 MD" 
-global.myweb = process.env.Web || "https://github.com/PikaBotz" 
-global.footer = process.env.Footer || "© Queen Anya Bot" 
-global.prefa = process.env.Prefix || ['-'] 
-global.themeemoji = process.env.ThemeEmoji || "🎐" 
-global.ownername = process.env.Owner_Name || "Pika~Kun" 
-global.ownernumber = process.env.Owner_Number || "916900904828" 
-global.adress = process.env.Continent || "Asia, India, Assam" 
-global.timezone = process.env.TimeZone || "Asia/Kolkata" 
-global.instagramId = process.env.Insta || "8.08_only_mine" 
-global.email = process.env.Email_Id || "example@example.com" 
-
-
 let badWords = [
   "vagina",
   "dick",
@@ -61,19 +46,6 @@ let badWords = [
   "laund",
   "loda",
   "gulambi"];
-  
-//--------------- Tip ----------------\\
-global.Tips = [
-`Type *$prefix info* for more information....`,
-`Type *$prefix settings* to commit changes in the bot.`,
-`If you got a bug or error, then please report to developer asap by *$prefix report* command.`
-]
-
-//--------------- Menu images ----------------\\
-global.image_1 = readFileSync('./lib/Assets/image_1.jpg') // Thumbnail for allmenu command
-global.image_2 = readFileSync('./lib/Assets/image_2.jpg') // null image
-global.image_3 = readFileSync("./lib/Assets/image_3.jpg") // Thumbnail for Dashboard
-global.menu_pic = "https://i.ibb.co/PhDcZTM/Thumbnail.png";
 
 global.message = {
     success: "✅ 𝚂𝚞𝚌𝚌𝚎𝚜𝚜! 𝙾𝚙𝚛𝚊𝚝𝚒𝚘𝚗 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍.",
@@ -111,7 +83,6 @@ module.exports = {
   image_1: readFileSync('./lib/Assets/image_1.jpg'), // Thumbnail for allmenu command
   image_2: readFileSync('./lib/Assets/image_2.jpg'), // null image
   image_3: readFileSync("./lib/Assets/image_3.jpg"), // Thumbnail for Dashboard
-  menu_pic: "https://i.ibb.co/PhDcZTM/Thumbnail.png",
   aliveMedia: readFileSync("./lib/Assets/aliveMedia.mp4"),
   menuMedia: readFileSync('./lib/Assets/menuMedia.mp4'),
   badWords: badWords,
@@ -130,3 +101,36 @@ module.exports = {
     banChat: message.banChat
   },
 }
+
+
+
+// Ignore them 👇🏻
+global.botname = process.env.BotName || "Queen Anya" 
+global.author = process.env.Author || "@PikaBotz" 
+global.packname = process.env.PackName || "Queen Anya v2 MD" 
+global.myweb = process.env.Web || "https://github.com/PikaBotz" 
+global.footer = process.env.Footer || "© Queen Anya Bot" 
+global.prefa = process.env.Prefix || ['-'] 
+global.themeemoji = process.env.ThemeEmoji || "🎐" 
+global.ownername = process.env.Owner_Name || "Pika~Kun" 
+global.ownernumber = process.env.Owner_Number || "916900904828" 
+global.adress = process.env.Continent || "Asia, India, Assam" 
+global.timezone = process.env.TimeZone || "Asia/Kolkata" 
+global.instagramId = process.env.Insta || "8.08_only_mine" 
+global.email = process.env.Email_Id || "example@example.com" 
+  
+//--------------- Tip ----------------\\
+global.Tips = [
+`Type *$prefix info* for more information....`,
+`Type *$prefix settings* to commit changes in the bot.`,
+`If you got a bug or error, then please report to developer asap by *$prefix report* command.`
+]
+
+//--------------- Menu images ----------------\\
+global.image_1 = readFileSync('./lib/Assets/image_1.jpg') // Thumbnail for allmenu command
+global.image_2 = readFileSync('./lib/Assets/image_2.jpg') // null image
+global.image_3 = readFileSync("./lib/Assets/image_3.jpg") // Thumbnail for Dashboard
+global.menu_pic = "https://i.ibb.co/PhDcZTM/Thumbnail.png";
+
+
+
