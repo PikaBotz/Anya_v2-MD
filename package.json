@@ -1,7 +1,7 @@
 {
-  "name": "queen_anya",
-  "version": "2.0.9#5 [BETA]",
-  "description": "A modular whatsApp bot created by node.js",
+  "name": "queen_anya_ver.2",
+  "version": "2.1.0",
+  "description": "Anya_v2-MD is an efficient and versatile WhatsApp bot designed to streamline your messaging experience with innovative features and seamless automation.",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
