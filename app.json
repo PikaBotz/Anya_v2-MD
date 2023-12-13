@@ -1,76 +1,76 @@
 {
-  'name': 'Queen Anya Ver.2',
-  'description': 'Anya_v2-MD is an efficient and versatile WhatsApp bot designed to streamline your messaging experience with innovative features and seamless automation.',
-  'repository': 'https://github.COM/PikaBotz/Anya_v2-MD',
-  'logo': 'https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg',
-  'keywords': ["Automation", "Innovation", "Versatility", "Efficiency", "Messaging", "Chatbot", "Integration", "Customization", "Ease of Use", "Personalization"],
-  'success_url': '/',
-  'env': {
-       'BotName': {
-           'description': 'Enter your desired bot\'s name (Ex:- Queen Anya)',
-           'required': true
+  "name": "Queen Anya Ver.2",
+  "description": "Anya_v2-MD is an efficient and versatile WhatsApp bot designed to streamline your messaging experience with innovative features and seamless automation.",
+  "repository": "https://github.COM/PikaBotz/Anya_v2-MD",
+  "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg",
+  "keywords": ["Automation", "Innovation", "Versatility", "Efficiency", "Messaging", "Chatbot", "Integration", "Customization", "Ease of Use", "Personalization"],
+  "success_url": "/",
+  "env": {
+       "BotName": {
+           "description": "Enter your desired bot\"s name (Ex:- Queen Anya)",
+           "required": true
        },
-       'Footer': {
-           'description': 'Enter a watermark for your bot\'s messages (Ex:- ? Queen Anya)',
-           'required': true
+       "Footer": {
+           "description": "Enter a watermark for your bot\"s messages (Ex:- ? Queen Anya)",
+           "required": true
        },
-       'Prefix': {
-           'description': 'Enter a specific prefix for your bot, except @, ?, +',
-           'required': true
+       "Prefix": {
+           "description": "Enter a specific prefix for your bot, except @, ?, +",
+           "required": true
        },
-       'Owner_Name': {
-           'description': 'Enter a name for bot\'s owner (Ex:- Pika~Kun)',
-           'required': true
+       "Owner_Name": {
+           "description": "Enter a name for bot\"s owner (Ex:- Pika~Kun)",
+           "required": true
        },
-       'Owner_Number': {
-           'description': 'Enter owner\'s number of the bot (Ex:- 918811xxxxxx)',
-           'required': true
+       "Owner_Number": {
+           "description": "Enter owner\"s number of the bot (Ex:- 918811xxxxxx)",
+           "required": true
        },
-       'MongoDB': {
-           'description': 'Get your mongoDB url from mongoDB website',
-           'required': true
+       "MongoDB": {
+           "description": "Get your mongoDB url from mongoDB website",
+           "required": true
        },
-       'SESSION_ID' : {
-           'description': 'Get your session id first, if you already have then paste here',
-           'required': true
+       "SESSION_ID" : {
+           "description": "Get your session id first, if you already have then paste here",
+           "required": true
        },
-       'Insta': {
-           'description': 'Enter your Instagram user Id (Ex:- 3.69_pika)',
-           'required': false
+       "Insta": {
+           "description": "Enter your Instagram user Id (Ex:- 3.69_pika)",
+           "required": false
        },
-       'Author': {
-           'description': 'Enter a name for sticker\'s owner name (Ex:- PikaBotz)',
-           'required': false
+       "Author": {
+           "description": "Enter a name for sticker\"s owner name (Ex:- PikaBotz)",
+           "required": false
        },
-       'PackName': {
-           'description': 'Enter a packname for stickers (Ex:- Queen Anya Stickers)',
-           'required': false
+       "PackName": {
+           "description": "Enter a packname for stickers (Ex:- Queen Anya Stickers)",
+           "required": false
        },
-       'Web': {
-           'description': 'Enter your any social platform link (Ex:- https://github.com/PikaBotz)',
-           'required': false
+       "Web": {
+           "description": "Enter your any social platform link (Ex:- https://github.com/PikaBotz)",
+           "required": false
        },
-       'ThemeEmoji': {
-           'description': 'Enter a desired emoji according to your theme (Ex:- ?)',
-           'required': false
+       "ThemeEmoji": {
+           "description": "Enter a desired emoji according to your theme (Ex:- ?)",
+           "required": false
        },
-       'Warns_Limits': {
-           'description': 'Enter the limit of warns for users (Ex:- 3)',
-           'required': false
+       "Warns_Limits": {
+           "description": "Enter the limit of warns for users (Ex:- 3)",
+           "required": false
        },
-       'Welcome_Msg': {
-           'description': 'Welcome message for users in groups, $user for user, $prefix for prefix',
-           'required': false
+       "Welcome_Msg": {
+           "description": "Welcome message for users in groups, $user for user, $prefix for prefix",
+           "required": false
        },
-       'Left_Msg': {
-           'description': 'Goodbye message for users in groups, $user for user, $prefix for prefix',
-           'required': false
+       "Left_Msg": {
+           "description": "Goodbye message for users in groups, $user for user, $prefix for prefix",
+           "required": false
        }
     },
-   'formation': {
-        'web': {
-            'quantity': 2,
-            'size': 'Standard-2X'
+   "formation": {
+        "web": {
+            "quantity": 2,
+            "size": "Standard-2X"
         }
     }
 }
