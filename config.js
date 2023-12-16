@@ -133,4 +133,3 @@ global.image_3 = readFileSync("./lib/Assets/image_3.jpg") // Thumbnail for Dashb
 global.menu_pic = "https://i.ibb.co/PhDcZTM/Thumbnail.png";
 
 
-
