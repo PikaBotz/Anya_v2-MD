@@ -1,0 +1,35 @@
+{
+  "name": "broadway",
+  "description": "Lightweight application extensibility and composition with a twist of feature reflection.",
+  "author": "Nodejitsu Inc. <info@nodejitsu.com>",
+  "version": "0.3.6",
+  "maintainers": [
+    "AvianFlu <avianflu@nodejitsu.com>",
+    "indexzero <charlie@nodejitsu.com>",
+    "Marak <marak@nodejitsu.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/flatiron/broadway.git"
+  },
+  "dependencies": {
+    "cliff": "0.1.9",
+    "eventemitter2": "0.4.14",
+    "nconf": "0.6.9",
+    "winston": "0.8.0",
+    "utile": "0.2.1"
+  },
+  "devDependencies": {
+    "codesurgeon": "0.3.x",
+    "uglify-js": "1.0.6",
+    "vows": "0.7.x"
+  },
+  "scripts": {
+    "test": "vows test/**/*-test.js --spec"
+  },
+  "main": "./lib/broadway",
+  "engines": {
+    "node": ">= 0.6.4"
+  }
+}
+

@@ -1,0 +1,506 @@
+{
+  "bot": {
+    "_id": "65785e43b6b7da60c7ce66d7",
+    "version": 3,
+    "react": true,
+    "prefix": "multi",
+    "worktype": "self",
+    "chatbot": true,
+    "anticall": true,
+    "welcome": false,
+    "goodbye": false,
+    "promoteMsg": false,
+    "demoteMsg": false,
+    "enabled": true,
+    "modlist": [],
+    "autoMsgRead": true,
+    "autoTyping": true,
+    "alwaysOnline": true,
+    "autoStatusRead": true,
+    "aliveMsg": "```\n❖ ── ✦ ──『✙ Alive ✙』── ✦ ── ❖\n\n📅 Dᴀᴛᴇ Tᴏᴅᴀʏ : $date\n⌚ Tɪᴍᴇ Nᴏᴡ : $time\n\n✦» 𝚄𝚜𝚎𝚛 : $username\n✦» 𝙱𝚘𝚝 : $botname\n✦» 𝙿𝚛𝚎𝚏𝚒𝚡 : $prefix\n✦» 𝙾𝚠𝚗𝚎𝚛 : $owner\n✦» 𝙼𝚘𝚍𝚎 : $mode\n✦» 𝙿𝚕𝚞𝚐𝚒𝚗𝚜 : $plugins\n✦» 𝚄𝚜𝚎𝚛𝚜 : $users\n✦» 𝚂𝚙𝚎𝚎𝚍 : $speed ms\n✦» 𝚄𝚙𝚝𝚒𝚖𝚎 : $runtime\n✦» 𝙼𝚎𝚖 : $ram```\n\n☎️ *Cᴏɴᴛᴀᴄᴛ :* https://wa.me/916900904828?text=Owner%20of%20Queen%20Anya%20%F0%9F%A5%B5%F0%9F%8E%80%F0%9F%8E%90\n💻 *Sᴏᴜʀᴄᴇ Cᴏᴅᴇ :* https://github.com/PikaBotz/Anya_v2-MD\n🎀 *YᴏᴜTᴜʙᴇ :* https://youtube.com/@Pika_Kunn\n🔮 *Public Group :* https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX\n\n*R𝚎𝚙𝚕𝚢 A N𝚞𝚖𝚋𝚎𝚛 T𝚘 G𝚎𝚝:*\n   𝟭 𝗔𝗹𝗹𝗺𝗲𝗻𝘂\n   𝟮 𝗟𝗶𝘀𝘁𝗺𝗲𝗻𝘂\n",
+    "antiDeleteMsg": true,
+    "autoBlockPM": false,
+    "autoReactMsg": true,
+    "autoReply": true,
+    "autoReplyText": [],
+    "autoVoice": true,
+    "badWords": [
+      "vagina",
+      "dick",
+      "mdrchod",
+      "mdrchod",
+      "chutiya",
+      "lodu",
+      "whore",
+      "hore",
+      "hoe",
+      "hoes",
+      "lode",
+      "cum",
+      "idiot",
+      "bastard",
+      "cunt",
+      "butt",
+      "pussy",
+      "chut",
+      "suck",
+      "scum",
+      "scumbag",
+      "niggr",
+      "nigga",
+      "chod",
+      "bhenchod",
+      "bc",
+      "bhodike",
+      "bsdk",
+      "randi",
+      "gandu",
+      "stfu",
+      "ass",
+      "asshole",
+      "madarchod",
+      "fuck",
+      "motherfucker",
+      "mother fucker",
+      "mf",
+      "mfs",
+      "fk",
+      "fck",
+      "gand",
+      "laund",
+      "loda",
+      "gulambi"
+    ],
+    "leftMsg": null,
+    "welcomeMsg": null
+  },
+  "group": {
+    "120363186053565325@g.us": {
+      "_id": "65786283670f5b5306a42bc9",
+      "id": "120363186053565325@g.us",
+      "version": 1,
+      "enabled": false,
+      "nsfw": false,
+      "ban": false,
+      "antilink": false,
+      "antitoxic": false,
+      "antipicture": false,
+      "antivideo": false
+    },
+    "120363026393635831@g.us": {
+      "_id": "6578678e233af2a945ef855e",
+      "id": "120363026393635831@g.us",
+      "version": 1,
+      "enabled": false,
+      "nsfw": false,
+      "ban": false,
+      "antilink": false,
+      "antitoxic": false,
+      "antipicture": false,
+      "antivideo": false
+    },
+    "120363044685249081@g.us": {
+      "_id": "6579d9751e86c8455c88c8ae",
+      "id": "120363044685249081@g.us",
+      "version": 2,
+      "enabled": true,
+      "nsfw": false,
+      "ban": false,
+      "antilink": false,
+      "antitoxic": false,
+      "antipicture": false,
+      "antivideo": false,
+      "antiBot": false,
+      "antiFake": [],
+      "antiNsfwImg": false
+    },
+    "120363052228427134@g.us": {
+      "_id": "657a9bca75f553da6de46ec9",
+      "id": "120363052228427134@g.us",
+      "version": 1,
+      "enabled": false,
+      "nsfw": false,
+      "ban": false,
+      "antilink": false,
+      "antitoxic": false,
+      "antipicture": false,
+      "antivideo": false
+    },
+    "120363040533431344@g.us": {
+      "_id": "657accd775f553da6de46ece",
+      "id": "120363040533431344@g.us",
+      "version": 1,
+      "enabled": false,
+      "nsfw": false,
+      "ban": false,
+      "antilink": false,
+      "antitoxic": false,
+      "antipicture": false,
+      "antivideo": false
+    },
+    "120363207784178116@g.us": {
+      "_id": "657b545d75f553da6de46edc",
+      "id": "120363207784178116@g.us",
+      "version": 1,
+      "enabled": true,
+      "nsfw": true,
+      "ban": false,
+      "antilink": false,
+      "antitoxic": false,
+      "antipicture": false,
+      "antivideo": false
+    }
+  },
+  "user": {
+    "918811074852": {
+      "_id": "65786282670f5b5306a42bc8",
+      "id": "918811074852",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "212700554835": {
+      "_id": "65786283670f5b5306a42bca",
+      "id": "212700554835",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "919685736029": {
+      "_id": "65786284670f5b5306a42bcb",
+      "id": "919685736029",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "916900904828": {
+      "_id": "657863b538a1eab165e97ff8",
+      "id": "916900904828",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "918697988808": {
+      "_id": "657866e079707e101087de5d",
+      "id": "918697988808",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "994401526536": {
+      "_id": "657868268968ef0024a97c2b",
+      "id": "994401526536",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "94775341543": {
+      "_id": "657868278968ef0024a97c2c",
+      "id": "94775341543",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "17273699250": {
+      "_id": "65786870f8815d708d3fe369",
+      "id": "17273699250",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "17182894019": {
+      "_id": "65786879f8815d708d3fe36a",
+      "id": "17182894019",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "254750338174": {
+      "_id": "6578687af8815d708d3fe36b",
+      "id": "254750338174",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "2349128308194": {
+      "_id": "65786931f8815d708d3fe36c",
+      "id": "2349128308194",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "919311520785": {
+      "_id": "65786a4ff8815d708d3fe36d",
+      "id": "919311520785",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "256785033046": {
+      "_id": "65795b5abacecf58069b7cce",
+      "id": "256785033046",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "265884324460": {
+      "_id": "65795b5abacecf58069b7ccf",
+      "id": "265884324460",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "17792326872": {
+      "_id": "65795b60bacecf58069b7cd0",
+      "id": "17792326872",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "2348104531844": {
+      "_id": "6579d27120106e63eed9ccc0",
+      "id": "2348104531844",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "263714406565": {
+      "_id": "6579df5aa0995b072640f741",
+      "id": "263714406565",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "918272976020": {
+      "_id": "6579e952951b31b2e686a2f9",
+      "id": "918272976020",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "2347069932639": {
+      "_id": "657a1d1ece0842f8644373b7",
+      "id": "2347069932639",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "27685463261": {
+      "_id": "657a22d8ce0842f8644373b8",
+      "id": "27685463261",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "918279975767": {
+      "_id": "657a5bf2a298279a639faf68",
+      "id": "918279975767",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "919961450351": {
+      "_id": "657a9cc375f553da6de46eca",
+      "id": "919961450351",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "2348121373516": {
+      "_id": "657a9d1975f553da6de46ecb",
+      "id": "2348121373516",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "77017605242950": {
+      "_id": "657a9da775f553da6de46ecc",
+      "id": "77017605242950",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "94723795423": {
+      "_id": "657accd675f553da6de46ecd",
+      "id": "94723795423",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "256707677501": {
+      "_id": "657accdb75f553da6de46ecf",
+      "id": "256707677501",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "2349064620494": {
+      "_id": "657accdc75f553da6de46ed0",
+      "id": "2349064620494",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "254793651678": {
+      "_id": "657acce375f553da6de46ed1",
+      "id": "254793651678",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "2349030767639": {
+      "_id": "657ad5f475f553da6de46ed2",
+      "id": "2349030767639",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "919123737179": {
+      "_id": "657ad61075f553da6de46ed3",
+      "id": "919123737179",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "923278974102": {
+      "_id": "657ad8d075f553da6de46ed4",
+      "id": "923278974102",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "254722695736": {
+      "_id": "657adcc075f553da6de46ed5",
+      "id": "254722695736",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "212645483135": {
+      "_id": "657af2c375f553da6de46ed6",
+      "id": "212645483135",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "15412050506": {
+      "_id": "657af38375f553da6de46ed7",
+      "id": "15412050506",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "919707905478": {
+      "_id": "657b022275f553da6de46ed8",
+      "id": "919707905478",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "6288242669184": {
+      "_id": "657b046e75f553da6de46ed9",
+      "id": "6288242669184",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "94716088983": {
+      "_id": "657b047875f553da6de46eda",
+      "id": "94716088983",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "2349021118497": {
+      "_id": "657b48fb75f553da6de46edb",
+      "id": "2349021118497",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "2348115336615": {
+      "_id": "657b58b375f553da6de46edd",
+      "id": "2348115336615",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "923206644058": {
+      "_id": "657b58b775f553da6de46ede",
+      "id": "923206644058",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "12028464509": {
+      "_id": "657b67c575f553da6de46edf",
+      "id": "12028464509",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "994406331327": {
+      "_id": "657b70cc75f553da6de46ee0",
+      "id": "994406331327",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "919088043981": {
+      "_id": "657bd6bc75f553da6de46ee1",
+      "id": "919088043981",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "923264700120": {
+      "_id": "657bd78575f553da6de46ee2",
+      "id": "923264700120",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "994404721595": {
+      "_id": "657ea8ba3f646290943e673b",
+      "id": "994404721595",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "13156336756": {
+      "_id": "657eb28ee3ec2f341c71ba99",
+      "id": "13156336756",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "917439317360": {
+      "_id": "657f0e899ddf28519427283a",
+      "id": "917439317360",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "923033195181": {
+      "_id": "657f1eb8568dd31570e1af60",
+      "id": "923033195181",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "918474037624": {
+      "_id": "657f207d568dd31570e1af61",
+      "id": "918474037624",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    },
+    "212697300798": {
+      "_id": "657f44336d74ddea25f22d97",
+      "id": "212697300798",
+      "version": 1,
+      "ban": false,
+      "warn": 0
+    }
+  }
+}
