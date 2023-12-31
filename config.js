@@ -63,7 +63,7 @@ global.message = {
 },
 
 module.exports = {
-  botname: process.env.BotName || "Queen Anya", 
+  botname: process.env.BotName || ", 
   author: process.env.Author || "@PikaBotz",
   packname: process.env.PackName || "Queen Anya v2 MD",
   socialLink: process.env.Web || "https://github.com/PikaBotz",
