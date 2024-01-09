@@ -108,17 +108,17 @@ module.exports = {
 // Ignore them 👇🏻
 global.botname = process.env.BotName || "B.a.m.b.i.n.o" 
 global.author = process.env.Author || "@Pimrane" 
-global.packname = process.env.PackName || "Queen Anya v2 MD" 
+global.packname = process.env.PackName || "b.a.m.b.i.n.o v2 MD" 
 global.myweb = process.env.Web || "https://github.com/oisaimrane" 
 global.footer = process.env.Footer || "© 3chir bambino Bot" 
 global.prefa = process.env.Prefix || ['-'] 
 global.themeemoji = process.env.ThemeEmoji || "🎐" 
-global.ownername = process.env.Owner_Name || "bambino~Kun" 
+global.ownername = process.env.Owner_Name || "bambino(imrane)" 
 global.ownernumber = process.env.Owner_Number || "212709302586" 
 global.adress = process.env.Continent || "Asia, India, Assam" 
 global.timezone = process.env.TimeZone || "Asia/Kolkata" 
 global.instagramId = process.env.Insta || "8.08_only_mine" 
-global.email = process.env.Email_Id || "example@example.com" 
+global.email = process.env.Email_Id || "oisaimrane@gmail.com" 
   
 //--------------- Tip ----------------\\
 global.Tips = [
