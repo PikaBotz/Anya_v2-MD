@@ -48,13 +48,13 @@ let badWords = [
   "gulambi"];
 
 global.message = {
-    success: "✅ 𝚂𝚞𝚌𝚌𝚎𝚜𝚜! 𝙾𝚙𝚛𝚊𝚝𝚒𝚘𝚗 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍.",
-    admin: "*👤 A𝙳𝙼𝙸𝙽 N𝙴𝙴𝙳𝙴𝙳!*\n\n- Dear, this command is only for Admins. You have to be a admin in this group to use this command.",
-    botAdmin: "*🤖 B𝙾𝚃 A𝙳𝙼𝙸𝙽 N𝙴𝙴𝙳𝙴𝙳!*\n\n- I'm not an Admin, so I can't execute this command in this group. Please make me an Admin.",
-    owner: "*👑 O𝚆𝙽𝙴𝚁 N𝙴𝙴𝙴𝙳𝙴𝙳!*\n\n- Bruh, this command is only made for this bot's owner. So you can't use this command.",
+    success: "✅ 𝚂𝚞𝚌𝚌𝚎𝚜𝚜!bss7tk.",
+    admin: "*👤 A𝙳𝙼𝙸𝙽 N𝙴𝙴𝙳𝙴𝙳!*\n\n- Dear, this command is only for Admins.wa 5ask admin al7mar.",
+    botAdmin: "*🤖 B𝙾𝚃 A𝙳𝙼𝙸𝙽 N𝙴𝙴𝙳𝙴𝙳!*\n\n- I'm not an Admin, ra wlh ma admin ana. gol ladmin y3tik add wana m3ak.",
+    owner: "*👑 O𝚆𝙽𝙴𝚁 N𝙴𝙴𝙴𝙳𝙴𝙳!*\n\n- Bruh, lbot mchi dylk sir lhih obki. mt9dch t5dm hadi.",
     group: "*👥 G𝚛𝚘𝚞𝚙 N𝚎𝚎𝚍𝚎𝚍!*\n\n- This command can only be executed in a group chat.",
     private: 'This command is only for private chats.',
-    wait: '🔄 Processing request...',
+    wait: '🔄 sbr m3a krk...',
     link: 'I need a link to process this command.',
     error: "❌ Oops! An error occurred while processing your request. Please try again later.",
     ban: `You're banned from using this bot!`,
