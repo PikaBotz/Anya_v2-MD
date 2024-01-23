@@ -2,14 +2,14 @@
     <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
 </p>
 
-<h1 align="center">Anya_v2 - MultiDevice</h1>
+<h1 align="center">Sk Hindu_🚩- MultiDevice</h1>
 
 <p align="center">
   <a href="https://github.com/PikaBotz"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Queen+Anya+v2+MultiDevice;New+Plugin+Base+Modification;Developed+by+Pika~Kun;Give+star+and+forks+this+Repo+🌟" alt="AnyaReadme"></a>
 </p>
 
 <p align="center">
-    <a href="#"><img title="Anya_v2-MD" src="https://img.shields.io/badge/WhatsApp%20BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+    <a href="#"><img ❣️title="Anya_v2-MD" src="https://img.shields.io/badge/WhatsApp%20BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -26,7 +26,7 @@
 
 ## Table of Contents
 - [Tap Here For Help ⛩️](#tap-here-for-help-️)
-- [Scan QR Here](https://anya-qr-teamolduser.koyeb.app/)
+- [Scan QR Number ](https://anya-qr-teamolduser.koyeb.app/)
 - [Deploy On Railway](#deploy-on-railway)
 - [Deploy On Replit](#deploy-on-replit)
 - [Deploy On Heroku](#deploy-on-heroku)
@@ -38,7 +38,8 @@
 
 - [Contact me on WhatsApp Messenger 🎐](https://wa.me/918811074852?text=Hello%20Pika~Kun%20sir...%20I%20need%20some%20help%20in%20Anya%20v2)
 
-- My email address: [alammdarif07@gmail.com](mailto:alammdarif07@gmail.com) 🎐
+- Jai shree raam 🚩🎐
+  🧡सीता राम 🙏🏼🚩
 
 ---
 
@@ -54,7 +55,7 @@
 
 ---
 
-## Deploy On Replit
+## 🚩Deploy On Replit
 
 [![Run on Repl.it](https://repl.it/badge/github/PikaBotz/Anya_v2-MD)](https://repl.it/github/PikaBotz/Anya_v2-MD)
 
@@ -74,6 +75,11 @@
 
 ---
 
-## Thanks to ✨
-- [OldUser](https://github.com/Teamolduser) - ✅ For web and modules compatibility
-- [AdirajShing](https://github.com/adiwajshing/Baileys) - ✅ For a huge library
+## Thanks to 🕉️
+ For a huge library
+ ~*🖤𝗥𝗔𝗗𝗛𝗔  𝗞𝗥𝗜𝗦𝗛𝗡𝗔🦋*~
+ -SITA RAAM--🚩(🧡)
+ SK KATTAR HINDU 🧡(🚩)
+ BHAGWA LOVER🚩(⚔️)
+ 🔱__महाकाल__🕉️__का__🌎__दिवाना__☘️❤‍🩹💥
+sk WhatsApp king (+917408210801)
