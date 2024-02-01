@@ -54,6 +54,7 @@
     "human-readable": "^0.2.1",
     "jimp": "^0.3.5 || ^0.16.2",
     "jsdom": "^16.4.0",
+    "megajs": "latest",
     "moment-timezone": "^0.5.34",
     "mongoose": "^6.10.0",
     "node-fetch": "^2.6.7",

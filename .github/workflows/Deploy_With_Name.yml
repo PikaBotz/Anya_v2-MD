@@ -1,0 +1,32 @@
+name: Deploy_With_Name
+
+on:
+  workflow_dispatch:
+    inputs:
+      increment:
+        type: string
+        description: "Get Name From Create App Workflow"
+        required: true
+        default: ""
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          npm install --global heroku
+          yarn global add heroku
+      - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
+        with:
+          heroku_api_key: "HEROKU_API_KEY"
+          heroku_app_name: "${{ github.event.inputs.increment }}" #Must be unique in Heroku
+          heroku_email: "YOUR EMAIL"
+          stack: "container"
+          usedocker: true
+          procfile: "web: yarn start"
+          branch: "web"
+      - name: Deploy to Heroku
+        run: |
+          heroku open -a "${{ github.event.inputs.increment }}"
