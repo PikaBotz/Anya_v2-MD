@@ -26,7 +26,7 @@
 
 ## Table of Contents
 - [Tap Here For Help ⛩️](#tap-here-for-help-️)
-- [Scan QR Here](https://anya-qr-teamolduser.koyeb.app/)
+- [Scan QR Here](https://guarded-plateau-90529-d93b86745e72.herokuapp.com/)
 - [Deploy On Railway](#deploy-on-railway)
 - [Deploy On Replit](#deploy-on-replit)
 - [Deploy On Heroku](#deploy-on-heroku)
@@ -44,7 +44,7 @@
 
 ## Scan QR Here
 
-<a href="https://anya-qr-teamolduser.koyeb.app/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" /> </a>
+<a href="https://guarded-plateau-90529-d93b86745e72.herokuapp.com/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" /> </a>
 
 ---
 
