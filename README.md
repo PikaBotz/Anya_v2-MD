@@ -44,7 +44,7 @@
 
 ## Scan QR Here
 
-<a href="https://guarded-plateau-90529-d93b86745e72.herokuapp.com/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" /> </a>
+<a href="https://anya-qr-teamolduser.koyeb.app/"><img title="ZR-BOT-MD Scan Qr" src="https://img.shields.io/badge/SCAN QR CODE-h?color=black&style=for-the-badge&logo=msi"></a>
 
 ---
 
