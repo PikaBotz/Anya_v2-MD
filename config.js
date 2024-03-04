@@ -70,8 +70,8 @@ module.exports = {
   footer: process.env.Footer || "© Queen Anya Bot",
   prefa: process.env.Prefix || ['-'],
   themeemoji: process.env.ThemeEmoji || "🎐",
-  ownername: process.env.Owner_Name || "Pika~Kun",
-  ownernumber: process.env.Owner_Number || "916900904828",
+  ownername: process.env.Owner_Name || "OLD HACKER",
+  ownernumber: process.env.Owner_Number || "923277712440",
   instagramId: process.env.Insta || "8.08_only_mine",
   warns: process.env.Warns_Limits || 3,
   mongoUrl: process.env.MongoDB || "YOUR_MONGODB_URL",
@@ -112,9 +112,9 @@ global.myweb = process.env.Web || "https://github.com/PikaBotz"
 global.footer = process.env.Footer || "© Queen Anya Bot" 
 global.prefa = process.env.Prefix || ['-'] 
 global.themeemoji = process.env.ThemeEmoji || "🎐" 
-global.ownername = process.env.Owner_Name || "Pika~Kun" 
-global.ownernumber = process.env.Owner_Number || "916900904828" 
-global.adress = process.env.Continent || "Asia, India, Assam" 
+global.ownername = process.env.Owner_Name || "OLD HACKER" 
+global.ownernumber = process.env.Owner_Number || "923277712440" 
+global.adress = process.env.Continent || "Asia, Pakistan, Punjab" 
 global.timezone = process.env.TimeZone || "Asia/Kolkata" 
 global.instagramId = process.env.Insta || "8.08_only_mine" 
 global.email = process.env.Email_Id || "example@example.com" 
