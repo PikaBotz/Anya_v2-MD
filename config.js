@@ -62,7 +62,7 @@ global.message = {
     banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
 },
 
-module.exports = {
+module.exports = {+94788457326
   botname: process.env.BotName || "Queen Anya", 
   author: process.env.Author || "@PikaBotz",
   packname: process.env.PackName || "Queen Anya v2 MD",
@@ -106,13 +106,13 @@ module.exports = {
 
 // Ignore them 👇🏻
 global.botname = process.env.BotName || "Queen Anya" 
-global.author = process.env.Author || "@PikaBotz" 
+global.author = process.env.Author || "@shanu_x" 
 global.packname = process.env.PackName || "Queen Anya v2 MD" 
 global.myweb = process.env.Web || "https://github.com/PikaBotz" 
 global.footer = process.env.Footer || "© Queen Anya Bot" 
 global.prefa = process.env.Prefix || ['-'] 
 global.themeemoji = process.env.ThemeEmoji || "🎐" 
-global.ownername = process.env.Owner_Name || "Pika~Kun" 
+global.ownername = process.env.Owner_Name || "shanu_x" 
 global.ownernumber = process.env.Owner_Number || "916900904828" 
 global.adress = process.env.Continent || "Asia, India, Assam" 
 global.timezone = process.env.TimeZone || "Asia/Kolkata" 
