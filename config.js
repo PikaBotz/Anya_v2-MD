@@ -80,11 +80,11 @@ module.exports = {
   promote: process.env.Promote_Msg || '*@$user* has been promoted as an admin in this group.\n\n_$prefix promotem off to disable this message._',
   demote: process.env.Demote_Msg || '*@$user* has been demoted to a member in this group.\n\n_$prefix demotem off to disable this message._',
   sessionId: process.env.SESSION_ID || "YOUR_SESSION_ID", 
-  image_1: readFileSync('./lib/Assets/image_1.jpg'), // Thumbnail for allmenu command
-  image_2: readFileSync('./lib/Assets/image_2.jpg'), // null image
-  image_3: readFileSync("./lib/Assets/image_3.jpg"), // Thumbnail for Dashboard
-  aliveMedia: readFileSync("./lib/Assets/aliveMedia.mp4"),
-  menuMedia: readFileSync('./lib/Assets/menuMedia.mp4'),
+  image_1: readFileSync('./lib/Assets/Jolt.jpg'), // Thumbnail for allmenu command
+  image_2: readFileSync('./lib/Assets/Jolt2.jpg'), // null image
+  image_3: readFileSync("./lib/Assets/Jolt4.jpg"), // Thumbnail for Dashboard
+  aliveMedia: readFileSync("./lib/Assets/Joltvid.mov"),
+  menuMedia: readFileSync('./lib/Assets/Joltvid2.mov'),
   badWords: badWords,
   message: {
     success: message.success,
@@ -127,8 +127,8 @@ global.Tips = [
 ]
 
 //--------------- Menu images ----------------\\
-global.image_1 = readFileSync('./lib/Assets/image_1.jpg') // Thumbnail for allmenu command
-global.image_2 = readFileSync('./lib/Assets/image_2.jpg') // null image
-global.image_3 = readFileSync("./lib/Assets/image_3.jpg") // Thumbnail for Dashboard
-global.menu_pic = "https://i.ibb.co/PhDcZTM/Thumbnail.png";
+global.image_1 = readFileSync('./lib/Assets/Jolt.jpg') // Thumbnail for allmenu command
+global.image_2 = readFileSync('./lib/Assets/Jolt2.jpg') // null image
+global.image_3 = readFileSync("./lib/Assets/Jolt4.jpg") // Thumbnail for Dashboard
+global.menu_pic = "https://i.imgur.com/Y3Bzgd4.jpg";
 
