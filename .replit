@@ -1,12 +1,2 @@
-entrypoint = "index.js"
-modules = ["nodejs-18:v3-20230608-f4cd419"]
-hidden = [".config", "yarn.lock"]
-run = "bash start.sh"
-
-[nix]
-channel = "stable-23_05"
-
-[deployment]
-run = ["node", "index.js"]
-deploymentTarget = "cloudrun"
-ignorePorts = false
+run = "yarn && npm i pm2 --location=global && pm2 start index.js --deep-monitoring --attach --name anya"
+start = "pm2 start index.js --deep-monitoring --attach --name anya"
