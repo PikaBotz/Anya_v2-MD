@@ -19,14 +19,12 @@
 *.tar.gz
 *.rar
 
+node_modules
+lib/database/store.json
+lib/database/sessions/*.json
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-node_modules
-node_modules*
-node_module*
 u.sh
-u.*
-u.sh*
-*.bak
-*bak
+
