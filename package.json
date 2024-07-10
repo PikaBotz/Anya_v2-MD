@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "starts": "bash start.sh",
-    "start": "node index.js"
+    "start": "pm2 start index.js --deep-monitoring --attach --name anya",
+    "stop": "pm2 stop anya"
   },
   "keywords": [
     "termux",
