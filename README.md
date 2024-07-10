@@ -42,9 +42,11 @@
 
 ---
 
-## Scan QR Here
+## `Scan Qr or Pair Code`
 
-<a href="https://guarded-plateau-90529-d93b86745e72.herokuapp.com/"><img src="./AnyaPikaMedia/HomeScreen/AnyaQRscan.png" align="center" width="90" /> </a>
+<a href="https://anya-session.olduser.me/choose.html">
+    <img src="https://i.ibb.co/NpVH2bF/Anya-QRscan.png" alt="Qr And Pair Code" width="150" height="150">
+</a>
 
 ---
 
