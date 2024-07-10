@@ -20,7 +20,7 @@
 
 ## **IMPORTANT**
 
-> **Warning**: This script is not for trading without permission.
+> **Warning**: This script is not for trading or decryption, if anyhow i find you I'll sue you..!
 
 ---
 
