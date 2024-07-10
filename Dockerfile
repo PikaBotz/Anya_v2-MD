@@ -1,15 +1,8 @@
 FROM node:14
 
-# Create app directory
-WORKDIR /usr/src/app
-
-# Install app dependencies
-COPY package*.json ./
-
+RUN git clone https://github.com/PikaBotz /root/PikaBotz
+WORKDIR /root/PikaBotz/
+RUN npm install npm@latest
 RUN npm install
-
-# Bundle app source
-COPY . .
-
-EXPOSE 8080
-CMD [ "node", "index.js" ]
+EXPOSE 8000
+CMD ["npm", "start"]
