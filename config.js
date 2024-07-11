@@ -26,8 +26,8 @@ module.exports = {
     groupLink: process.env.GcLink || "https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX",
     warns: Number(process.env.Warn_Limits) || 3,
     cooldown: 5, // default cooldown time per command in seconds
-    mongoUrl: process.env.MongoDB || "mongodb+srv://pikabotzz:3.69_pika@atlascluster.ytjwnhy.mongodb.net/?retryWrites=true&w=majority",
-    sessionId: process.env.SESSION_ID || "N0JJRkNJU_Queen-Anya_kkjMlVWNXRsSDRoTldSS0lnbG51U_Queen-Anya_TF4MGFzVGxjZS1YeWpON2EwVGJxaU_Queen-Anya_50WQ==",
+    mongoUrl: process.env.MongoDB || "YOUR_MONGODB_URL",
+    sessionId: process.env.SESSION_ID || "YOUR_SESSION_ID",
 
     /**
      * thumbnails and medias
