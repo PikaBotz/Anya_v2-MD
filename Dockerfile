@@ -1,7 +1,8 @@
 FROM node:14
 
-RUN git clone https://github.com/PikaBotz/Anya_v2-MD /root/PikaBotz
-WORKDIR /root/PikaBotz/
+COPY . /root/Anyav2
+WORKDIR /root/Anyav2
+RUN apt install ffmpeg
 RUN npm install npm@latest
 RUN npm install
 EXPOSE 8000
