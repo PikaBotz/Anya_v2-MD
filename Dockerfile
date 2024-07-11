@@ -1,9 +1,12 @@
-FROM node:14
+FROM node:latest
 
 COPY . /root/Anyav2
 WORKDIR /root/Anyav2
-RUN apt install ffmpeg
+
+RUN apt-get update && apt-get install -y ffmpeg
+
 RUN npm install npm@latest
 RUN npm install
-EXPOSE 8000
-CMD ["npm", "start"]
+
+# Specify the command to run your application
+CMD ["node", "index.js"]
