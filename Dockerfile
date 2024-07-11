@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:18
 
 COPY . /root/Anyav2
 WORKDIR /root/Anyav2
