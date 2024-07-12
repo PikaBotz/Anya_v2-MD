@@ -8,74 +8,29 @@
   <a href="https://github.com/PikaBotz"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Queen+Anya+v2+MultiDevice;New+Plugin+Base+Modification;Developed+by+Pika~Kun;Give+star+and+forks+this+Repo+🌟" alt="AnyaReadme"></a>
 </p>
 
-<p align="center">
-    <a href="#"><img title="Anya_v2-MD" src="https://img.shields.io/badge/WhatsApp%20BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
-</p>
+---
 
-<p align="center">
-    <a href="https://github.com/PikaBotz"><img title="Author" src="https://img.shields.io/badge/AUTHOR-PikaBotz-green.svg?style=for-the-badge&logo=github"></a>
-</p>
+<p align="center"><img src="https://moe-counter.glitch.me/get/@Anya_v2-Md?theme=gelbooru" alt="Anya_v2_Visits_Counter" /></p>
+
+##
+## `How To Deploy?`
+  1. Fork the `Repo`.
+     - ***([`Tap Here To Fork`](https://github.com/PikaBotz/Anya_v2-MD/fork))***
+
+##
+
+  2. Get a `SESSION_ID` by scanning QR code or using pair code.
+     - ***([`Tap Here For Session Id`](https://anya-session.olduser.me/choose.html))***
+     - ***([`Tap Here For Tutorial`](https://example.com))***
+
+##
+  3. Get a `MONGODB_URL` from mongodb website.
+     - ***([`Tap Here For Url`](https://www.mongodb.com/cloud/atlas/register))***
+     - ***([`Tap Here For Tutorial`](https://example.com))***
 
 ---
 
-## **IMPORTANT**
-
-> **Warning**: This script is not for trading or decryption, if anyhow i find you I'll sue you..!
-
----
-
-## Table of Contents
-- [Tap Here For Help ⛩️](#tap-here-for-help-️)
-- [Scan QR Here](https://guarded-plateau-90529-d93b86745e72.herokuapp.com/)
-- [Deploy On Railway](#deploy-on-railway)
-- [Deploy On Replit](#deploy-on-replit)
-- [Deploy On Heroku](#deploy-on-heroku)
-- [Terms & Conditions](#terms--conditions)
-- [Thanks to ✨](#thanks-to-)
----
-
-## Tap Here For Help ⛩️
-
-- [Contact me on WhatsApp Messenger 🎐](https://wa.me/918811074852?text=Hello%20Pika~Kun%20sir...%20I%20need%20some%20help%20in%20Anya%20v2)
-
-- My email address: [alammdarif07@gmail.com](mailto:alammdarif07@gmail.com) 🎐
-
----
-
-## `Scan Qr or Pair Code`
-
-<a href="https://anya-session.olduser.me/choose.html">
-    <img src="https://i.ibb.co/NpVH2bF/Anya-QRscan.png" alt="Qr And Pair Code" width="150" height="150">
-</a>
-
----
-
-## Deploy On Railway
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
-
----
-
-## Deploy On Replit
-
-[![Run on Repl.it](https://repl.it/badge/github/PikaBotz/Anya_v2-MD)](https://repl.it/github/PikaBotz/Anya_v2-MD)
-
----
-
-## Deploy On Heroku
-
-[Deploy on Heroku](https://heroku.deploy.queenanya.work.gd/)
-
----
-
-## Terms & Conditions
-1. This repository is not for sale or trade.
-2. Don't forget to give this repository a ⭐️ star.
-3. This script is not made for illegal purposes.
-4. If you have a problem, [contact me](https://wa.me/918811074852?text=Hello%20*master%20Pika~Kun*%20sir...%20I%20need%20some%20help%20in%20Anya%20v2...%20🥲) for help.
-
----
-
-## Thanks to ✨
-- [OldUser](https://github.com/Teamolduser) - ✅ For web and modules compatibility
-- [AdirajShing](https://github.com/adiwajshing/Baileys) - ✅ For a huge library
+### `Where To Deploy? (Choose One)`
+##
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?repository=https://github.com/PikaBotz/Anya_v2-MD&branch=main&env=BotName=Queen%20Anya%20Bot,Footer=©%20Queen%20Anya%20Bot,Prefix=-,ThemeEmoji=🎐,Owner_Name=Pika~Kun,Owner_Number=,Insta=3.69_pika,Author=@PikaBotz,PackName=Queen%20Anya%20v2%20MD,Web=https://github.com/PikaBotz,GcLink=https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX,Warn_Limits=3,Cooldown_Timer_Seconds=5,MongoDB=YOUR_MONGODB_URL,SESSION_ID=YOUR_SESSION_ID)
+[`Tap Here For Koyeb Tutorial`](https://example.com)
