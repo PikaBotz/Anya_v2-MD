@@ -76,6 +76,8 @@
 ### `Need Support?` ***Join support group..!***
    - [Tap Here To Join Support Group](https://chat.whatsapp.com/KLDmXeCVKtf2gjokVkFSw9)
 
+##
+
 ### `Social Media Handles:`
    - [Github Profile](https://github.com/PikaBotz)
    - [Repository](https://github.com/PikaBotz/Anya_v2-MD)
@@ -83,5 +85,7 @@
    - [WhatsApp Channel](https://whatsapp.com/channel/0029VaDIPkA6buMS9hRE7y2G)
    - [YouTube](https://youtube.com/@pika_kunn)
 
-## `License:`
-This repository is licensed under [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+##
+
+### `License:`
+This repository is [licensed](https://github.com/Fake-404/Anya_v2-MD/blob/master/LICENCE) under [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
