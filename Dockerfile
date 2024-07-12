@@ -8,8 +8,6 @@ RUN apt-get update && apt-get install -y ffmpeg
 RUN npm install npm@latest
 RUN npm install
 
-COPY .env .env
-
 EXPOSE 8080
 
 # Specify the command to run your application
