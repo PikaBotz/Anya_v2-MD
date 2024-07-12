@@ -34,7 +34,7 @@
 
 ##
 
-1. [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?repository=https://github.com/PikaBotz/Anya_v2-MD&branch=main&env=BotName=Queen%20Anya%20Bot,Footer=©%20Queen%20Anya%20Bot,Prefix=-,ThemeEmoji=🎐,Owner_Name=Pika~Kun,Owner_Number=,Insta=3.69_pika,Author=@PikaBotz,PackName=Queen%20Anya%20v2%20MD,Web=https://github.com/PikaBotz,GcLink=https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX,Warn_Limits=3,Cooldown_Timer_Seconds=5,MongoDB=YOUR_MONGODB_URL,SESSION_ID=YOUR_SESSION_ID)
+1. [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?repository=https://github.com/Fake-404/Anya_v2-MD&branch=main&env=BotName=Queen%20Anya%20Bot,Footer=©%20Queen%20Anya%20Bot,Prefix=-,ThemeEmoji=🎐,Owner_Name=Pika~Kun,Owner_Number=,Insta=3.69_pika,Author=@PikaBotz,PackName=Queen%20Anya%20v2%20MD,Web=https://github.com/PikaBotz,GcLink=https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX,Warn_Limits=3,Cooldown_Timer_Seconds=5,MongoDB=YOUR_MONGODB_URL,SESSION_ID=YOUR_SESSION_ID)
 
 
 ***<p align="center"> After clicking the button, you'll be redirected to the `Koyeb deployment page`. Please set the following environment variables: </p>***
