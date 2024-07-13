@@ -57,5 +57,8 @@ module.exports = {
         ban: `You're banned from using this bot!`,
         nsfw: 'This group is not *NSFW* enabled.',
         banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
+    },
+    api: {
+        guru: "https://www.guruapi.tech" // Guru's API
     }
 }
