@@ -39,7 +39,7 @@
 ***<p align="left"> • [`Tap here for Koyeb tutorial`](https://example.com) </p>***
 
 <details>
-  <summary>Click please click here for more assist</summary>
+  <summary>Click please click here for more assist.</summary>
 
    ***<p align="center"> • After clicking the button, you'll be redirected to the `Koyeb deployment page`. Please set the following environment variables like examples: </p>***
     
@@ -75,7 +75,7 @@
 ***<p align="left"> • [`Tap here for Heroku tutorial`](https://example.com) </p>***
 
 <details>
-  <summary>Click please click here for more assist</summary>
+  <summary>Click please click here for more assist.</summary>
 
    ***<p align="center"> • After clicking the button, you'll be redirected to the `Heroku deployment page`. Please set the following environment variables like example: </p>***
     
