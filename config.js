@@ -58,6 +58,10 @@ module.exports = {
         nsfw: 'This group is not *NSFW* enabled.',
         banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
     },
+
+    /**
+     * external APIs
+     */
     api: {
         api1: "https://www.guruapi.tech" // Guru's API
     }
