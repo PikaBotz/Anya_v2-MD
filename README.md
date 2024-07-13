@@ -73,18 +73,36 @@
 ---
 
 ### `Need Support?` ***Join support group..!***
-   - [Tap Here To Join Support Group](https://chat.whatsapp.com/KLDmXeCVKtf2gjokVkFSw9)
 
+   - [![Support Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/KLDmXeCVKtf2gjokVkFSw9)
 ##
 
 ### `Social Media Handles:`
-   - [Github Profile](https://github.com/PikaBotz)
-   - [Repository](https://github.com/PikaBotz/Anya_v2-MD)
-   - [WhatsApp Group](https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX)
-   - [WhatsApp Channel](https://whatsapp.com/channel/0029VaDIPkA6buMS9hRE7y2G)
-   - [YouTube](https://youtube.com/@pika_kunn)
+   - [![Github Profile](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PikaBotz) ***(profile)***
+   - [![Repository](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PikaBotz/Anya_v2-MD) ***(repository)***
+   - [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX) ***(group)***
+   - [![WhatsApp Channel](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029VaDIPkA6buMS9hRE7y2G) ***(channel)***
+   - [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@pika_kunn)
+   - [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/3.69_pika)
 
 ##
 
 ### `License:`
-This repository is [licensed](https://github.com/Fake-404/Anya_v2-MD/blob/master/LICENCE) under [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+This project is licensed under the [`MIT License`](LICENSE).
+
+Feel free to star ⭐ and fork 🍴 this repository to show your support!
+
+##
+
+### `Repository Details:`
+
+<div align="center">
+    
+| Owner 👤             | Repo 🤖              | Forks 🍽️             | Stars 🌟            | Language 🗣️        | Licence 🪪 | Version 💻
+|----------------------|----------------------|----------------------|---------------------|---------------------|---------------------|---------------------
+|                      |                      | [![GitHub forks](https://img.shields.io/github/forks/PikaBotz/anya_v2-md.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/PikaBotz/anya_v2-md/) | [![GitHub stars](https://img.shields.io/github/stars/PikaBotz/anya_v2-md.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/PikaBotz/anya_v2-md/stargazers/) | ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) | [![GitHub license](https://img.shields.io/github/license/PikaBotz/anya_v2-md.svg)](https://github.com/PikaBotz/anya_v2-md/blob/master/LICENSE) | [![GitHub release](https://img.shields.io/github/release/PikaBotz/Anya_v2-Md.svg)](https://GitHub.com/PikaBotz/Anya_v2-MD/releases/)
+
+[![Contributors over time](https://contributor-graph-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=PikaBotz/Anya_v2-MD)](https://www.apiseven.com/en/contributor-graph?chart=contributorOverTime&repo=PikaBotz/Anya_v2-MD)
+
+</div>
