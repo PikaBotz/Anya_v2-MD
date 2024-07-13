@@ -37,8 +37,12 @@
 1. [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/Fake-404/Anya_v2-MD&branch=master&builder=dockerfile&region=fra&name=queen-anya-md&service_type=web&env[BotName]=Queen%20Anya%20Bot&env[Footer]=©%20Queen%20Anya%20Bot&env[Prefix]=-&env[ThemeEmoji]=🎐&env[Owner_Name]=Pika~Kun&env[Owner_Number]=91881107xxxx&env[Insta]=3.69_pika&env[Author]=PikaBotz&env[PackName]=Queen%20Anya%20v2%20MD&env[Web]=https://github.com/PikaBotz&env[GcLink]=https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX&env[Warn_Limits]=3&env[Cooldown_Timer_Seconds]=5&env[MongoDB]=YOUR_MONGODB_URL&env[SESSION_ID]=YOUR_SESSION_ID)
 
 ***<p align="left"> • [`Tap here for Koyeb tutorial`](https://example.com) </p>***
-***<p align="center"> • After clicking the button, you'll be redirected to the `Koyeb deployment page`. Please set the following environment variables: </p>***
 
+<details>
+  <summary>Click please click here for more assist</summary>
+
+   ***<p align="center"> • After clicking the button, you'll be redirected to the `Koyeb deployment page`. Please set the following environment variables like examples: </p>***
+    
 <div align="center">
     
 | Key                  | Example Value                        |
@@ -62,13 +66,43 @@
 </div>
 
 *<p align="center"> Replace `91881107xxxx`, `<YOUR_MONGODB_URL>`, and `<YOUR_SESSION_ID>` with your actual values. </p>*
+</details>
 
 ##
 
 2. [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/PikaBotz/Anya_v2-MD/tree/master&env[BotName]=Queen%20Anya%20Bot&env[Footer]=©%20Queen%20Anya%20Bot&env[Prefix]=-&env[ThemeEmoji]=🎐&env[Owner_Name]=Pika~Kun&env[Owner_Number]=91881107xxxx&env[Insta]=3.69_pika&env[Author]=PikaBotz&env[PackName]=Queen%20Anya%20v2%20MD&env[Web]=https://github.com/PikaBotz&env[GcLink]=https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX&env[Warn_Limits]=3&env[Cooldown_Timer_Seconds]=5&env[MongoDB]=YOUR_MONGODB_URL&env[SESSION_ID]=YOUR_SESSION_ID)
 
 ***<p align="left"> • [`Tap here for Heroku tutorial`](https://example.com) </p>***
-***<p align="center"> • After clicking the button, you'll be redirected to the `heroku deployment page`. Please set the environment variables like mentioned above: </p>***
+
+<details>
+  <summary>Click please click here for more assist</summary>
+
+   ***<p align="center"> • After clicking the button, you'll be redirected to the `Heroku deployment page`. Please set the following environment variables like example: </p>***
+    
+<div align="center">
+    
+| Key                  | Example Value                        |
+|----------------------|------------------------------|
+| BotName              | Queen Anya Bot               |
+| Footer               | © Queen Anya Bot             |
+| Prefix               | -                            |
+| ThemeEmoji           | 🎐                           |
+| Owner_Name           | Pika~Kun                     |
+| Owner_Number         | 91881107xxxx                 |
+| Insta                | 3.69_pika                    |
+| Author               | @PikaBotz                    |
+| PackName             | Queen Anya v2 MD             |
+| Web                  | https://github.com/PikaBotz  |
+| GcLink               | https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX |
+| Warn_Limits          | 3                            |
+| Cooldown_Timer_Seconds | 5                           |
+| MongoDB              | <YOUR_MONGODB_URL>           |
+| SESSION_ID           | <YOUR_SESSION_ID>            |
+
+</div>
+
+*<p align="center"> Replace `91881107xxxx`, `<YOUR_MONGODB_URL>`, and `<YOUR_SESSION_ID>` with your actual values. </p>*
+</details>
 
 ---
 
@@ -97,6 +131,9 @@ Feel free to star ⭐ and fork 🍴 this repository to show your support!
 
 ### `Repository Details:`
 
+<details>
+  <summary>Click here to view</summary>
+
 <div align="center">
     
 | Owner 👤             | Repo 🤖              | Forks 🍽️             | Stars 🌟            | Language 🗣️        | Licence 🪪              
@@ -110,3 +147,4 @@ Feel free to star ⭐ and fork 🍴 this repository to show your support!
 [![Contributors over time](https://contributor-graph-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=PikaBotz/Anya_v2-MD)](https://www.apiseven.com/en/contributor-graph?chart=contributorOverTime&repo=PikaBotz/Anya_v2-MD)
 
 </div>
+</details>
