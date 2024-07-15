@@ -58,6 +58,7 @@ module.exports = {
         nsfw: 'This group is not *NSFW* enabled.',
         banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
     },
+    Port: process.env.Port || "8080",
 
     /**
      * external APIs
