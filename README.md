@@ -104,6 +104,120 @@
 *<p align="center"> Replace `91881107xxxx`, `<YOUR_MONGODB_URL>`, and `<YOUR_SESSION_ID>` with your actual values. </p>*
 </details>
 
+##
+3. # Termux/Ssh/Ubuntu
+
+<details>
+  <summary>Click please click here for more assist.</summary>
+    
+   ### `🌟 There are two common ways to deploy on Termux/Ssh/Ubuntu.`
+   ### ***`First Method:` ([`Tap Here To See Tutorial`](https://example.com))***
+   ***- Using clone method from github repository.***
+   ```
+apt update
+apt upgrade
+pkg update && pkg upgrade
+pkg install bash
+pkg install libwebp
+pkg install git -y
+pkg install nodejs -y 
+pkg install ffmpeg -y 
+pkg install wget
+pkg install imagemagick -y
+git clone https://github.com/PikaBotz/Anya_v2-MD
+cd Anya_v2-MD
+yarn install
+npm start
+```
+
+  ### ***`Second Method:` ([`Tap Here To See Tutorial`](https://example.com))***
+  ***- Using download method to local storage.***
+  
+  Step: 1
+    ***Download [`Anya_v2-MD`](https://github.com/PikaBotz/Anya_v2-MD/archive/refs/heads/Master.zip) repository first.***
+
+  Step: 2
+    ***Extract the downloaded `.zip` file.***
+
+  Step: 3
+    ***Edit `config.js` file (enter ownernumber, session id etc...).***
+    
+  Step: 4
+    ***Go to your `termux/Ssh/Ubuntu` terminal and navigate to your folder path.***
+  ***- For Example:***
+  
+  ```
+  cd /sdcard/download/Anya_v2-MD
+  ```
+
+  Step: 5
+    ***Enter the followings commands in your `terminal`.***
+
+ ```
+apt update
+apt upgrade
+pkg update && pkg upgrade
+pkg install bash
+pkg install libwebp
+pkg install git -y
+pkg install nodejs -y 
+pkg install ffmpeg -y 
+pkg install wget
+pkg install imagemagick -y
+```
+
+  Step: 6
+    ***`Install dependencies:`***
+
+```
+yarn install
+```
+
+  Step: 7
+    ***`Run your bot:`***
+
+```
+npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
+```
+
+   ***or***
+   
+```
+npm start
+```
+
+   ***or***
+
+```
+node index
+```
+
+</details>  
+
+##
+
+4. # VPS
+
+<details>
+  <summary>Click please click here for more assist.</summary>
+
+   - ***([`Tap Here To See Tutorial`](https://example.com))***
+   - ***`Edit` your forked repo's config.js and `replace` the repository url below with your repo's url.***
+
+ ```
+apt install nodejs 
+apt install git 
+apt apt install ffmpeg 
+apt apt install libwebp 
+apt apt install imagrmagick
+apt install bash
+git clone https://github.com/PikaBotz/Anya_v2-MD
+cd Anya_v2-MD
+npm start
+```
+
+</details>  
+
 ---
 
 ### `Need Support?` ***Join support group..!***
