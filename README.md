@@ -39,7 +39,7 @@
 ***<p align="left"> • [`Tap here for Koyeb tutorial`](https://example.com) </p>***
 
 <details>
-  <summary>Click please click here for more assist.</summary>
+  <summary>Please click here for more assist.</summary>
 
    ***<p align="center"> • After clicking the button, you'll be redirected to the `Koyeb deployment page`. Please set the following environment variables like examples: </p>***
     
@@ -75,7 +75,7 @@
 ***<p align="left"> • [`Tap here for Heroku tutorial`](https://example.com) </p>***
 
 <details>
-  <summary>Click please click here for more assist.</summary>
+  <summary>Please click here for more assist.</summary>
 
    ***<p align="center"> • After clicking the button, you'll be redirected to the `Heroku deployment page`. Please set the following environment variables like example: </p>***
     
@@ -108,7 +108,7 @@
 3. # Termux/Ssh/Ubuntu
 
 <details>
-  <summary>Click please click here for more assist.</summary>
+  <summary>Please click here for more assist.</summary>
     
    ### `🌟 There are two common ways to deploy on Termux/Ssh/Ubuntu.`
    ### ***`First Method:` ([`Tap Here To See Tutorial`](https://example.com))***
@@ -199,7 +199,7 @@ node index
 4. # VPS
 
 <details>
-  <summary>Click please click here for more assist.</summary>
+  <summary>Please click here for more assist.</summary>
 
    - ***([`Tap Here To See Tutorial`](https://example.com))***
    - ***`Edit` your forked repo's config.js and `replace` the repository url below with your repo's url.***
