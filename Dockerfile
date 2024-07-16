@@ -1,12 +1,8 @@
-FROM node:18
+FROM quay.io/teamolduser/docker
 
 COPY . /root/Anyav2
 WORKDIR /root/Anyav2
-
-RUN apt-get update && apt-get install -y ffmpeg
-
-RUN npm install npm@latest
-RUN npm install
-
-# Specify the command to run your application
-CMD ["node", "index.js"]
+RUN apt install ffmpeg
+RUN yarn install --network-concurrency 1
+EXPOSE 8000
+CMD ["yarn", "start"]
