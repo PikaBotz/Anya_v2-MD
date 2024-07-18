@@ -44,7 +44,7 @@
     "express": "^4.18.1 || ^4.18.2",
     "file-type": "^18.7.0",
     "fluent-ffmpeg": "^2.1.2",
-    "forever-monitor": "^1.5.2",
+    "forever-monitor": "^3.0.3",
     "form-data": "^4.0.0",
     "fs": "0.0.1-security",
     "got": "^11.8.5",
