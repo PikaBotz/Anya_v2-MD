@@ -34,6 +34,7 @@
     "@queenanya/ytsearch": "npm:@queenanya/ytsearch",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^1.7.2",
+    "canvas": "^2.11.2",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "child_process": "^1.0.2",
@@ -61,7 +62,6 @@
     "path": "^0.12.7",
     "pm2": "^5.4.2",
     "request": "^2.88.2",
-    "sharp": "latest",
     "util": "^0.12.5"
   },
   "devDependencies": {
