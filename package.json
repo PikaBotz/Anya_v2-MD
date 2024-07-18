@@ -3,7 +3,7 @@
   "version": "2.1.2",
   "description": "Anya_v2-MD is an efficient and versatile WhatsApp bot designed to streamline your messaging experience with innovative features and seamless automation.",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name anya",
     "stop": "pm2 stop anya"
