@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name anya",
+    "start": "node index",
+    "run": "pm2 start index.js --deep-monitoring --attach --name anya",
     "stop": "pm2 stop anya"
   },
   "keywords": [
