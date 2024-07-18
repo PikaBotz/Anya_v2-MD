@@ -5,10 +5,9 @@ WORKDIR /root/Anyav2
 
 RUN apt-get update && apt-get install -y ffmpeg
 
-RUN npm install npm@latest
-RUN npm install
+RUN npm install npm@latest --legacy-peer-deps
+RUN npm install --legacy-peer-deps
 
 EXPOSE 8080
 
-# Specify the command to run your application
 CMD ["node", "index.js"]
