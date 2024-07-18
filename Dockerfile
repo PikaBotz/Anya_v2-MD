@@ -5,8 +5,8 @@ WORKDIR /root/Anyav2
 
 RUN apt-get update && apt-get install -y ffmpeg
 
-RUN npm install npm@latest --force
-RUN npm install --force
+RUN npm install npm@latest
+RUN npm install
 
 EXPOSE 8080
 
