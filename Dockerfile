@@ -5,9 +5,9 @@ WORKDIR /root/Anyav2
 
 RUN apt-get update && apt-get install -y ffmpeg
 
-RUN npm install npm@latest
-RUN npm install
+RUN yarn global add npm@latest
+RUN yarn install
 
 EXPOSE 8080
 
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
