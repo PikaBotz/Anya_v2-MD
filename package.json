@@ -31,9 +31,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "@queenanya/baileys": "^6.6.7",
-    "@queenanya/ytdlcore": "npm:@queenanya/ytdlcore",
-    "@queenanya/ytsearch": "npm:@queenanya/ytsearch",
     "@distube/ytdl-core": "^4.13.5",
+    "yt-search": "^2.11.1",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^1.7.2",
     "canvas": "^2.11.2",
