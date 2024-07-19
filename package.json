@@ -31,7 +31,6 @@
   "license": "GPL-3.0",
   "dependencies": {
     "@queenanya/baileys": "^6.6.7",
-    "yt-dlp": "^2024.07.16",
     "yt-search": "^2.11.1",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^1.7.2",
