@@ -31,6 +31,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "@queenanya/baileys": "^6.6.7",
+    "@babel/parser": "^7.24.8",
     "yt-search": "^2.11.1",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^1.7.2",
@@ -62,8 +63,7 @@
     "path": "^0.12.7",
     "pm2": "^5.4.2",
     "request": "^2.88.2",
-    "util": "^0.12.5",
-    "vm": "^0.1.0"
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "@hapi/boom": "^9.1.4",
