@@ -62,9 +62,9 @@
 
 ---
 
-## Deploy On Heroku
+## Deploy On Koyeb
 
-[Deploy on Heroku](https://heroku.deploy.queenanya.work.gd/)
+[Deploy on Koyeb]([https://heroku.deploy.queenanya.work.gd/](https://app.koyeb.com/deploy?type=git&builder=Dockerfile&repository=github.com/Pikabotz/Anya-MD_V2&branch=Master&service_type=web&instance_type=free&region=fra&env[BotName]=Anya_MD&env[Footer]=Queen_Anya&env[Prefix]=!&env[Owner_Name]&env[Owner_Number]&env[MongoDB]&env[SESSION_ID]&env[Warns_Limits]=3))
 
 ---
 
