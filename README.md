@@ -29,7 +29,7 @@
 - [Scan QR Here](https://guarded-plateau-90529-d93b86745e72.herokuapp.com/)
 - [Deploy On Railway](#deploy-on-railway)
 - [Deploy On Replit](#deploy-on-replit)
-- [Deploy On Heroku](#deploy-on-heroku)
+- [Deploy On Koyeb](#deploy-on-koyeb)
 - [Terms & Conditions](#terms--conditions)
 - [Thanks to ✨](#thanks-to-)
 ---
