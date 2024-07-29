@@ -1,0 +1,81 @@
+{
+    "name": "Queen Anya Ver.2",
+    "description": "Anya_v2-MD is an efficient and versatile WhatsApp bot designed to streamline your messaging experience with innovative features and seamless automation.",
+    "repository": "https://github.COM/PikaBotz/Anya_v2-MD",
+    "logo": "https://i.ibb.co/bgfFFjF/Videoshot-20221026-164328.jpg",
+    "keywords": ["Automation", "Innovation", "Versatility", "Efficiency", "Messaging", "Chatbot", "Integration", "Customization", "Ease of Use", "Personalization"],
+    "success_url": "/",
+    "stack": "container",
+    "env": {
+         "BotName": {
+             "description": "Enter your desired bot\"s name (Eg:- Queen Anya)",
+             "required": false
+         },
+         "Footer": {
+            "description": "Enter your bot's watermark (Eg:- Anya Bot)",
+            "required": false
+         },
+         "Prefix": {
+            "description": "Enter a prefix for single prefix mode (Eg:- !, -, /, etc...)",
+            "required": false
+         },
+         "ThemeEmoji": {
+            "description": "Enter your favourite emoji",
+            "required": false
+         },
+         "Owner_Name": {
+            "description": "Enter owner's name",
+            "required": true
+         },
+         "Owner_Number": {
+            "description": "Enter Owner's Number with country code",
+            "required": true
+         },
+         "Insta": {
+            "description": "Enter your Instragram's id",
+            "required": false
+         },
+         "Author": {
+            "description": "Enter sticker author name",
+            "required": false
+         },
+         "PackName": {
+            "description": "Enter sticker pack's name",
+            "required": false
+         },
+         "Web": {
+            "description": "Enter your social profile url",
+            "required": false
+         },
+         "GcLink": {
+            "description": "Enter your group link",
+            "required": false
+         },
+         "Warn_Limits": {
+            "description": "Enter user's warns limit",
+            "required": false
+         },
+         "Cooldown_Timer_Seconds": {
+             "description": "Enter Command cooldown timer in seconds",
+             "required": false
+         },
+         "Port": {
+             "description": "Port number for your bot, else please put 8080",
+             "required": false
+         },
+         "MongoDB": {
+            "description": "Enter your mongodb connection url",
+            "required": true
+         },
+         "SESSION_ID": {
+            "description": "Enter your session id",
+            "required": true
+         }
+    },
+    "formation": {
+         "worker": {
+             "quantity": 1,
+             "size": "basic"
+         }
+    }
+}

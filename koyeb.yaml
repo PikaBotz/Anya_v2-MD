@@ -1,0 +1,14 @@
+name: anya-bot
+type: app
+regions:
+  - fra # Frankfurt (choose your preferred region)
+ports:
+  - 8080:8080
+build:
+  type: node
+  files:
+    - package.json
+    - package-lock.json
+    - index.js
+    - .env
+plan: web # Ensuring it's a web service, not a worker
