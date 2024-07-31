@@ -20,6 +20,6 @@ Welcome to the Queen Anya v2 project, managed by [`@PikaBotz`](https://github.co
 
 ## License
 
-This project is licensed under the [`MIT License`](LICENSE).
+This project is licensed under the [`GPL-3.0 License`](LICENSE).
 
 Feel free to star ⭐ and fork 🍴 this repository to show your support!
