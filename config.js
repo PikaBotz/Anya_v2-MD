@@ -8,7 +8,7 @@ module.exports = {
     /**
      * bot details and parameters
      */
-    botname: process.env.BotName || "Queen Anya Bot",
+    botname: process.env.BotName || "Queen Rias Bot",
     footer: process.env.Footer || "© Queen Anya Bot",
     prefa: process.env.Prefix || "-",
     themeemoji: process.env.ThemeEmoji || "🎐",
@@ -16,21 +16,21 @@ module.exports = {
     /**
      * owner details and parameters
      */
-    ownername: process.env.Owner_Name || "Pika~Kun",
-    ownernumber: process.env.Owner_Number || "916900904828",
-    instagramId: process.env.Insta || "3.69_pika",
+    ownername: process.env.Owner_Name || "Sekiryuutei~Kun",
+    ownernumber: process.env.Owner_Number || "224620780851",
+    instagramId: process.env.Insta || "Sekiryuutei",
 
     /**
      * other details and parameters
      */
-    author: process.env.Author || "@PikaBotz",
-    packname: process.env.PackName || "Queen Anya v2 MD",
-    socialLink: process.env.Web || "https://github.com/PikaBotz",
+    author: process.env.Author || "@SekiRyuutei",
+    packname: process.env.PackName || "Queen Rias v2 MD",
+    socialLink: process.env.Web || "https://github.com/Popp100",
     groupLink: process.env.GcLink || "https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX",
-    warns: Number(process.env.Warn_Limits) || 3,
+    warns: Number(process.env.Warn_Limits) || 0,
     cooldown: 5, // default cooldown time per command in seconds
-    mongoUrl: process.env.MongoDB || "YOUR_MONGODB_URL",
-    sessionId: process.env.SESSION_ID || "YOUR_SESSION_ID",
+    mongoUrl: process.env.MongoDB || "mongodb://usfixhghl6njctfufyi6:y0ljSsE27qqMg0Cf8Ek@by2ypcwxjjxkoj4swe0e-mongodb.services.clever-cloud.com:2739/by2ypcwxjjxkoj4swe0e",
+    sessionId: process.env.SESSION_ID || "MmZwZWh_AN_YA_iMDI=",
 
     /**
      * thumbnails and medias
