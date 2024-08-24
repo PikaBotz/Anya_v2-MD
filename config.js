@@ -1,5 +1,8 @@
 const { readFileSync } = require('fs')
-require("dotenv").config();
+require('dotenv').config({path: './mongo.env'});
+require('dotenv').config({path: './owner.env'});
+require('dotenv').config({path: './session.env'});
+require('dotenv').config({path: './bot.env'});
 
 module.exports = {
     /**
