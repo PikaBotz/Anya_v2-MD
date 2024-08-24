@@ -55,6 +55,14 @@
             "description": "Enter user's warns limit",
             "required": false
          },
+         "Cooldown_Timer_Seconds": {
+             "description": "Enter Command cooldown timer in seconds",
+             "required": false
+         },
+         "Port": {
+             "description": "Port number for your bot, else please put 8080",
+             "required": false
+         },
          "MongoDB": {
             "description": "Enter your mongodb connection url",
             "required": true
