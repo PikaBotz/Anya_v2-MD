@@ -28,7 +28,6 @@
      - ***([`Tap Here For Url`](https://www.mongodb.com/cloud/atlas/register))***
      - ***([`Tap Here For Tutorial`](https://example.com))***
 
-
 ---
 
 ### `Where To Deploy? (Choose One)`
@@ -76,6 +75,7 @@
 ***<p align="left"> • [`Tap here for Heroku tutorial`](https://example.com) </p>***
 
 <details>
+
   <summary>Please click here for more assist.</summary>
 
    ***<p align="center"> • After clicking the button, you'll be redirected to the `Heroku deployment page`. Please set the following environment variables like example: </p>***
@@ -100,11 +100,10 @@
 | MongoDB              | <YOUR_MONGODB_URL>           |
 | SESSION_ID           | <YOUR_SESSION_ID>            |
 
+</div>
 
-## Deploy On Koyeb
-
-[Deploy on Koyeb](https://app.koyeb.com/deploy?type=git&builder=Dockerfile&repository=github.com/Pikabotz/Anya-MD_V2&branch=Master&service_type=web&instance_type=free&region=fra&env[BotName]=Anya_MD&env[Footer]=Queen_Anya&env[Prefix]=!&env[Owner_Name]&env[Owner_Number]&env[MongoDB]&env[SESSION_ID]&env[Warns_Limits]=3)
-
+*<p align="center"> Replace `91881107xxxx`, `<YOUR_MONGODB_URL>`, and `<YOUR_SESSION_ID>` with your actual values. </p>*
+</details>
 
 ##
 3. # Termux/Ssh/Ubuntu
