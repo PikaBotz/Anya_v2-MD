@@ -9,15 +9,15 @@
     "env": {
          "BotName": {
              "description": "Enter your desired bot\"s name (Eg:- Queen Anya)",
-             "required": false
+             "required": true
          },
          "Footer": {
             "description": "Enter your bot's watermark (Eg:- Anya Bot)",
-            "required": false
+            "required": true
          },
          "Prefix": {
             "description": "Enter a prefix for single prefix mode (Eg:- !, -, /, etc...)",
-            "required": false
+            "required": true
          },
          "ThemeEmoji": {
             "description": "Enter your favourite emoji",
@@ -49,7 +49,7 @@
          },
          "GcLink": {
             "description": "Enter your group link",
-            "required": false
+            "required": true
          },
          "Warn_Limits": {
             "description": "Enter user's warns limit",
