@@ -34,7 +34,7 @@
 
 ##
 
-1. [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/services/deploy?type=git&repository=github.com/Pikabotz/Anya_V2-MD&branch=master&builder=dockerfile&dockerfile=./Dockerfile&service_type=web&instance_type=free&region=fra&env[BotName]=Anya_MD&env[Footer]=Queen_Anya&env[Prefix]=!&env[Owner_Name]&env[Owner_Number]&env[MongoDB]&env[SESSION_ID]&env[Warns_Limits]=3&env[Port]=8000)
+1. [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/services/deploy?type=git&repository=github.com/Pikabotz/Anya_V2-MD&branch=master&builder=dockerfile&dockerfile=./Dockerfile&service_type=web&instance_type=free&region=fra&env[BotName]=Anya_MD&env[Footer]=Queen_Anya&env[Prefix]=!&env[Owner_Name]&env[Owner_Number]&env[MongoDB]&env[SESSION_ID]&env[Insta]=3.69_pika&env[Author]=PikaBotz&env[PackName]=Queen%20Anya%20v2%20MD&env[Web]=https://github.com/PikaBotz&env[GcLink]=https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX&env[Warn_Limits]=3&env[Cooldown_Timer_Seconds]=5&env[Port]=8000)
 
 ***<p align="left"> • [`Tap here for Koyeb tutorial`](https://example.com) </p>***
 
