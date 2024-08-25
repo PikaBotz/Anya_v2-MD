@@ -3,6 +3,5 @@ FROM quay.io/teamolduser/docker
 COPY . /root/Anyav2
 WORKDIR /root/Anyav2
 
-RUN yarn install --network-concurrency 1
-EXPOSE 8000
+RUN yarn install
 CMD ["yarn", "start"]
