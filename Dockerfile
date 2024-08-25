@@ -1,7 +1,13 @@
-FROM quay.io/teamolduser/docker
+FROM node:18
 
 COPY . /root/Anyav2
 WORKDIR /root/Anyav2
 
+RUN apt-get update && apt-get install -y ffmpeg
+
+RUN yarn global add npm@latest
 RUN yarn install
-CMD ["yarn", "start"]
+
+EXPOSE 8080
+
+CMD ["npm", "start"]
