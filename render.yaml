@@ -2,7 +2,7 @@ services:
   - type: web
     plan: free
     name: queen-anya-md
-    runtime: node 18
+    runtime: Node
     repo: https://github.com/PikaBotz/Anya_v2-MD.git
     buildCommand: |
       apt-get update && \
