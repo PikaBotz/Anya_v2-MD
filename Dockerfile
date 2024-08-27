@@ -12,6 +12,5 @@ RUN npm install --only=prod
 
 # Copy all other files
 COPY . .
-
 # Start the application
 CMD ["npm", "start"]
