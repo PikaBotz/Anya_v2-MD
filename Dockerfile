@@ -6,11 +6,12 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy package.json and install dependencies
+# Copy package.json and install dependencies with legacy peer deps
 COPY package.json ./
-RUN npm install --only=prod
+RUN npm install --only=prod --legacy-peer-deps
 
 # Copy all other files
 COPY . .
+
 # Start the application
 CMD ["npm", "start"]
