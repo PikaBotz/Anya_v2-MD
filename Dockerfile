@@ -1,11 +1,13 @@
-FROM node:18
+FROM node:lts-buster
 
-COPY . /root/Anyav2
-WORKDIR /root/Anyav2
+RUN apt-get update && \
+    apt-get install -y ffmpeg webp && \
+    apt-get upgrade -y && \
+    rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update && apt-get install -y ffmpeg
+COPY package.json ./
+RUN npm install --only=prod --legacy-peer-deps
 
-RUN yarn global add npm@latest
-RUN yarn install
+COPY . .
 
 CMD ["npm", "start"]
