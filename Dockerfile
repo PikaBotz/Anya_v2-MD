@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:18
 
 # Set a memory swap limit to prevent OOM errors (optional)
 ENV NODE_OPTIONS=--max-old-space-size=512
