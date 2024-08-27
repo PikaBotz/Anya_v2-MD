@@ -15,7 +15,7 @@ services:
     #startCommand: npm start
     envVars:
       - key: BotName
-        value: "Queen Anya V2"
+        value: ""
       - key: Footer
         value: "© Queen Anya Bot"
       - key: Prefix
