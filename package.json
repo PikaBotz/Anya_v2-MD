@@ -73,11 +73,5 @@
     "url": "^0.11.4",
     "stream": "^0.0.3"
   },
-  "devDependencies": {
-    "@hapi/boom": "^9.1.4",
-    "jimp": "^0.22.12",
-    "pino": "^8.1.0",
-    "qrcode-terminal": "^0.12.0"
-  },
   "packageManager": "yarn@1.22.19"
 }
