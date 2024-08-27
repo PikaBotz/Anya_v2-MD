@@ -8,10 +8,7 @@ WORKDIR /root/Anyav2
 
 RUN apt-get update && apt-get install -y ffmpeg
 
-# Skip npm global install to reduce memory usage
-# RUN yarn global add npm@latest
-
-# Install dependencies with network timeout and frozen lockfile options
-RUN yarn install --network-timeout 1000000 --frozen-lockfile
+# Install dependencies with additional flags to disable optional dependencies
+RUN yarn install --network-timeout 1000000 --frozen-lockfile --ignore-optional --verbose
 
 CMD ["npm", "start"]
