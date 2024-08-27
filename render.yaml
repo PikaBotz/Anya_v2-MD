@@ -2,16 +2,20 @@ services:
   - type: web
     plan: free
     name: queen-anya-md
-    runtime: node 18
+    runtime: docker
+    region: Frankfurt
+    branch: master
     repo: https://github.com/PikaBotz/Anya_v2-MD.git
-    buildCommand: |
-      apt-get update && \
-      apt-get install -y ffmpeg && \
-      npm install
-    startCommand: npm start
+    #buildCommand: |
+    #  apt-get update && \
+    #  apt-get install -y ffmpeg && \
+    #  npm install
+    autoDeploy: true
+    healthCheckPath: /
+    #startCommand: npm start
     envVars:
       - key: BotName
-        value: "Queen Anya V2"
+        value: ""
       - key: Footer
         value: "© Queen Anya Bot"
       - key: Prefix
