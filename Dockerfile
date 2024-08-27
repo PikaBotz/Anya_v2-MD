@@ -1,15 +1,17 @@
-FROM node:18
+FROM node:lts-buster
 
-# Set environment variable to limit Node.js memory usage
-#ENV NODE_OPTIONS=--max-old-space-size=512
+# Install required packages and clean up
+RUN apt-get update && \
+    apt-get install -y ffmpeg webp && \
+    apt-get upgrade -y && \
+    rm -rf /var/lib/apt/lists/*
 
-COPY . /root/Anyav2
-WORKDIR /root/Anyav2
+# Copy package.json and install dependencies
+COPY package.json ./
+RUN npm install --only=prod
 
-RUN apt-get update && apt-get install -y ffmpeg
+# Copy all other files
+COPY . .
 
-# Install dependencies with additional flags to disable optional dependencies
-RUN npm install
-#--network-timeout 1000000 --frozen-lockfile --ignore-optional --verbose
-
+# Start the application
 CMD ["npm", "start"]
