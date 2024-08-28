@@ -1,0 +1,48 @@
+services:
+  - type: web
+    plan: free
+    name: queen-anya-md
+    runtime: docker
+    region: Frankfurt
+    branch: master
+    repo: https://github.com/PikaBotz/Anya_v2-MD.git
+    #buildCommand: |
+    #  apt-get update && \
+    #  apt-get install -y ffmpeg && \
+    #  npm install
+    autoDeploy: true
+    healthCheckPath: /
+    #startCommand: npm start
+    envVars:
+      - key: BotName
+        value: ""
+      - key: Footer
+        value: "© Queen Anya Bot"
+      - key: Prefix
+        value: "-"
+      - key: ThemeEmoji
+        value: "🎐"
+      - key: Owner_Name
+        value: "Pika~Kun"
+      - key: Owner_Number
+        value: "91881107xxxx"
+      - key: Insta
+        value: "3.69_pika"
+      - key: Author
+        value: "PikaBotz"
+      - key: PackName
+        value: "Queen Anya • Stickers"
+      - key: Web
+        value: "https://github.com/PikaBotz"
+      - key: GcLink
+        value: "https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX"
+      - key: Warn_Limits
+        value: "3"
+      - key: Cooldown_Timer_Seconds
+        value: "5"
+      - key: Port
+        value: "8080"
+      - key: MongoDB
+        value: "YOUR_MONGODB_URL"
+      - key: SESSION_ID
+        value: "YOUR_SESSION_ID"

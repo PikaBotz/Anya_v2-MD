@@ -70,7 +70,43 @@
 
 ##
 
-2. [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/PikaBotz/Anya_v2-MD/tree/master&env[BotName]=Queen%20Anya%20Bot&env[Footer]=©%20Queen%20Anya%20Bot&env[Prefix]=-&env[ThemeEmoji]=🎐&env[Owner_Name]=Pika~Kun&env[Owner_Number]=91881107xxxx&env[Insta]=3.69_pika&env[Author]=PikaBotz&env[PackName]=Queen%20Anya%20v2%20MD&env[Web]=https://github.com/PikaBotz&env[GcLink]=https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX&env[Warn_Limits]=3&env[Cooldown_Timer_Seconds]=5&env[Port]=8080&env[MongoDB]=YOUR_MONGODB_URL&env[SESSION_ID]=YOUR_SESSION_ID)
+2. [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/PikaBotz/Anya_v2-MD.git)
+
+***<p align="left"> • [`Tap here for Render tutorial`](https://example.com) </p>***
+
+<details>
+  <summary>Please click here for more assist.</summary>
+
+   ***<p align="center"> • After clicking the button, you'll be redirected to the `Render deployment page`. Please set the following environment variables like examples: </p>***
+    
+<div align="center">
+    
+| Key                  | Example Value                        |
+|----------------------|------------------------------|
+| BotName              | Queen Anya Bot               |
+| Footer               | © Queen Anya Bot             |
+| Prefix               | -                            |
+| ThemeEmoji           | 🎐                           |
+| Owner_Name           | Pika~Kun                     |
+| Owner_Number         | 91881107xxxx                 |
+| Insta                | 3.69_pika                    |
+| Author               | @PikaBotz                    |
+| PackName             | Queen Anya v2 MD             |
+| Web                  | https://github.com/PikaBotz  |
+| GcLink               | https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX |
+| Warn_Limits          | 3                            |
+| Cooldown_Timer_Seconds | 5                           |
+| MongoDB              | <YOUR_MONGODB_URL>           |
+| SESSION_ID           | <YOUR_SESSION_ID>            |
+
+</div>
+
+*<p align="center"> Replace `91881107xxxx`, `<YOUR_MONGODB_URL>`, and `<YOUR_SESSION_ID>` with your actual values. </p>*
+</details>
+
+##
+
+3. [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/PikaBotz/Anya_v2-MD/tree/master&env[BotName]=Queen%20Anya%20Bot&env[Footer]=©%20Queen%20Anya%20Bot&env[Prefix]=-&env[ThemeEmoji]=🎐&env[Owner_Name]=Pika~Kun&env[Owner_Number]=91881107xxxx&env[Insta]=3.69_pika&env[Author]=PikaBotz&env[PackName]=Queen%20Anya%20v2%20MD&env[Web]=https://github.com/PikaBotz&env[GcLink]=https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX&env[Warn_Limits]=3&env[Cooldown_Timer_Seconds]=5&env[Port]=8080&env[MongoDB]=YOUR_MONGODB_URL&env[SESSION_ID]=YOUR_SESSION_ID)
 
 ***<p align="left"> • [`Tap here for Heroku tutorial`](https://example.com) </p>***
 
@@ -106,7 +142,7 @@
 </details>
 
 ##
-3. # Termux/Ssh/Ubuntu
+4. # Termux/Ssh/Ubuntu
 
 <details>
   <summary>Please click here for more assist.</summary>
@@ -197,7 +233,7 @@ node index
 
 ##
 
-4. # VPS
+5. # VPS
 
 <details>
   <summary>Please click here for more assist.</summary>
