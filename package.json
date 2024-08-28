@@ -76,5 +76,5 @@
   "engines": {
   "node": "20.x.x >=22.2.x"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.x"
 }
