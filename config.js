@@ -8,29 +8,29 @@ module.exports = {
     /**
      * bot details and parameters
      */
-    botname: process.env.BotName || "Queen Anya Bot",
-    footer: process.env.Footer || "© Powered By Queen Anya Bot",
-    prefa: process.env.Prefix || "-",
+    botname: process.env.BotName || "VIHANGA BOT",
+    footer: process.env.Footer || "© Powered By Vihanga Bot",
+    prefa: process.env.Prefix || ".",
     themeemoji: process.env.ThemeEmoji || "🎐",
 
     /**
      * owner details and parameters
      */
-    ownername: process.env.Owner_Name || "Pika~Kun",
+    ownername: process.env.Owner_Name || "Vihanga Hansana",
     ownernumber: process.env.Owner_Number || "916900904828",
     instagramId: process.env.Insta || "3.69_pika",
 
     /**
      * other details and parameters
      */
-    author: process.env.Author || "@PikaBotz",
-    packname: process.env.PackName || "Queen Anya v2 MD",
+    author: process.env.Author || "Vihanga",
+    packname: process.env.PackName || "❤️‍🩹",
     socialLink: process.env.Web || "https://github.com/PikaBotz",
     groupLink: process.env.GcLink || "https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX",
     warns: Number(process.env.Warn_Limits) || 3,
     cooldown: Number(process.env.Cooldown_Timer_Seconds) || 5, // default cooldown time per command in seconds
-    mongoUrl: process.env.MongoDB || "YOUR_MONGODB_URL",
-    sessionId: process.env.SESSION_ID || "YOUR_SESSION_ID",
+    mongoUrl: process.env.MongoDB || "mongodb+srv://vihangahansana060527:@Nikiya0220@cluster0.mx9jr.mongodb.net/",
+    sessionId: process.env.SESSION_ID || "c_Queen-Anya_zZ3aTc_Queen-Anya_2Y3k=",
 
     /**
      * thumbnails and medias
