@@ -10,5 +10,4 @@ RUN npm install --only=prod --legacy-peer-deps
 
 COPY . .
 
-# CMD ["npm", "start"]
-CMD ["pm2-runtime", "start", "index.js", "--name", "anya", "--deep-monitoring"]
+ CMD ["npm", "run"]
