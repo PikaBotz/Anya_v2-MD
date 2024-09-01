@@ -8,8 +8,8 @@ module.exports = {
     /**
      * bot details and parameters
      */
-    botname: process.env.BotName || "Queen Anya Bot",
-    footer: process.env.Footer || "© Powered By Queen Anya Bot",
+    botname: process.env.BotName || "Qᴜᴇᴇɴ ᴀɴʏᴀ ᴠ2",
+    footer: process.env.Footer || "© 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 𝐐𝐮𝐞𝐞𝐧 𝐀𝐧𝐲𝐚 𝐁𝐨𝐭",
     prefa: process.env.Prefix || "-",
     themeemoji: process.env.ThemeEmoji || "🎐",
 
@@ -23,8 +23,8 @@ module.exports = {
     /**
      * other details and parameters
      */
-    author: process.env.Author || "@PikaBotz",
-    packname: process.env.PackName || "Queen Anya v2 MD",
+    author: process.env.Author || "𝐏𝐢𝐤𝐚𝐁𝐨𝐭𝐳 🌚🌙",
+    packname: process.env.PackName || "𝕼𝖚𝖊𝖊𝖓 𝕬𝖓𝖞𝖆 𝖁2 𝕾𝖙𝖎𝖈𝖐𝖊𝖗 𝕻𝖆𝖈𝖐 🪀",
     socialLink: process.env.Web || "https://github.com/PikaBotz",
     groupLink: process.env.GcLink || "https://chat.whatsapp.com/E490r0wSpSr89XkCWeGtnX",
     warns: Number(process.env.Warn_Limits) || 3,
