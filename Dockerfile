@@ -6,7 +6,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 COPY package.json ./
+
 RUN npm install --only=prod --legacy-peer-deps
+RUN npm install pm2 -g
 
 COPY . .
 
