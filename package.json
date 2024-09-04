@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "node index",
-    "run": "pm2-runtime start index.js --deep-monitoring --name anya",
+    "launch": "pm2-runtime start index.js --deep-monitoring --name anya",
     "stop": "pm2 stop anya"
   },
   "keywords": [
