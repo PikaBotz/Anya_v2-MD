@@ -13,4 +13,4 @@ RUN npm install pm2 -g
 COPY . .
 
 # CMD ["npm", "start"]
-CMD ["npm", "launch"]
+CMD ["npm", "startpm2"]
