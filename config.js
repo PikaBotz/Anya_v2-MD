@@ -70,3 +70,5 @@ module.exports = {
         api1: "https://www.guruapi.tech" // Guru's API
     }
 }
+
+global.connectionMessageSent = false;
