@@ -32,12 +32,11 @@
   "dependencies": {
     "@queenanya/baileys": "latest",
     "@queenanya/invite": "latest",
+    "@bochilteam/scraper": "latest",
     "@babel/parser": "^7.24.8",
     "yt-search": "latest",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^1.7.2",
-    "@bochilteam/scraper": "latest",
-    "canvas": "^2.11.2",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "child_process": "^1.0.2",
