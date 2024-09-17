@@ -9,11 +9,11 @@
     "env": {
          "BotName": {
              "description": "Enter your desired bot\"s name (Eg:- Queen Anya)",
-             "required": false
+             "required": true
          },
          "Footer": {
             "description": "Enter your bot's watermark (Eg:- Anya Bot)",
-            "required": false
+            "required": true
          },
          "Prefix": {
             "description": "Enter a prefix for single prefix mode (Eg:- !, -, /, etc...)",
@@ -49,11 +49,11 @@
          },
          "GcLink": {
             "description": "Enter your group link",
-            "required": false
+            "required": true
          },
          "Warn_Limits": {
             "description": "Enter user's warns limit",
-            "required": false
+            "required": true
          },
          "Cooldown_Timer_Seconds": {
              "description": "Enter Command cooldown timer in seconds",
@@ -61,7 +61,7 @@
          },
          "Port": {
              "description": "Port number for your bot, else please put 8080",
-             "required": false
+             "required": true
          },
          "MongoDB": {
             "description": "Enter your mongodb connection url",
