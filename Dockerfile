@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 COPY package.json ./
 
-RUN npm install --only=prod --legacy-peer-deps
+RUN yarn install
 RUN npm install pm2 -g
 
 COPY . .
