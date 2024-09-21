@@ -1,0 +1,77 @@
+{
+  "core": {
+    "cateSymbol": "💻",
+    "pluginSymbol": "🌀",
+    "desc": "System default commands of the bot"
+  },
+  "admins": {
+    "cateSymbol": "👮🏻‍♂️",
+    "pluginSymbol": "🔰",
+    "desc": "Commands that only can be used by Admin in a gc"
+  },
+  "ai": {
+    "cateSymbol": "🤖",
+    "pluginSymbol": "✨",
+    "desc": "Artificial intelligence powered commands"
+  },
+  "owner": {
+    "cateSymbol": "🧩",
+    "pluginSymbol": "♠️",
+    "desc": "Commands only owner can use"
+  },
+  "convert": {
+    "cateSymbol": "♻️",
+    "pluginSymbol": "🎈",
+    "desc": "Convert medias formats"
+  },
+  "download": {
+    "cateSymbol": "📂",
+    "pluginSymbol": "📥",
+    "desc": "Download from various platforms"
+  },
+  "fun": {
+    "cateSymbol": "😂",
+    "pluginSymbol": "🎭",
+    "desc": "Fun commands for enjoyment"
+  },
+  "games": {
+    "cateSymbol": "🃏",
+    "pluginSymbol": "🎰",
+    "desc": "Gaming commands for fun"
+  },
+  "general": {
+    "cateSymbol": "🧧",
+    "pluginSymbol": "🍂",
+    "desc": "General command for everyone"
+  },
+  "random": {
+    "cateSymbol": "🍜",
+    "pluginSymbol": "🌊",
+    "desc": "Random approach commands"
+  },
+  "reaction": {
+    "cateSymbol": "🎃",
+    "pluginSymbol": "🥏",
+    "desc": "Get reaction GIFs"
+  },
+  "religious": {
+    "cateSymbol": "🌟",
+    "pluginSymbol": "🛐",
+    "desc": "Get religious images, books, prayers etc"
+  },
+  "search": {
+    "cateSymbol": "🕵🏻‍♂️",
+    "pluginSymbol": "🌐",
+    "desc": "Search on the internet"
+  },
+  "stalker": {
+    "cateSymbol": "🛸",
+    "pluginSymbol": "🪀",
+    "desc": "Stalk for various platforms accounts"
+  },
+  "tools": {
+    "cateSymbol": "👨🏻‍🔧",
+    "pluginSymbol": "📐",
+    "desc": "Various uses tools commands"
+  }
+}

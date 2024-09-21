@@ -1,13 +1,13 @@
 {
   "name": "queen_anya_ver.2",
-  "version": "2.1.2",
+  "version": "2.1.2.1",
   "description": "Anya_v2-MD is an efficient and versatile WhatsApp bot designed to streamline your messaging experience with innovative features and seamless automation.",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index",
-    "run": "pm2 start index.js --deep-monitoring --attach --name anya",
-    "stop": "pm2 stop anya"
+    "start2": "node index",
+    "start": "pm2 start index.js --attach --name anya-v2 --namespace production",
+    "stop": "pm2 stop anya-v2"
   },
   "keywords": [
     "termux",
@@ -32,12 +32,11 @@
   "dependencies": {
     "@queenanya/baileys": "latest",
     "@queenanya/invite": "latest",
+    "@bochilteam/scraper": "latest",
     "@babel/parser": "^7.24.8",
     "yt-search": "latest",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^1.7.2",
-    "@bochilteam/scraper": "latest",
-    "canvas": "^2.11.2",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "child_process": "^1.0.2",
@@ -55,9 +54,6 @@
     "jimp": "^0.22.12",
     "jsdom": "^16.4.0",
     "megajs": "^1.2.2",
-    "canvas": "^2.6.1",
-    "fortnite-9812": "^1.0.4",
-    "fortnite": "^4.3.2",
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.34",
     "mongoose": "^8.5.1",
@@ -74,7 +70,6 @@
     "stream": "^0.0.3"
   },
   "engines": {
-  "node": "20.x.x >=22.2.x"
-  },
-  "packageManager": "yarn@1.22.x"
+    "node": ">=20.0.0"
+  }
 }

@@ -1,13 +1,16 @@
 FROM node:lts-buster
 
 RUN apt-get update && \
-    apt-get install -y ffmpeg webp && \
+    apt-get install -y ffmpeg webp git && \
     apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/*
 
-COPY package.json ./
-RUN npm install --only=prod --legacy-peer-deps
+RUN git clone https://github.com/PikaBotz/Anya_v2-MD anya-v2
 
-COPY . .
+WORKDIR /anya-v2
 
-CMD ["npm", "start"]
+RUN yarn install --production
+
+RUN yarn global add pm2
+
+CMD ["pm2-runtime", "npm", "--", "start"]
