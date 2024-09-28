@@ -13,4 +13,4 @@ RUN yarn install --production
 
 RUN yarn global add pm2
 
-CMD ["pm2-runtime", "npm", "--", "start"]
+CMD ["npm", "start"]
