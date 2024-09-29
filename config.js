@@ -72,3 +72,6 @@ module.exports = {
 }
 
 global.connectionMessageSent = false;
+global.game = {
+    tictactoe: {}
+}
