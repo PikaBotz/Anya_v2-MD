@@ -67,6 +67,7 @@
     "request": "^2.88.2",
     "util": "^0.12.5",
     "url": "^0.11.4",
-    "stream": "^0.0.3"
+    "stream": "^0.0.3",
+    "translate-google": "latest"
   }
 }
