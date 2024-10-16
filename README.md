@@ -20,7 +20,7 @@
 ##
 
   2. Get a `SESSION_ID` by scanning QR code or using pair code.
-     - ***([`Tap Here For Session Id`](https://anya-session.olduser.me/choose.html))***
+     - ***([`Tap Here For Session Id`](https://anya-session.koyeb.app/))***
      - ***([`Tap Here For Tutorial`](https://example.com))***
 
 ##
