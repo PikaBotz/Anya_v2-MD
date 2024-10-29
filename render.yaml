@@ -5,7 +5,7 @@ services:
     runtime: docker
     region: Frankfurt
     branch: master
-    repo: https://github.com/Fake-404/Anya_v2-MD.git
+    repo: https://github.com/PikaBotz/Anya_v2-MD.git
     #buildCommand: |
     #  apt-get update && \
     #  apt-get install -y ffmpeg && \
