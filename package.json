@@ -50,6 +50,7 @@
     "form-data": "^4.0.0",
     "fs": "0.0.1-security",
     "got": "^11.8.5",
+    "gemini-ai": "latest",
     "human-readable": "^0.2.1",
     "jimp": "^0.22.12",
     "jsdom": "^16.4.0",
