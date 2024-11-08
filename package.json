@@ -7,7 +7,7 @@
   "scripts": {
     "start2": "node index",
     "start": "pm2 start index.js --attach --name anya-v2 --namespace production",
-    "stop": "pm2 stop anya-v2"
+    "stop": "pm2 stop anya-v2 --namespace production"
   },
   "keywords": [
     "termux",
