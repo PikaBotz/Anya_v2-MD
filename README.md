@@ -20,8 +20,10 @@
 ##
 
   2. Get a `SESSION_ID` by scanning QR code or using pair code.
+     1. `website 1` :
      - ***([`Tap Here For Session Id`](https://qr-pair-anyaV2.koyeb.app/))***
-     - ***([`Tap Here For Tutorial`](https://example.com))***
+     2. `website 2` :
+     - ***([`Tap Here For Session Id`](https://qr-pair-anyav2.up.railway.app/))***
 
 ##
   3. Get a `MONGODB_URL` from mongodb website.
