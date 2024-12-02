@@ -73,5 +73,10 @@
     "cateSymbol": "👨🏻‍🔧",
     "pluginSymbol": "📐",
     "desc": "Various uses tools commands"
+  },
+  "maker": {
+    "cateSymbol": "🖼️",
+    "pluginSymbol": "🎨",
+    "desc": "Create, edit and modify images"
   }
 }
