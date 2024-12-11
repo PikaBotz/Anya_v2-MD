@@ -32,6 +32,9 @@ module.exports = {
     mongoUrl: process.env.MongoDB || "YOUR_MONGODB_URL",
     sessionId: process.env.SESSION_ID || "YOUR_SESSION_ID",
 
+    
+    
+    //༺------------------------------------------------------------------------------------------------
     /**
      * thumbnails and medias
      */
@@ -62,13 +65,6 @@ module.exports = {
         banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
     },
     Port: process.env.Port || "8080",
-
-    /**
-     * external APIs
-     */
-    api: {
-        api1: "https://www.guruapi.tech" // Guru's API
-    }
 }
 
 global.connectionMessageSent = false;
